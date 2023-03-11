@@ -104,8 +104,6 @@ const filesToCache = [
 'img/mandala-2.jpg',
 'img/maple-leaf-g038a1e4f1_640.jpg',
 'img/meadow-ga6a0d7d67_640.jpg',
-'img/meditation0.mp3',
-'img/meditation1.mp3',
 'img/nature-gf527aac49_640.jpg',
 'img/night-view-g7f6fe0e4e_640.jpg',
 'img/paper-g84892f294_640.jpg',

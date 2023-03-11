@@ -1,7 +1,7 @@
 <?php
 
     $list = [];
-    $exclude = ["CNAME", "make.php"];
+    $exclude = ["CNAME", "make.php",'meditation0.mp3','meditation1.mp3'];
 
     $scanned_directory = array_diff(scandir('./'), array('..', '.'));
     foreach($scanned_directory as $sd) {
