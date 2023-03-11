@@ -13,7 +13,7 @@
     $scanned_directory = array_diff(scandir('./img'), array('..', '.'));
     foreach($scanned_directory as $sd) {
         if (is_file('./img/' . $sd) && !in_array($sd, $exclude)) {
-            $list[] = '/img/' . $sd;
+            $list[] = 'img/' . $sd;
         }
     }
 
@@ -25,11 +25,10 @@ $template = "const cacheName = 'vibrations';
 
 // put the static assets and routes you want to cache here
 const filesToCache = [
-    '/',
-    '/bootstrap/js/bootstrap.bundle.min.js',
-    '/bootstrap/css/bootstrap.min.css',
-    '/fontawesome/css/all.min.css',
-    '/fontawesome/js/all.min.js'".$out."
+    'bootstrap/js/bootstrap.bundle.min.js',
+    'bootstrap/css/bootstrap.min.css',
+    'fontawesome/css/all.min.css',
+    'fontawesome/js/all.min.js'".$out."
 ];
 
 // the event handler for the activate event
