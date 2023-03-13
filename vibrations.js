@@ -25,6 +25,9 @@ let mbControl = null;
 let soloControl = null;
 let solo = false;
 let activelement = null;
+let rotateControl = null;
+let rotator = null;
+
 
 
 function drawTiles () {
@@ -63,6 +66,7 @@ function start () {
     }
     running = true;
     let set = list[activelement.data("f")];
+    freqcount = set.freq.length;
     activelement.find('.balken').addClass('activebalken');
     activelement.find('.playbutton').hide();
     activelement.find('.stopbutton').show();
@@ -74,6 +78,14 @@ function start () {
     pans = [];
 
     audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    rotator = audioCtx.createOscillator();
+    rotator.type = 'sine';
+    rotator.frequency.value = .5;
+    try {
+    rotator.start();
+    } catch (e) {}
+
+
     for (let o = 0; o < freqcount; o++) {
         oscillators.push(audioCtx.createOscillator());
         gains.push(audioCtx.createGain());
@@ -105,12 +117,18 @@ function start () {
     }
 
     fullvolume.gain.setValueAtTime(0.0001, audioCtx.currentTime);
-    fullvolume.gain.exponentialRampToValueAtTime(volumeControl.value, audioCtx.currentTime + 2);
+    fullvolume.gain.linearRampToValueAtTime(volumeControl.value, audioCtx.currentTime + 2);
 
     startsec = Date.now();
     duration = minutesControl.value;
     endsec = startsec + (duration * 60000);
 
+    if (rotateControl.value === "1") {
+        for (let o = 0; o < freqcount; o++) {
+            rotator.connect(pans[o].pan);
+        }
+        rotator.start();
+    }
 }
 
 
@@ -153,7 +171,7 @@ function stop() {
         try {
 
             fullvolume.gain.setValueAtTime(fullvolume.gain.value, audioCtx.currentTime);
-            fullvolume.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + .01);
+            fullvolume.gain.linearRampToValueAtTime(0.0001, audioCtx.currentTime + .01);
 
             window.setTimeout(function () {
                 for (let o = 0; o < freqcount; o++) {
@@ -171,6 +189,7 @@ $(document).ready(function () {
     volumeControl = document.querySelector("#volume");
     mbControl = document.querySelector("#boost");
     soloControl = document.querySelector("#solo");
+    rotateControl = document.querySelector("#rotate");
 
 
     drawTiles ();
@@ -186,7 +205,7 @@ $(document).ready(function () {
                 $('#volumeshow').text(Math.floor(volumeControl.value * 100));
 
                 fullvolume.gain.setValueAtTime(fullvolume.gain.value, audioCtx.currentTime);
-                fullvolume.gain.exponentialRampToValueAtTime(volumeControl.value, audioCtx.currentTime + .001);
+                fullvolume.gain.linearRampToValueAtTime(volumeControl.value, audioCtx.currentTime + .001);
 
             } catch (e){}
         },
@@ -220,6 +239,26 @@ $(document).ready(function () {
         false
     );
 
+    rotateControl.addEventListener(
+        "input",
+        () => {
+            try {
+                if (rotateControl.value === "1") {
+                    $('#rotateshow').text("An");
+                    for (let o = 0; o < freqcount; o++) {
+                        rotator.connect(pans[o].pan);
+                    }
+                } else {
+                    $('#rotateshow').text("Aus");
+                    rotator.disconnect();
+                    for (let o = 0; o < freqcount; o++) {
+                        pans[o].pan.value = list[activelement.data("f")].pan[o];
+                    }
+                }
+            } catch (e){}
+        },
+        false
+    );
     soloControl.addEventListener(
         "input",
         () => {
@@ -229,7 +268,7 @@ $(document).ready(function () {
                     solo = false;
                     for (let o = 0; o < freqcount; o++) {
                         gains[o].gain.setValueAtTime(gains[o].gain.value, audioCtx.currentTime);
-                        gains[o].gain.exponentialRampToValueAtTime(runningfreq.vol[o], audioCtx.currentTime + .01);
+                        gains[o].gain.linearRampToValueAtTime(runningfreq.vol[o], audioCtx.currentTime + .01);
                         //gains[o].gain.value = runningfreq.vol[o];
                     }
                 } else {
@@ -238,7 +277,7 @@ $(document).ready(function () {
                     for (let o = 0; o < freqcount; o++) {
 
                         gains[o].gain.setValueAtTime(gains[o].gain.value, audioCtx.currentTime);
-                        gains[o].gain.exponentialRampToValueAtTime((!o?1:0.0001), audioCtx.currentTime + .01);
+                        gains[o].gain.linearRampToValueAtTime((!o?1:0.0001), audioCtx.currentTime + .01);
                         //gains[o].gain.value = (!o?1:0);
                     }
                 }
