@@ -96,6 +96,7 @@ const filesToCache = [
 'img/lamp-ga434e4fc3_640.jpg',
 'img/light-gc12a26841_640.jpg',
 'img/lion-g89034e545_640.jpg',
+'img/logo.png',
 'img/logo1.jpg',
 'img/lotus-g4284cce54_640.jpg',
 'img/love-g0c3de754e_1280.jpg',
