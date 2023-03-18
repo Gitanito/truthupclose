@@ -21,7 +21,10 @@
 '".join("',
 '", $list)."'";
 
-$template = "const cacheName = 'vibrations';
+$template = "
+const newversion = '".date("YmdHis")."';
+
+const cacheName = 'vibrations';
 
 // put the static assets and routes you want to cache here
 const filesToCache = [
