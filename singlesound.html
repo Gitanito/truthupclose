@@ -30,9 +30,7 @@
 
         function calcpositions () {
             list = [];
-            console.log(first);
 
-            console.log(second);
             let f = ((parseInt(first) * 1000) + parseInt(second)) / 1000;
             for (let o = 0; o < frequencies.length; o++) {
                 list.push({"group": "Single", "freq": [f, f / 2, (f>530?f/4:f * 2)], "vol": [.8,.4,.3], "pan": [0,0,0], "col": "#222","name": f+" Hz", "desc": frequencies[o].desc, "tags": "1 2 3", "img": frequencies[o].img});
@@ -174,7 +172,7 @@
             <h3>Stereo-Rotation<br><input type="range" id="rotate" min="0" max="1" value="0" step="1" />&nbsp;&nbsp;<span id="rotateshow">Aus</span></h3>
             <h3>Nebenfrequenzen<br><input type="range" id="solo" min="0" max="1" value="1" step="1" />&nbsp;&nbsp;<span id="soloshow">An</span></h3>Die Nebenfrequenzen erleichtern das Zuhören und die Ausgabe auf verschiedenen Lautsprechern.<br><br>
             <h3>Frequenz<br><input type="range" id="first" min="40" max="1000" value="369" step="1" />&nbsp;&nbsp;<span id="firstshow">369</span></h3>
-            <h3>Tausendstel<br><input type="range" id="second" min="0" max="1000" value="0" step="1" />&nbsp;&nbsp;<span id="secondshow">000</span></h3>
+            <h3>Tausendstel<br><input type="range" id="second" min="0" max="999" value="0" step="1" />&nbsp;&nbsp;<span id="secondshow">000</span></h3>
 
             <input type="hidden" id="boost" value="0"/>
             <!--<h3>Mentalboost (experimentell)<br><input type="range" id="boost" min="0" max="1" value="0" step="1" />&nbsp;&nbsp;<span id="boostshow">Aus</span></h3>Dieser Schalter veranlasst, dass die Hauptfrequenz zufällig um bis zu 0.3% variiert wird. Das bewirkt, dass ein "Abschalten" des Gehirns erschwert wird und der Effekt intensiver wahrgenommen wird. Das "Eiern" kann aber auch unangenehm wirken. Bitte finden Sie ihre eigene optimale Einstellung! -->
