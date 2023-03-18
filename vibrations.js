@@ -137,22 +137,22 @@ function changeFreq(set)
     //console.log(freq);
 
     let freq = set.freq;
-    /*
-            if (mbControl.value === "1" && freq[0] > 80) {
-                switch (Math.floor(Math.random() * 6)) {
-                    case 0:
-                        for (let o = 0; o < freq.length; o++) {
-                            freq[o] = freq[o] * 1.03;
-                        }
-                        break;
-                    case 1:
-                        for (let o = 0; o < freq.length; o++) {
-                            freq[o] = freq[o] * 0.97;
-                        }
-                        break;
+
+    if (mbControl.value === "1" && freq[0] > 80) {
+        switch (Math.floor(Math.random() * 6)) {
+            case 0:
+                for (let o = 0; o < freq.length; o++) {
+                    freq[o] = freq[o] * 1.002;
                 }
-            }
-    */
+                break;
+            case 1:
+                for (let o = 0; o < freq.length; o++) {
+                    freq[o] = freq[o] * 0.998;
+                }
+                break;
+        }
+    }
+
     if (oscillators[0].frequency.value !== freq[0]) {
         for (let o = 0; o < freqcount; o++) {
             oscillators[o].frequency.value = freq[o];
