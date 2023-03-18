@@ -18,45 +18,10 @@
   <script src="fontawesome/js/all.min.js"></script>
 
   <script>
-
-    let list = [
-      {"group": "Verschiedenes", "freq": [432, 432 + 3.5], "vol": [1,1], "pan": [1,-1],"col": "#e09a4d","name": "3.5 Hz", "desc": "Theta-Bereich - beschleunigte Speicherung der Sprache", "tags": "1 2 3", "img": "img/lion-g89034e545_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 5.5], "vol": [1,1], "pan": [1,-1], "col": "#333", "name": "5.5 Hz", "desc": "Visionen über notwendige Wachstumsprozesse", "tags": "1 2 3", "img": "img/filter-g5e7f24ab4_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 6.3], "vol": [1,1], "pan": [1,-1], "col": "#e33235", "name": "6.3 Hz", "desc": "Beschleunigtes Lernen, verbesserte Gedächtnisleistung, mentale und astrale Projektionen", "tags": "1 2 3", "img": "img/abacus-g4f6c2fe99_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 7], "vol": [1,1], "pan": [1,-1], "col": "#f7b352", "name": "7 Hz", "desc": "Beschleunigtes Lernen, verbesserte Gedächtnisleistung", "tags": "1 2 3", "img": "img/paper-g84892f294_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 7.5], "vol": [1,1], "pan": [1,-1], "col": "#fede33", "name": "7.5 Hz", "desc": "Geführte Meditationen, Kreativität in Kunst/Erfindungen/Musik, Kontakt zu geistigen Bewusstseinsformen", "tags": "1 2 3", "img": "img/colorful-gf04857371_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 7.83], "vol": [1,1], "pan": [1,-1], "col": "#486cb0", "name": "7.83 Hz", "desc": "Elementare Schumann Resonanz", "tags": "1 2 3", "img": "img/frequency-g5def81d85_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 8], "vol": [1,1], "pan": [1,-1], "col": "#2ab2e4", "name": "8 Hz", "desc": "Alpha-Bereich - Regression in frühere Lebensphasen", "tags": "1 2 3", "img": "img/night-view-g7f6fe0e4e_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 8.3], "vol": [1,1], "pan": [1,-1], "col": "#6f6aaa", "name": "8.3 Hz", "desc": "Visualisierung mentaler Objekte", "tags": "1 2 3", "img": "img/maple-leaf-g038a1e4f1_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 9], "vol": [1,1], "pan": [1,-1], "col": "#8b4a8a", "name": "9 Hz", "desc": "Gewahrsein über die Ursachen körperlicher Unausgeglichenheiten", "tags": "1 2 3", "img": "img/hands-gc41d68a32_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 10.5], "vol": [1,1], "pan": [1,-1], "col": "#334976", "name": "10.5 Hz", "desc": "Selbstheilung des Körpers", "tags": "1 2 3", "img": "img/gemstone-g28de21b17_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 12], "vol": [1,1], "pan": [1,-1], "col": "#a4954b", "name": "12 Hz", "desc": "Zentrierung", "tags": "1 2 3", "img": "img/harmony-g46ec50c30_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 33], "vol": [1,1], "pan": [1,-1], "col": "#512396", "name": "33 Hz", "desc": "Gamma-Bereich - Vibrationsgefühl, physische Aufgewühltheit", "tags": "1 2 3", "img": "img/swirl-geda463af3_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 35], "vol": [1,1], "pan": [1,-1], "col": "#31549f", "name": "35 Hz", "desc": "Balance der Chakren", "tags": "1 2 3", "img": "img/droplet-gf9fbdcf52_640.jpg"},
-
-
-      {"group": "Verschiedenes", "freq": [432, 432 + 55], "vol": [1,1], "pan": [1,-1], "col": "#e9e9ec", "name": "55 Hz", "desc": "Tantrischer Yoga, Stimulation der Kundalini-Kraft", "tags": "1 2 3", "img": "img/saint-ga85fbbdfc_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 62], "vol": [1,1], "pan": [1,-1], "col": "#f8c67c", "name": "62 Hz", "desc": "Gefühl physischer Kraft", "tags": "1 2 3", "img": "img/man-g43f96aba3_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 63], "vol": [1,1], "pan": [1,-1], "col": "#a8afc0", "name": "63 Hz", "desc": "Astrale Projektionen", "tags": "1 2 3", "img": "img/black-hole-g00cc7c7dd_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 70], "vol": [1,1], "pan": [1,-1], "col": "#e3cc5e", "name": "70 Hz", "desc": "Mentale und astrale Projektionen", "tags": "1 2 3", "img": "img/lamp-ga434e4fc3_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 80], "vol": [1,1], "pan": [1,-1], "col": "#06183f", "name": "80 Hz", "desc": "Bindung von Raum und Zeit, Orientierung", "tags": "1 2 3", "img": "img/compass-gb5b3731da_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 83], "vol": [1,1], "pan": [1,-1], "col": "#a4954b", "name": "83 Hz", "desc": "Öffnung des 3.Auges", "tags": "1 2 3", "img": "img/eye-gd05c61b68_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 90], "vol": [1,1], "pan": [1,-1], "col": "#adadad", "name": "90 Hz", "desc": "Wohlgefühl, Sicherheit, Ausgeglichenheit", "tags": "1 2 3", "img": "img/animal-g6e29370ee_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 105], "vol": [1,1], "pan": [1,-1], "col": "#b1e55b", "name": "105 Hz", "desc": "Überblick über komplexe Situationen", "tags": "1 2 3", "img": "img/fractal-g2eed7d16c_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 108], "vol": [1,1], "pan": [1,-1], "col": "#e38b53", "name": "108 Hz", "desc": "Totales Wissen", "tags": "1 2 3", "img": "img/books-g89d0d5e37_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 196], "vol": [1,1], "pan": [1,-1], "col": "#654b3b", "name": "196 Hz", "desc": "Gefühl grosser Beruhigung", "tags": "1 2 3", "img": "img/tealights-geb8741839_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 247], "vol": [1,1], "pan": [1,-1], "col": "#e3d383", "name": "247 Hz", "desc": "Gefühl des Friedens", "tags": "1 2 3", "img": "img/meadow-ga6a0d7d67_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 333], "vol": [1,1], "pan": [1,-1], "col": "#865e36", "name": "333 Hz", "desc": "Inspiration bis Ekstase", "tags": "1 2 3", "img": "img/hiking-gd967dfc21_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 348], "vol": [1,1], "pan": [1,-1], "col": "#0c6410", "name": "348 Hz", "desc": "Gefühl der Liebe", "tags": "1 2 3", "img": "img/heart-g9a27ca01c_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 440], "vol": [1,1], "pan": [1,-1], "col": "#e52f6e", "name": "440 Hz", "desc": "Verständnis", "tags": "1 2 3", "img": "img/background-ge4989a578_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 494], "vol": [1,1], "pan": [1,-1], "col": "#a4954b", "name": "494 Hz", "desc": "Geistiges Erwachen", "tags": "1 2 3", "img": "img/daisy-gae05a0139_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 698], "vol": [1,1], "pan": [1,-1], "col": "#e81414", "name": "698 Hz", "desc": "Starkes Liebesgefühl", "tags": "1 2 3", "img": "img/happy-mothers-day-gbdb1f8275_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 794], "vol": [1,1], "pan": [1,-1], "col": "#334976", "name": "794 Hz", "desc": "Starker Wille", "tags": "1 2 3", "img": "img/pointing-gd2ad379fc_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 880], "vol": [1,1], "pan": [1,-1], "col": "#b1e55b", "name": "880 Hz", "desc": "Unbegrenzte Vorstellungskraft", "tags": "1 2 3", "img": "img/wildlife-g82dff3606_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 988], "vol": [1,1], "pan": [1,-1], "col": "#829cce", "name": "988 Hz", "desc": "Vergeistigung", "tags": "1 2 3", "img": "img/hands-gf96359ece_640.jpg"},
-      {"group": "Verschiedenes", "freq": [432, 432 + 1925], "vol": [1,1], "pan": [1,-1], "col": "#1f9624", "name": "1925 Hz", "desc": "Gefühl der Erleuchtung, auch Euphorie", "tags": "1 2 3", "img": "img/woman-g0e390c31b_640.jpg"},
-    ];
+    let list = [];
+    let listtype = "bin";
   </script>
+  <script src="list.js"></script>
   <script src="vibrations.js"></script>
   <link rel="stylesheet" href="vibrations.css">
   <style>

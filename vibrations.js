@@ -33,25 +33,26 @@ let rotator = null;
 function drawTiles () {
     let lastgroup = "";
     for (let i = 0; i < list.length; i++) {
-        if (lastgroup != list[i].group) {
-            $('#freq').append('<div class="w-100"><h2><br>' + list[i].group + '</h2></div>');
+        if (list[i].type === listtype) {
+            if (lastgroup !== list[i].group) {
+                $('#freq').append('<div class="w-100"><h2><br>' + list[i].group + '</h2></div>');
+            }
+            lastgroup = list[i].group;
+
+            $('#freq').append(
+                '<div class="col ' + list[i].tags + '">\n' +
+                '                        <div data-f="' + i + '" class="box card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="border: 5px solid ' + list[i].col + ';background-size: cover; background-position-x: center; background-position-y: center; background-image: url(' + list[i].img + ');">\n' +
+                '                            <img class="playbutton" src="img/play.png">' +
+                '                            <img class="stopbutton" src="img/stop.png">' +
+                '            <div class="balken" style="background-color: ' + list[i].col + '"></div>' +
+                '            <div class="d-flex flex-column h-100 p-2 pb-3 text-white text-shadow-3">\n' +
+                '                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-white text-shadow text-decoration-none">\n' +
+                '                                    ' + list[i].name + '</h2><h5 class="text-shadow"> ' + list[i].desc + '</h5>\n' +
+                '                            </div>\n' +
+                '                        </div>\n' +
+                '                </div>'
+            );
         }
-        lastgroup = list[i].group;
-
-        $('#freq').append(
-            '<div class="col ' + list[i].tags + '">\n' +
-            '                        <div data-f="' + i + '" class="box card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="border: 5px solid ' + list[i].col + ';background-size: cover; background-position-x: center; background-position-y: center; background-image: url(' + list[i].img + ');">\n' +
-            '                            <img class="playbutton" src="img/play.png">' +
-            '                            <img class="stopbutton" src="img/stop.png">' +
-            '            <div class="balken" style="background-color: ' + list[i].col + '"></div>' +
-            '            <div class="d-flex flex-column h-100 p-2 pb-3 text-white text-shadow-3">\n' +
-            '                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-white text-shadow text-decoration-none">\n' +
-            '                                    ' + list[i].name + '</h2><h5 class="text-shadow"> ' + list[i].desc + '</h5>\n' +
-            '                            </div>\n' +
-            '                        </div>\n' +
-            '                </div>'
-
-        );
     }
 }
 function start () {

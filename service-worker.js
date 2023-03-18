@@ -1,5 +1,5 @@
 
-const newversion = '20230319000540';
+const newversion = '20230319002250';
 
 const cacheName = 'vibrations';
 
@@ -15,6 +15,7 @@ const filesToCache = [
 'fullboost.html',
 'index.html',
 'jquery.min.js',
+'list.js',
 'manifest.json',
 'papaparse.min.js',
 'podcasts.html',

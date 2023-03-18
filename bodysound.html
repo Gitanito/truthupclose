@@ -32,6 +32,7 @@
         let hzpercm = 5;
         let height = 175;
         let list = [];
+        let listtype = "body";
         let heightControl = null;
 
         function calcpositions () {
@@ -42,7 +43,7 @@
                 //console.log(percent * hzpercm * (thirdeyeheight/165));
 
                 let newheight = Math.round((percent * hzpercm * (thirdeyeheight/165)) * 100) / 100;
-                list.push({"group": "Frequenzen", "freq": [newheight, newheight / 2, (newheight>530?newheight/4:newheight * 2)], "vol": [.8,.4,.3], "pan": [0,0,0], "col": "#222","name": newheight+" Hz", "desc": frequencies[o].desc, "tags": "1 2 3", "img": frequencies[o].img});
+                list.push({"type": "body","group": "Frequenzen", "freq": [newheight, newheight / 2, (newheight>530?newheight/4:newheight * 2)], "vol": [.8,.4,.3], "pan": [0,0,0], "col": "#222","name": newheight+" Hz", "desc": frequencies[o].desc, "tags": "1 2 3", "img": frequencies[o].img});
             }
             //console.log(list);
         }
