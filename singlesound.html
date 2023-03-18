@@ -27,13 +27,14 @@
         let list = [];
         let firstControl = null;
         let secondControl = null;
+        let listtype = "single";
 
         function calcpositions () {
             list = [];
 
             let f = ((parseInt(first) * 1000) + parseInt(second)) / 1000;
             for (let o = 0; o < frequencies.length; o++) {
-                list.push({"group": "Single", "freq": [f, f / 2, (f>530?f/4:f * 2)], "vol": [.8,.4,.3], "pan": [0,0,0], "col": "#222","name": f+" Hz", "desc": frequencies[o].desc, "tags": "1 2 3", "img": frequencies[o].img});
+                list.push({"type": "single", "group": "Single", "freq": [f, f / 2, (f>530?f/4:f * 2)], "vol": [.8,.4,.3], "pan": [0,0,0], "col": "#222","name": f+" Hz", "desc": frequencies[o].desc, "tags": "1 2 3", "img": frequencies[o].img});
             }
             //console.log(list);
         }
