@@ -18,6 +18,7 @@ let startsec = 0;
 let endsec = 0;
 let running = false;
 let runningfreq = 0;
+let logging = {"starttime": 0};
 
 let minutesControl = null;
 let volumeControl = null;
@@ -66,6 +67,13 @@ function start () {
         return;
     }
     running = true;
+
+
+
+    activelement.parent().addClass('sticky-element');
+    $("#settings").addClass('sticky-settings');
+
+
     let set = list[activelement.data("f")];
     freqcount = set.freq.length;
     activelement.find('.balken').addClass('activebalken');
@@ -169,6 +177,9 @@ function stop() {
         $('.stopbutton').hide();
         $('.playbutton').show();
         $('.transparent').removeClass('transparent');
+        activelement.parent().removeClass('sticky-element');
+        $("#settings").removeClass('sticky-settings');
+
         try {
 
             fullvolume.gain.setValueAtTime(fullvolume.gain.value, audioCtx.currentTime);
@@ -302,6 +313,17 @@ $(document).ready(function () {
     }, 250);
 
     initializeCookieBanner();
+
+    /*
+    const el = document.getElementById("settings");
+    const observer = new IntersectionObserver(
+        ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
+        { threshold: [1] }
+    );
+
+    observer.observe(el);
+    */
+
 });
 
 
@@ -337,3 +359,4 @@ function initializeCookieBanner(){
         showCookieBanner();
     }
 }
+
