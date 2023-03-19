@@ -50,16 +50,16 @@ input {
 
 .sticky-element {
     position: fixed;
-    bottom: 0;
+    bottom: 5px;
     z-index: 99999;
-    height: 45vh;
+    height: 40vh;
     width: 90%;
 }
 .sticky-settings {
     position: fixed;
-    top: 0;
+    top: 5px;
     z-index: 99999;
-    height: 50vh;
+    height: 55vh;
     overflow: auto;
     width: 90%;
 }
