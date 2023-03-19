@@ -1,4 +1,4 @@
-if('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator) {
     let registration;
 
     const registerServiceWorker = async () => {
@@ -11,6 +11,7 @@ if('serviceWorker' in navigator) {
 let oscillators = [];
 let gains = [];
 let pans = [];
+let rotators = [];
 let freqcount = 1;
 let fullvolume = null;
 let duration = 10;
@@ -30,8 +31,20 @@ let rotateControl = null;
 let rotator = null;
 
 
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
 
-function drawTiles () {
+function getCookie(name) {
+    var cookies = '; ' + document.cookie;
+    var splitCookie = cookies.split('; ' + name + '=');
+    if (splitCookie.length === 2) return splitCookie.pop();
+}
+
+function drawTiles() {
     let lastgroup = "";
     for (let i = 0; i < list.length; i++) {
         if (list[i].type === listtype) {
@@ -56,18 +69,29 @@ function drawTiles () {
         }
     }
 }
-function start () {
+
+function startRotation () {
+    for (let o = 0; o < freqcount; o++) {
+        rotators[o].connect(pans[o].pan);
+    }
+}
+
+function start() {
     stop();
     if (running) {
         running = false;
         return;
     }
 
-    if (!confirm("WARNUNG!\nVerwenden Sie diese Funktion NICHT während Sie ein Fahrzeug bewegen, oder in anderer Weise Ihre volle Aufmerksamkeit gefordert ist. Diese Frequenzen KÖNNEN direkt auf Ihr Wohlbefinden wirken. Nehmen Sie eine entspannte Position im Sitzen oder Liegen ein bevor Sie starten.")) {
-        return;
+    if (getCookie("warning_ok") !== "yes") {
+        if (confirm("WARNUNG!\nVerwenden Sie diese Funktion NICHT während Sie ein Fahrzeug bewegen, oder in anderer Weise Ihre volle Aufmerksamkeit gefordert ist. Diese Frequenzen KÖNNEN direkt auf Ihr Wohlbefinden wirken. Nehmen Sie eine entspannte Position im Sitzen oder Liegen ein bevor Sie starten.\nDiese Nachricht wird alle 24 Stunden angezeigt.")) {
+            setCookie("warning_ok", "yes", 1);
+        } else {
+            return;
+        }
     }
-    running = true;
 
+    running = true;
 
 
     activelement.parent().addClass('sticky-element');
@@ -85,20 +109,16 @@ function start () {
     oscillators = [];
     gains = [];
     pans = [];
+    rotators = [];
 
     audioCtx = new window.AudioContext({sampleRate: 48000});
-    rotator = audioCtx.createOscillator();
-    rotator.type = 'sine';
-    rotator.frequency.value = .5;
-    try {
-    rotator.start();
-    } catch (e) {}
 
 
     for (let o = 0; o < freqcount; o++) {
         oscillators.push(audioCtx.createOscillator());
         gains.push(audioCtx.createGain());
         pans.push(new StereoPannerNode(audioCtx));
+        rotators.push(audioCtx.createOscillator());
     }
 
     fullvolume = audioCtx.createGain();
@@ -111,11 +131,19 @@ function start () {
         pans[o].connect(fullvolume);
         gains[o].connect(pans[o]);
         if (solo) {
-            gains[o].gain.value = (!o?1:0.0001);
+            gains[o].gain.value = (!o ? 1 : 0.0001);
         } else {
             gains[o].gain.value = set.vol[o];
         }
         pans[o].pan.value = set.pan[o];
+        rotators[o].type = 'sine';
+        rotators[o].frequency.value = .5;
+
+        window.setTimeout(function(){
+            try {
+                rotators[o].start();
+            } catch (e) {}
+        }, 1000 / freqcount * o);
     }
 
     runningfreq = set;
@@ -133,16 +161,12 @@ function start () {
     endsec = startsec + (duration * 60000);
 
     if (rotateControl.value === "1") {
-        for (let o = 0; o < freqcount; o++) {
-            rotator.connect(pans[o].pan);
-        }
-        rotator.start();
+        startRotation();
     }
 }
 
 
-function changeFreq(set)
-{
+function changeFreq(set) {
     //console.log(freq);
 
     let freq = set.freq;
@@ -164,7 +188,7 @@ function changeFreq(set)
 
     if (oscillators[0].frequency.value !== freq[0]) {
         for (let o = 0; o < freqcount; o++) {
-            oscillators[o].frequency.value = freq[o];
+            oscillators[o].frequency.linearRampToValueAtTime(freq[o], .25);
         }
     }
 
@@ -204,10 +228,13 @@ $(document).ready(function () {
     rotateControl = document.querySelector("#rotate");
 
 
-    drawTiles ();
+    drawTiles();
 
 
-    $('.box').on('click', function(){ activelement = $(this); start()});
+    $('.box').on('click', function () {
+        activelement = $(this);
+        start()
+    });
 
 
     volumeControl.addEventListener(
@@ -219,7 +246,8 @@ $(document).ready(function () {
                 fullvolume.gain.setValueAtTime(fullvolume.gain.value, audioCtx.currentTime);
                 fullvolume.gain.linearRampToValueAtTime(volumeControl.value, audioCtx.currentTime + .001);
 
-            } catch (e){}
+            } catch (e) {
+            }
         },
         false
     );
@@ -231,7 +259,8 @@ $(document).ready(function () {
                 $('#minutesshow').text(minutesControl.value);
                 duration = minutesControl.value;
                 endsec = startsec + (duration * 60000);
-            } catch (e){}
+            } catch (e) {
+            }
         },
         false
     );
@@ -246,7 +275,8 @@ $(document).ready(function () {
                     $('#boostshow').text("Aus");
                     changeFreq(runningfreq);
                 }
-            } catch (e){}
+            } catch (e) {
+            }
         },
         false
     );
@@ -257,17 +287,16 @@ $(document).ready(function () {
             try {
                 if (rotateControl.value === "1") {
                     $('#rotateshow').text("An");
-                    for (let o = 0; o < freqcount; o++) {
-                        rotator.connect(pans[o].pan);
-                    }
+                    startRotation();
                 } else {
                     $('#rotateshow').text("Aus");
-                    rotator.disconnect();
                     for (let o = 0; o < freqcount; o++) {
+                        rotators[o].disconnect();
                         pans[o].pan.value = list[activelement.data("f")].pan[o];
                     }
                 }
-            } catch (e){}
+            } catch (e) {
+            }
         },
         false
     );
@@ -289,14 +318,16 @@ $(document).ready(function () {
                     for (let o = 0; o < freqcount; o++) {
 
                         gains[o].gain.setValueAtTime(gains[o].gain.value, audioCtx.currentTime);
-                        gains[o].gain.linearRampToValueAtTime((!o?1:0.0001), audioCtx.currentTime + .01);
+                        gains[o].gain.linearRampToValueAtTime((!o ? 1 : 0.0001), audioCtx.currentTime + .01);
                         //gains[o].gain.value = (!o?1:0);
                     }
                 }
-            } catch (e){}
+            } catch (e) {
+            }
         },
         false
     );
+
     window.setInterval(function () {
         if (endsec > Date.now()) {
             let newwidth = ((Date.now() - startsec) / ((endsec - startsec) / 100));
@@ -306,7 +337,7 @@ $(document).ready(function () {
                 running = false;
             }
 
-            if (running) {
+            if (running && mbControl.value === "1") {
                 changeFreq(runningfreq);
             }
         }
@@ -317,41 +348,39 @@ $(document).ready(function () {
 
 });
 
-window.onpopstate = function() {
+window.onpopstate = function () {
     if (running) {
         stop();
         running = false;
         return false;
     }
-}; history.pushState({}, '');
-
-
-
+};
+history.pushState({}, '');
 
 
 /* Javascript to show and hide cookie banner using localstorage */
+
 /* Shows the Cookie banner */
-function showCookieBanner(){
+function showCookieBanner() {
     let cookieBanner = document.getElementById("cb-cookie-banner");
     cookieBanner.style.display = "block";
 }
 
 /* Hides the Cookie banner and saves the value to localstorage */
-function hideCookieBanner(){
+function hideCookieBanner() {
     localStorage.setItem("cb_isCookieAccepted", "yes");
     let cookieBanner = document.getElementById("cb-cookie-banner");
     cookieBanner.style.display = "none";
 }
 
 /* Checks the localstorage and shows Cookie banner based on it. */
-function initializeCookieBanner(){
+function initializeCookieBanner() {
     let isCookieAccepted = localStorage.getItem("cb_isCookieAccepted");
-    if(isCookieAccepted === null)
-    {
+    if (isCookieAccepted === null) {
         localStorage.setItem("cb_isCookieAccepted", "no");
         showCookieBanner();
     }
-    if(isCookieAccepted === "no"){
+    if (isCookieAccepted === "no") {
         showCookieBanner();
     }
 }

@@ -18,16 +18,20 @@
     opacity: 0.5;
     z-index: 1;
 }
+
 body {
     background: #1e2125;
     color: white;
 }
+
 .text-shadow {
     text-shadow: 2px 2px #000000;
 }
+
 #ex1Slider .slider-selection {
     background: #BABABA;
 }
+
 .stopbutton {
     display: none;
     position: absolute;
@@ -35,32 +39,46 @@ body {
     right: 5px;
     width: 20%;
 }
+
 .playbutton {
     position: absolute;
     top: 5px;
     right: 5px;
     width: 20%;
 }
+
 input {
     width: 60%;
 }
+
 .transparent {
     opacity: .3;
 }
-#cb-cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 999; border-radius: 0; display: none; }
+
+#cb-cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    border-radius: 0;
+    display: none;
+}
 
 .sticky-element {
     position: fixed;
     bottom: 5px;
     z-index: 99999;
     height: 40vh;
-    width: 90%;
+    max-width: 95%;
 }
+
 .sticky-settings {
     position: fixed;
     top: 5px;
     z-index: 99999;
-    height: 55vh;
+    height: 65vh;
     overflow: auto;
     width: 90%;
+    max-width: 90%;
 }

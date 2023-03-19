@@ -8,66 +8,99 @@
     <script type="text/javascript" src="jquery.min.js"></script>
     <script>
 
-/*
-    Ich bin wertvoll und geliebt.
-Ich verdiene Glück und Erfolg.
-Ich bin stark und mutig.
-Ich bin in der Lage, Herausforderungen zu bewältigen.
-Ich bin dankbar für alles, was ich habe.
-Ich bin einzigartig und besonders.
-Ich vertraue auf meine Fähigkeiten und meinen Instinkt.
-Ich bin fähig, meine Ziele zu erreichen.
-Ich bin dankbar für jeden Tag und jede Erfahrung, die ich machen darf.
-Ich bin in Frieden mit mir selbst und den Menschen um mich herum.
-Ich bin offen für neue Möglichkeiten und Abenteuer.
-Ich bin fähig, Veränderungen positiv zu sehen und zu nutzen.
-Ich bin voller Energie und Leidenschaft für das Leben.
-Ich bin dankbar für die Fähigkeit, zu lernen und zu wachsen.
-Ich bin gesegnet mit einer wunderbaren Familie und Freunden.
-Ich bin dankbar für die Schönheit und Vielfalt der Natur.
-Ich bin bereit, Risiken einzugehen und aus meiner Komfortzone herauszutreten.
-Ich bin voller Freude und Lebenslust.
-Ich bin dankbar für jede Chance, anderen zu helfen und einen Unterschied zu machen.
-Ich vertraue darauf, dass alles im Leben aus gutem Grund geschieht und dass ich auf meinem Weg weiter wachsen werde.
+        /*
+            Ich bin wertvoll und geliebt.
+        Ich verdiene Glück und Erfolg.
+        Ich bin stark und mutig.
+        Ich bin in der Lage, Herausforderungen zu bewältigen.
+        Ich bin dankbar für alles, was ich habe.
+        Ich bin einzigartig und besonders.
+        Ich vertraue auf meine Fähigkeiten und meinen Instinkt.
+        Ich bin fähig, meine Ziele zu erreichen.
+        Ich bin dankbar für jeden Tag und jede Erfahrung, die ich machen darf.
+        Ich bin in Frieden mit mir selbst und den Menschen um mich herum.
+        Ich bin offen für neue Möglichkeiten und Abenteuer.
+        Ich bin fähig, Veränderungen positiv zu sehen und zu nutzen.
+        Ich bin voller Energie und Leidenschaft für das Leben.
+        Ich bin dankbar für die Fähigkeit, zu lernen und zu wachsen.
+        Ich bin gesegnet mit einer wunderbaren Familie und Freunden.
+        Ich bin dankbar für die Schönheit und Vielfalt der Natur.
+        Ich bin bereit, Risiken einzugehen und aus meiner Komfortzone herauszutreten.
+        Ich bin voller Freude und Lebenslust.
+        Ich bin dankbar für jede Chance, anderen zu helfen und einen Unterschied zu machen.
+        Ich vertraue darauf, dass alles im Leben aus gutem Grund geschieht und dass ich auf meinem Weg weiter wachsen werde.
 
 
-Selbstliebe
-Selbstvertrauen
-Zufriedenheit
-Dankbarkeit
-Glück
-Gesundheit
-Erfolg
-Fokussierung
-Kreativität
-Motivation
-Energie
-Klarheit
-Mut
-Gelassenheit
-innere Stärke
-positive Einstellung
-Wohlstand
-Freude
-Frieden
-Abenteuerlust
-  */
+        Selbstliebe
+        Selbstvertrauen
+        Zufriedenheit
+        Dankbarkeit
+        Glück
+        Gesundheit
+        Erfolg
+        Fokussierung
+        Kreativität
+        Motivation
+        Energie
+        Klarheit
+        Mut
+        Gelassenheit
+        innere Stärke
+        positive Einstellung
+        Wohlstand
+        Freude
+        Frieden
+        Abenteuerlust
+          */
         let images = [
             {"src": "img/3053969.jpg", "type": "img", "text": "Ich wachaaaaaeäääääßßßß auf!äüö", "duration": 100},
             {"src": "img/Weg87529.mp4", "type": "vid", "text": "Die Sonne scheint fuer MICH!", "duration": 100},
-            {"src": "img/5250691.jpg", "type": "img", "text": "Mein Zuhause schenkt mir\nGeborgenheit", "duration": 100},
-            {"src": "img/Blasen85220.mp4", "type": "vid", "text": "Meine Gedanken steigen\nzum Himmel", "duration": 100},
+            {
+                "src": "img/5250691.jpg",
+                "type": "img",
+                "text": "Mein Zuhause schenkt mir\nGeborgenheit",
+                "duration": 100
+            },
+            {
+                "src": "img/Blasen85220.mp4",
+                "type": "vid",
+                "text": "Meine Gedanken steigen\nzum Himmel",
+                "duration": 100
+            },
             {"src": "img/259929.jpg", "type": "img", "text": "... und erschaffen\nmeine Wirklichkeit", "duration": 100},
-            {"src": "img/Verehrung43838.mp4", "type": "vid", "text": "Mein inneres Licht\nerleuchtet die Welt", "duration": 100},
-            {"src": "img/259735.jpg", "type": "img", "text": "... und fuehrt mich an\ndie schoensten Orte", "duration": 100},
+            {
+                "src": "img/Verehrung43838.mp4",
+                "type": "vid",
+                "text": "Mein inneres Licht\nerleuchtet die Welt",
+                "duration": 100
+            },
+            {
+                "src": "img/259735.jpg",
+                "type": "img",
+                "text": "... und fuehrt mich an\ndie schoensten Orte",
+                "duration": 100
+            },
             {"src": "img/Haus67774.mp4", "type": "vid", "text": "Ob auf dem Land ...", "duration": 100},
             {"src": "img/Surfer38451.mp4", "type": "vid", "text": "... oder am Wasser", "duration": 100},
-            {"src": "img/inspiration-ge68dca3f4_1920.jpg", "type": "img", "text": "Mein Leben ist schoener als\nich es jeh erwartet hatte!", "duration": 100},
-            {"src": "img/heart-g11c2ae39d_1920.jpg", "type": "img", "text": "Meine allumfassende Liebe\nheilt jeden Aspekt der Welt", "duration": 100},
-            {"src": "img/thanks-g411edba99_1920.jpg", "type": "img", "text": "Ich schliesse jetzt meine Augen\nund beende mit einem lauten\nAMEN.", "duration": 100}
+            {
+                "src": "img/inspiration-ge68dca3f4_1920.jpg",
+                "type": "img",
+                "text": "Mein Leben ist schoener als\nich es jeh erwartet hatte!",
+                "duration": 100
+            },
+            {
+                "src": "img/heart-g11c2ae39d_1920.jpg",
+                "type": "img",
+                "text": "Meine allumfassende Liebe\nheilt jeden Aspekt der Welt",
+                "duration": 100
+            },
+            {
+                "src": "img/thanks-g411edba99_1920.jpg",
+                "type": "img",
+                "text": "Ich schliesse jetzt meine Augen\nund beende mit einem lauten\nAMEN.",
+                "duration": 100
+            }
         ];
-
-
 
 
         let recording = false;
@@ -99,17 +132,18 @@ Abenteuerlust
             );
         }
 
-        $(document).ready(function(){
-            document.querySelector('a-scene').addEventListener('loaded', function() {
+        $(document).ready(function () {
+            document.querySelector('a-scene').addEventListener('loaded', function () {
                 let startposition = (distance * -1) + cameradistance;
                 //document.querySelector('#rig').setAttribute("animation","property: rotation; to: 0 360 0; loop: false; dur: " + (10000 * speed));
-                for (let i = 0; i < images.length; i++ ) {
+                for (let i = 0; i < images.length; i++) {
                     //appendObject("id"+i, images[i].src, "0 0 " + startposition, "0 "+images[i].rotationx+" 0");
-                    appendObject(i, images[i].src, images[i].type, images[i].text, "0 1 " + startposition, "-1 0 " + (startposition-3));
+                    appendObject(i, images[i].src, images[i].type, images[i].text, "0 1 " + startposition, "-1 0 " + (startposition - 3));
                     startposition -= distance;
                 }
             });
         });
+
         function appendObject(id, file, type, text, position = "0 0 0", textposition = "0 0 0", rotation = "0 0 0", scale = "-1 1 1") {
             let assets = document.querySelector('a-assets');
 
@@ -122,7 +156,7 @@ Abenteuerlust
                 video.setAttribute("width", "1280");
                 video.setAttribute("height", "720");
                 video.setAttribute("playsinline", "");
-                video.setAttribute("webkit-playsinline","");
+                video.setAttribute("webkit-playsinline", "");
                 video.setAttribute("src", file);
                 assets.appendChild(video);
             } else {
@@ -200,7 +234,6 @@ Abenteuerlust
                 }, 9000);
 
 
-
                 window.setTimeout(
                     function () {
                         let newp = document.querySelector('a-camera').getAttribute('rotation');
@@ -262,16 +295,16 @@ Abenteuerlust
             }
         }
 
-        $(document).ready(function(){
-            $('body').on('mousedown', function() {
+        $(document).ready(function () {
+            $('body').on('mousedown', function () {
                 console.log("click");
                 startNow();
             });
-            $('body').on('keydown', function() {
+            $('body').on('keydown', function () {
                 console.log("key");
                 startNow();
             });
-            $('body').on('touch', function() {
+            $('body').on('touch', function () {
                 console.log("touch");
                 startNow();
             });
@@ -279,26 +312,27 @@ Abenteuerlust
     </script>
 </head>
 <body bgcolor="black">
-<a-scene id="film" >
+<a-scene id="film">
     <a-assets>
-         <!--<img id="image1" src="https://cdn.pixabay.com/photo/2016/01/05/08/33/foggy-1122136_960_720.jpg"/> -->
+        <!--<img id="image1" src="https://cdn.pixabay.com/photo/2016/01/05/08/33/foggy-1122136_960_720.jpg"/> -->
     </a-assets>
     <a-entity glow></entity>
-    <!--<a-entity obj-model="obj: #myModelObj; mtl: #myModelMtl" position="0 -30 0"></a-entity>-->
-    <!--<a-entity id="bgchange" cursor-changesky  geometry="primitive: cylinder; radius: 2; height: .1; open-ended: false;" material="color: blue;" position="0 -20 -30" rotation="90 0 0"></a-entity>-->
+        <!--<a-entity obj-model="obj: #myModelObj; mtl: #myModelMtl" position="0 -30 0"></a-entity>-->
+        <!--<a-entity id="bgchange" cursor-changesky  geometry="primitive: cylinder; radius: 2; height: .1; open-ended: false;" material="color: blue;" position="0 -20 -30" rotation="90 0 0"></a-entity>-->
 
-    <!--<a-entity id="id0" position="0 1.5 10" material="shader: flat; side: double; src: #image1" geometry="primitive: cylinder; radius: 35; height: 25; open-ended: true; theta-start: 142.8247; theta-length: 74.3507;" rotation="0 0 0" scale="-1 1 1"></a-entity>-->
+        <!--<a-entity id="id0" position="0 1.5 10" material="shader: flat; side: double; src: #image1" geometry="primitive: cylinder; radius: 35; height: 25; open-ended: true; theta-start: 142.8247; theta-length: 74.3507;" rotation="0 0 0" scale="-1 1 1"></a-entity>-->
 
-    <a-text id="infotext" value="Tap or Click\nthe Surface\nto start" position="-1 1.5 -2" rotation="0 0 0"></a-text>
+        <a-text id="infotext" value="Tap or Click\nthe Surface\nto start" position="-1 1.5 -2"
+                rotation="0 0 0"></a-text>
 
 
-    <a-entity id="rig" position="0 0 0">
-        <a-entity id="rig2" position="0 0 0">
-            <a-camera position="0 1 0">
+        <a-entity id="rig" position="0 0 0">
+            <a-entity id="rig2" position="0 0 0">
+                <a-camera position="0 1 0">
 
-            </a-camera>
+                </a-camera>
+            </a-entity>
         </a-entity>
-    </a-entity>
 </a-scene>
 
 <img id="vvv" style="border: 2px solid red; z-index: 99999; position: absolute; top:0; left: 0;"></img>

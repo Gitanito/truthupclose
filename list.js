@@ -79,12 +79,12 @@ list = [
     {"type": "bin", "group": "Verschiedenes", "freq": [432, 432 + 988], "vol": [1,1], "pan": [1,-1], "col": "#829cce", "name": "988 Hz", "desc": "Vergeistigung", "tags": "1 2 3", "img": "img/hands-gf96359ece_640.jpg"},
     {"type": "bin", "group": "Verschiedenes", "freq": [432, 432 + 1925], "vol": [1,1], "pan": [1,-1], "col": "#1f9624", "name": "1925 Hz", "desc": "Gefühl der Erleuchtung, auch Euphorie", "tags": "1 2 3", "img": "img/woman-g0e390c31b_640.jpg"},
 
-    {"type": "five", "group": "5er Set", "freq": [174, 285, 396, 417, 528], "vol": [.4,.4,.4,.4,.4], "pan": [0,0,0,0,0], "col": "#222","name": "174-528 Hz", "desc": "Untere Körperhälfte", "tags": "1 2 3", "img": "img/men-g29e1ca941_640.jpg"},
-    {"type": "five", "group": "5er Set", "freq": [285, 396, 417, 528, 639], "vol": [.4,.4,.4,.4,.4], "pan": [0,0,0,0,0], "col": "#222","name": "285-639 Hz", "desc": "Unten bis Mitte", "tags": "1 2 3", "img": "img/shoe-gad2c2199b_640.jpg"},
-    {"type": "five", "group": "5er Set", "freq": [396, 417, 528, 639, 741], "vol": [.4,.4,.4,.4,.4], "pan": [0,0,0,0,0], "col": "#222","name": "396-741Hz", "desc": "Körpermitte", "tags": "1 2 3", "img": "img/belly-gf80e2a51b_640.jpg"},
-    {"type": "five", "group": "5er Set", "freq": [417, 528, 639, 741, 852], "vol": [.4,.4,.4,.4,.4], "pan": [0,0,0,0,0], "col": "#222","name": "417-852Hz", "desc": "Oben bis Mitte", "tags": "1 2 3", "img": "img/woman-g7443a7634_640.jpg"},
-    {"type": "five", "group": "5er Set", "freq": [528, 639, 741, 852, 963], "vol": [.4,.4,.4,.4,.4], "pan": [0,0,0,0,0], "col": "#222","name": "528-963Hz", "desc": "Obere Körperhälfte", "tags": "1 2 3", "img": "img/woman-g904eb5e0b_640.jpg"},
-    {"type": "five", "group": "5er Set", "freq": [174, 396, 528, 741, 963], "vol": [.4,.4,.4,.4,.4], "pan": [0,0,0,0,0], "col": "#222","name": "5/9", "desc": "Jede zweite Frequenz", "tags": "1 2 3", "img": "img/symbol-gd2ba77619_640.jpg"},
+    {"type": "five", "group": "5er Set", "freq": [174, 285, 396, 417, 528], "vol": [.6,.5,.4,.3,.2], "pan": [0,0,0,0,0], "col": "#222","name": "174-528 Hz", "desc": "Untere Körperhälfte", "tags": "1 2 3", "img": "img/men-g29e1ca941_640.jpg"},
+    {"type": "five", "group": "5er Set", "freq": [285, 396, 417, 528, 639], "vol": [.6,.5,.4,.3,.2], "pan": [0,0,0,0,0], "col": "#222","name": "285-639 Hz", "desc": "Unten bis Mitte", "tags": "1 2 3", "img": "img/shoe-gad2c2199b_640.jpg"},
+    {"type": "five", "group": "5er Set", "freq": [396, 417, 528, 639, 741], "vol": [.6,.5,.4,.3,.2], "pan": [0,0,0,0,0], "col": "#222","name": "396-741Hz", "desc": "Körpermitte", "tags": "1 2 3", "img": "img/belly-gf80e2a51b_640.jpg"},
+    {"type": "five", "group": "5er Set", "freq": [417, 528, 639, 741, 852], "vol": [.6,.5,.4,.3,.2], "pan": [0,0,0,0,0], "col": "#222","name": "417-852Hz", "desc": "Oben bis Mitte", "tags": "1 2 3", "img": "img/woman-g7443a7634_640.jpg"},
+    {"type": "five", "group": "5er Set", "freq": [528, 639, 741, 852, 963], "vol": [.6,.5,.4,.3,.2], "pan": [0,0,0,0,0], "col": "#222","name": "528-963Hz", "desc": "Obere Körperhälfte", "tags": "1 2 3", "img": "img/woman-g904eb5e0b_640.jpg"},
+    {"type": "five", "group": "5er Set", "freq": [174, 396, 528, 741, 963], "vol": [.6,.5,.4,.3,.2], "pan": [0,0,0,0,0], "col": "#222","name": "5/9", "desc": "Jede zweite Frequenz", "tags": "1 2 3", "img": "img/symbol-gd2ba77619_640.jpg"},
 
 
 ];
