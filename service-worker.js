@@ -1,5 +1,5 @@
 
-const newversion = '20230319231155';
+const newversion = '20230319234149';
 
 const cacheName = 'vibrations';
 
@@ -33,7 +33,6 @@ const filesToCache = [
 'img/5250691.jpg',
 'img/abacus-g4f6c2fe99_640.jpg',
 'img/adult-ge16ab3c40_640.jpg',
-'img/anatomy.jpg',
 'img/animal-g6e29370ee_640.jpg',
 'img/arm-g636c9e0fa_640.jpg',
 'img/athens-g6f41add55_1280.jpg',
@@ -132,7 +131,6 @@ const filesToCache = [
 'img/play.png',
 'img/pointing-gd2ad379fc_640.jpg',
 'img/positive-g363c7b752_1280.jpg',
-'img/profile.jpg',
 'img/room-g791600391_1280.jpg',
 'img/saint-ga85fbbdfc_640.jpg',
 'img/selbstliebe.jpg',
