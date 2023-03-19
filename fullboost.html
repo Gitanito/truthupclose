@@ -26,7 +26,13 @@
     <link rel="stylesheet" href="vibrations.css">
     <style>
         body {
-            background: #1d3f06;
+            background-color: #FA8BFF;
+            background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
         }
     </style>
 </head>
@@ -104,7 +110,8 @@
 
 
 
-    <section class="pt-2 pb-3 bg-dark rounded-5 shadow-lg" id="settings">
+    <br><br>
+    <section class="pt-4 pb-3 bg-dark rounded-5 shadow-lg" id="settings">
         <div class="container pt-1 pb-3">
             <h5>Sitzungslänge<br><input type="range" id="minutes" min="5" max="100" value="10" step="5" />&nbsp;&nbsp;<span id="minutesshow">10</span>&nbsp;Min.</h5>
             <h5>Lautstärke<br><input type="range" id="volume" min="0" max="1" value=".6" step="0.01" />&nbsp;&nbsp;<span id="volumeshow">60</span>%</h5>

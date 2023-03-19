@@ -314,20 +314,16 @@ $(document).ready(function () {
 
     initializeCookieBanner();
 
-    /*
-    const el = document.getElementById("settings");
-    const observer = new IntersectionObserver(
-        ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
-        { threshold: [1] }
-    );
-
-    observer.observe(el);
-    */
 
 });
 
-
-
+window.onpopstate = function() {
+    if (running) {
+        stop();
+        running = false;
+        return false;
+    }
+}; history.pushState({}, '');
 
 
 
