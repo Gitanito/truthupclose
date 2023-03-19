@@ -13,6 +13,7 @@
     left: 0;
     width: 0%;
     height: 100%;
+    border-right: red solid 2px;
     background: #cccccc;
     opacity: 0.5;
     z-index: 1;
