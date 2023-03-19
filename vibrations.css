@@ -52,9 +52,12 @@ input {
     position: fixed;
     bottom: 0;
     z-index: 99999;
+    height: 33vh;
 }
 .sticky-settings {
     position: fixed;
     top: 0;
     z-index: 99999;
+    height: 66vh;
+    overflow: auto;
 }

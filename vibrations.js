@@ -86,7 +86,7 @@ function start () {
     gains = [];
     pans = [];
 
-    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)({sampleRate: 8000});
     rotator = audioCtx.createOscillator();
     rotator.type = 'sine';
     rotator.frequency.value = .5;
