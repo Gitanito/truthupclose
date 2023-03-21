@@ -33,7 +33,26 @@ let rotateControl = null;
 let warning_ok = false;
 let xon = { "de": "An", "en": "On", "es": "encendido", "fr": "allumé", "it": "acceso", "hr": "upaljeno"};
 let xoff = { "de": "Aus", "en": "Off", "es": "apagado", "fr": "éteint", "it": "spento", "hr": "isključen"};
+let w = {
+    "de": "WARNUNG!\nVerwenden Sie diese Funktion NICHT während Sie ein Fahrzeug bewegen, oder in anderer Weise Ihre volle Aufmerksamkeit gefordert ist. Diese Frequenzen KÖNNEN direkt auf Ihr Wohlbefinden wirken. Nehmen Sie eine entspannte Position im Sitzen oder Liegen ein bevor Sie starten.\nDiese Nachricht wird alle 24 Stunden angezeigt.",
+    "en": "WARNING!\nDO NOT use this feature while moving a vehicle or otherwise requires your full attention. These frequencies CAN have a direct effect on your well-being. Sit or lie down in a relaxed position before you start.\nThis message is displayed every 24 hours.",
+    "es": "¡ADVERTENCIA!\nNO use esta función mientras mueve un vehículo o requiere toda su atención. Estas frecuencias PUEDEN tener un efecto directo en su bienestar. Siéntese o acuéstese en una posición relajada antes de comenzar.\nEste mensaje se muestra cada 24 horas.",
+    "fr": "AVERTISSEMENT!\nN'utilisez PAS cette fonction pendant le déplacement d'un véhicule ou si elle requiert toute votre attention. Ces fréquences PEUVENT avoir un effet direct sur votre bien-être. Asseyez-vous ou allongez-vous dans une position détendue avant de commencer.\nCe message s'affiche toutes les 24 heures.",
+    "it": "AVVERTIMENTO!\nNON utilizzare questa funzione durante lo spostamento di un veicolo o altrimenti richiede la massima attenzione. Queste frequenze POSSONO avere un effetto diretto sul tuo benessere. Siediti o sdraiati in una posizione rilassata prima di iniziare.\nQuesto messaggio viene visualizzato ogni 24 ore.",
+    "hr": "UPOZORENJE!\nNEMOJTE koristiti ovu značajku dok se krećete vozilom ili na neki drugi način zahtijeva vašu punu pozornost. Ove frekvencije MOGU imati izravan učinak na vaše blagostanje. Sjednite ili legnite u opušteni položaj prije nego što počnete.\nOva poruka se prikazuje svaka 24 sata."
+};
+let cats = {
+    "0": {"de": "Solfeggio Frequenzen", "en": "Solfeggio Frequencies", "es": "Frecuencias de solfeo", "fr": "Fréquences du solfège", "it": "Frequenze di solfeggio", "hr": "Solfeggio frekvencije"},
+    "1": {"de": "Hilfe", "en": "Help", "es": "Ayuda", "fr": "Aider", "it": "Aiuto", "hr": "Pomozite"},
+    "2": {"de": "Unterstützung", "en": "Support", "es": "Apoyo", "fr": "Soutien", "it": "Supporto", "hr": "Podrška"},
+    "3": {"de": "Körperliche Entsprechungen", "en": "Physical equivalents", "es": "Equivalentes físicos", "fr": "équivalents physiques", "it": "Equivalenti fisici", "hr": "Fizički ekvivalenti"},
+    "4": {"de": "Experimentell", "en": "Experimental", "es": "Experimental", "fr": "Expérimental", "it": "Sperimentale", "hr": "Eksperimentalni"},
+    "5": {"de": "Verschiedenes", "en": "Various", "es": "Varios", "fr": "Divers", "it": "Vari", "hr": "Razne"},
+    "6": {"de": "5er Set", "en": "Set of 5", "es": "Conjunto de 5", "fr": "Lot de 5", "it": "Insieme di 5", "hr": "Set od 5"},
+    "7": {"de": "Frequenzen", "en": "Frequencies", "es": "Frecuencias", "fr": "Fréquences", "it": "Frequenze", "hr": "Frekvencije"},
+    "8": {"de": "", "en": "", "es": "", "fr": "", "it": "", "hr": ""},
 
+}
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -52,7 +71,7 @@ function drawTiles() {
     for (let i = 0; i < list.length; i++) {
         if (list[i].type === listtype) {
             if (lastgroup !== list[i].group) {
-                $('#freq').append('<div class="w-100"><h2><br>' + list[i].group + '</h2></div>');
+                $('#freq').append('<div class="w-100"><h2><br>' + cats[list[i].group][language] + '</h2></div>');
             }
             lastgroup = list[i].group;
 
@@ -93,14 +112,6 @@ function start() {
     }
 
     if (getCookie("warningok") !== "yes" && !warning_ok) {
-        let w = {
-            "de": "WARNUNG!\nVerwenden Sie diese Funktion NICHT während Sie ein Fahrzeug bewegen, oder in anderer Weise Ihre volle Aufmerksamkeit gefordert ist. Diese Frequenzen KÖNNEN direkt auf Ihr Wohlbefinden wirken. Nehmen Sie eine entspannte Position im Sitzen oder Liegen ein bevor Sie starten.\nDiese Nachricht wird alle 24 Stunden angezeigt.",
-            "en": "WARNING!\nDO NOT use this feature while moving a vehicle or otherwise requires your full attention. These frequencies CAN have a direct effect on your well-being. Sit or lie down in a relaxed position before you start.\nThis message is displayed every 24 hours.",
-            "es": "¡ADVERTENCIA!\nNO use esta función mientras mueve un vehículo o requiere toda su atención. Estas frecuencias PUEDEN tener un efecto directo en su bienestar. Siéntese o acuéstese en una posición relajada antes de comenzar.\nEste mensaje se muestra cada 24 horas.",
-            "fr": "AVERTISSEMENT!\nN'utilisez PAS cette fonction pendant le déplacement d'un véhicule ou si elle requiert toute votre attention. Ces fréquences PEUVENT avoir un effet direct sur votre bien-être. Asseyez-vous ou allongez-vous dans une position détendue avant de commencer.\nCe message s'affiche toutes les 24 heures.",
-            "it": "AVVERTIMENTO!\nNON utilizzare questa funzione durante lo spostamento di un veicolo o altrimenti richiede la massima attenzione. Queste frequenze POSSONO avere un effetto diretto sul tuo benessere. Siediti o sdraiati in una posizione rilassata prima di iniziare.\nQuesto messaggio viene visualizzato ogni 24 ore.",
-            "hr": "UPOZORENJE!\nNEMOJTE koristiti ovu značajku dok se krećete vozilom ili na neki drugi način zahtijeva vašu punu pozornost. Ove frekvencije MOGU imati izravan učinak na vaše blagostanje. Sjednite ili legnite u opušteni položaj prije nego što počnete.\nOva poruka se prikazuje svaka 24 sata."
-        };
         if (confirm(w[language])) {
             setCookie("warningok", "yes", 1);
             warning_ok = true;

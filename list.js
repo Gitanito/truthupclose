@@ -1,7 +1,7 @@
 list = [
     {
         "type": "sound",
-        "group": "Solfeggio Frequenzen",
+        "group": "0",
         "freq": [174, 174 / 2, 174 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -18,7 +18,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Solfeggio Frequenzen",
+        "group": "0",
         "freq": [285, 285 / 2, 285 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -35,7 +35,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Solfeggio Frequenzen",
+        "group": "0",
         "freq": [396, 396 / 2, 396 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -52,7 +52,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Solfeggio Frequenzen",
+        "group": "0",
         "freq": [417, 417 / 2, 417 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -69,7 +69,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Solfeggio Frequenzen",
+        "group": "0",
         "freq": [528, 528 / 2, 528 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -86,7 +86,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Solfeggio Frequenzen",
+        "group": "0",
         "freq": [639, 639 / 2, 639 / 4],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -103,7 +103,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Solfeggio Frequenzen",
+        "group": "0",
         "freq": [741, 741 / 2, 741 / 4],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -120,7 +120,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Solfeggio Frequenzen",
+        "group": "0",
         "freq": [852, 852 / 2, 852 / 4],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -137,7 +137,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Solfeggio Frequenzen",
+        "group": "0",
         "freq": [963, 963 / 2, 963 / 4],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -154,7 +154,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Hilfe",
+        "group": "1",
         "freq": [144, 144 / 2, 144 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -171,7 +171,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Hilfe",
+        "group": "1",
         "freq": [664, 664 / 2, 664 / 4],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -188,7 +188,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Hilfe",
+        "group": "1",
         "freq": [965, 965 / 2, 965 / 4],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -205,7 +205,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Hilfe",
+        "group": "1",
         "freq": [802, 802 / 2, 802 / 4],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -222,7 +222,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Hilfe",
+        "group": "1",
         "freq": [304, 304 / 2, 304 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -239,7 +239,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Hilfe",
+        "group": "1",
         "freq": [330, 330 / 2, 330 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -256,7 +256,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Unterstützung",
+        "group": "2",
         "freq": [40, 40 / 2, 40 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -273,7 +273,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Unterstützung",
+        "group": "2",
         "freq": [432, 432 / 2, 432 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -290,7 +290,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Unterstützung",
+        "group": "2",
         "freq": [8.3 * 32, 8.3 * 32 / 2, 8.3 * 32 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -307,7 +307,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Unterstützung",
+        "group": "2",
         "freq": [90, 90 / 2, 90 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -324,7 +324,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Unterstützung",
+        "group": "2",
         "freq": [108, 108 / 2, 108 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -341,7 +341,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Unterstützung",
+        "group": "2",
         "freq": [420.82, 420.82 / 2, 420.82 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -358,7 +358,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Unterstützung",
+        "group": "2",
         "freq": [20.215 * 16, 20.215 * 16 / 2, 20.215 * 16 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -375,7 +375,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Unterstützung",
+        "group": "2",
         "freq": [4.5 * 32, 4.5 * 32 / 2, 4.5 * 32 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -393,7 +393,7 @@ list = [
 
     {
         "type": "sound",
-        "group": "Körperliche Entsprechungen",
+        "group": "3",
         "freq": [4.11 * 32, 4.11 * 32 / 2, 4.11 * 32 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -410,7 +410,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Körperliche Entsprechungen",
+        "group": "3",
         "freq": [4.6 * 32, 4.6 * 32 / 2, 4.6 * 32 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -427,7 +427,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Körperliche Entsprechungen",
+        "group": "3",
         "freq": [5.14 * 32, 5.14 * 32 / 2, 5.14 * 32 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -444,7 +444,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Körperliche Entsprechungen",
+        "group": "3",
         "freq": [5.35 * 32, 5.35 * 32 / 2, 5.35 * 32 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -461,7 +461,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Körperliche Entsprechungen",
+        "group": "3",
         "freq": [6.15 * 32, 6.15 * 32 / 2, 6.15 * 32 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -478,7 +478,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Körperliche Entsprechungen",
+        "group": "3",
         "freq": [6.88 * 32, 6.88 * 32 / 2, 6.88 * 32 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -495,7 +495,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Körperliche Entsprechungen",
+        "group": "3",
         "freq": [7.69 * 32, 7.69 * 32 / 2, 7.69 * 32 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -512,7 +512,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Körperliche Entsprechungen",
+        "group": "3",
         "freq": [8.22 * 32, 8.22 * 32 / 2, 8.22 * 32 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -529,7 +529,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Körperliche Entsprechungen",
+        "group": "3",
         "freq": [9.19 * 32, 9.19 * 32 / 2, 9.19 * 32 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -546,7 +546,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Körperliche Entsprechungen",
+        "group": "3",
         "freq": [9.4 * 32, 9.4 * 32 / 2, 9.4 * 32 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -563,7 +563,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Körperliche Entsprechungen",
+        "group": "3",
         "freq": [10.3 * 16, 10.3 * 16 / 2, 10.3 * 16 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -580,7 +580,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Körperliche Entsprechungen",
+        "group": "3",
         "freq": [10.7 * 16, 10.7 * 16 / 2, 10.7 * 16 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -597,7 +597,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Körperliche Entsprechungen",
+        "group": "3",
         "freq": [12.3 * 16, 12.3 * 16 / 2, 12.3 * 16 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -614,7 +614,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Körperliche Entsprechungen",
+        "group": "3",
         "freq": [13.8 * 16, 13.8 * 16 / 2, 13.8 * 16 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -631,7 +631,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Körperliche Entsprechungen",
+        "group": "3",
         "freq": [295.8, 295.8 / 2, 295.8 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -649,7 +649,7 @@ list = [
 
     {
         "type": "sound",
-        "group": "Experimentell",
+        "group": "4",
         "freq": [7.83 * 32, 7.83 * 32 / 2, 7.83 * 32 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -666,7 +666,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Experimentell",
+        "group": "4",
         "freq": [126.22, 126.22 / 2, 126.22 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -683,7 +683,7 @@ list = [
     },
     {
         "type": "sound",
-        "group": "Experimentell",
+        "group": "4",
         "freq": [585.9375, 585.9375 / 2, 585.9375 * 2],
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
@@ -701,7 +701,7 @@ list = [
 
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 3.5],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -718,7 +718,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 5.5],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -735,7 +735,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 6.3],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -752,7 +752,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 7],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -769,7 +769,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 7.5],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -786,7 +786,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 7.83],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -803,7 +803,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 8],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -820,7 +820,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 8.3],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -837,7 +837,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 9],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -854,7 +854,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 10.5],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -871,7 +871,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 12],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -888,7 +888,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 33],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -905,7 +905,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 35],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -924,7 +924,7 @@ list = [
 
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 55],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -941,7 +941,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 62],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -958,7 +958,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 63],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -975,7 +975,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 70],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -992,7 +992,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 80],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -1009,7 +1009,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 83],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -1026,7 +1026,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 90],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -1043,7 +1043,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 105],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -1060,7 +1060,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 108],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -1077,7 +1077,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 196],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -1094,7 +1094,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 247],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -1111,7 +1111,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 333],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -1128,7 +1128,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 348],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -1145,7 +1145,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 440],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -1162,7 +1162,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 494],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -1179,7 +1179,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 698],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -1196,7 +1196,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 794],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -1213,7 +1213,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 880],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -1230,7 +1230,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 988],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -1247,7 +1247,7 @@ list = [
     },
     {
         "type": "bin",
-        "group": "Verschiedenes",
+        "group": "5",
         "freq": [432, 432 + 1925],
         "vol": [1, 1],
         "pan": [1, -1],
@@ -1265,7 +1265,7 @@ list = [
 
     {
         "type": "five",
-        "group": "5er Set",
+        "group": "6",
         "freq": [174, 285, 396, 417, 528],
         "vol": [.6, .5, .4, .3, .2],
         "pan": [0, 0, 0, 0, 0],
@@ -1282,7 +1282,7 @@ list = [
     },
     {
         "type": "five",
-        "group": "5er Set",
+        "group": "6",
         "freq": [285, 396, 417, 528, 639],
         "vol": [.6, .5, .4, .3, .2],
         "pan": [0, 0, 0, 0, 0],
@@ -1299,7 +1299,7 @@ list = [
     },
     {
         "type": "five",
-        "group": "5er Set",
+        "group": "6",
         "freq": [396, 417, 528, 639, 741],
         "vol": [.6, .5, .4, .3, .2],
         "pan": [0, 0, 0, 0, 0],
@@ -1316,7 +1316,7 @@ list = [
     },
     {
         "type": "five",
-        "group": "5er Set",
+        "group": "6",
         "freq": [417, 528, 639, 741, 852],
         "vol": [.6, .5, .4, .3, .2],
         "pan": [0, 0, 0, 0, 0],
@@ -1333,7 +1333,7 @@ list = [
     },
     {
         "type": "five",
-        "group": "5er Set",
+        "group": "6",
         "freq": [528, 639, 741, 852, 963],
         "vol": [.6, .5, .4, .3, .2],
         "pan": [0, 0, 0, 0, 0],
@@ -1350,7 +1350,7 @@ list = [
     },
     {
         "type": "five",
-        "group": "5er Set",
+        "group": "6",
         "freq": [174, 396, 528, 741, 963],
         "vol": [.6, .5, .4, .3, .2],
         "pan": [0, 0, 0, 0, 0],
