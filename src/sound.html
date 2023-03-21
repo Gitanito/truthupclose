@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    {{header}}
+    <title>{{pagetitle-sound}}</title>
+
+
+    <script>
+        let listtype = "sound";
+    </script>
+    <style>
+        body {
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <section class="">
+        <nav class="navbar navbar-light bg-white  navbar-expand-md ">
+            <div class="container">
+                <div class="col-2 pl-md-0 text-left">
+                    <a href="/">
+                        <img src="img/logo.png" height="30"/>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav4"
+                        aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center col-md-8" id="navbarNav4">
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Startseite
+                                <!--<span class="sr-only">(current)</span>--></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="3dcourse.html">VR/3D-Kurse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tools.html">Schwingungen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="podcasts.html">Podcasts</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav col-2 justify-content-end d-none d-md-flex">
+                    <!--
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fab fa-github"></i></a>
+                    </li>
+                    -->
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://www.youtube.com/@ubersinnliche_erfahrungen"><i
+                                class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+
+    <section class="pt-5 pb-1 mt-0 align-items-center d-flex bg-dark cover ov-hidden"
+             style="background-size: cover; min-height: 15vh;  background-position-x: center; background-position-y: center;  background-image: url(img/jonathan-borba-3eC5n6gHwe8-unsplash.jpg);">
+        <div class="container-fluid zindex-1">
+            <div class="row align-items-center justify-content-center  text-center text-shadow">
+                <div class="col-12 col-md-12  ">
+                    <h1 class=" text-light   mb-2 mt-5"><strong>Frequenzgenerator
+                    </strong></h1>
+                    <p class="lead  text-light mb-5">Verändere dich selbst und Andere mit diesen Frequenzen
+                    </p>
+                    <p class="lead  text-light mb-5">Andere Schwingungs-Generatoren:<br>
+                        <a class="btn   btn-lg btn-danger btn-rised   mt-md-4" href="sound.html">Solfeggio und
+                            Andere</a>
+                        <a class="btn   btn-lg btn-danger btn-rised   mt-md-4" href="binaural.html">Binaural Beats</a>
+                        <a class="btn   btn-lg btn-danger btn-rised   mt-md-4" href="bodysound.html">Chakra Boost</a>
+                        <a class="btn   btn-lg btn-danger btn-rised   mt-md-4" href="fullboost.html">Secret of Five</a>
+                        <a class="btn   btn-lg btn-danger btn-rised   mt-md-4" href="singlesound.html">Single-Ton</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section class="pt-4 pb-3 bg-dark rounded-5 shadow-lg" id="settings">
+        <div class="container pt-1 pb-3">
+            <h5>Sitzungslänge<br><input type="range" id="minutes" min="5" max="100" value="10"
+                                        step="5"/>&nbsp;&nbsp;<span id="minutesshow">10</span>&nbsp;Min.</h5>
+            <h5>Lautstärke<br><input type="range" id="volume" min="0" max="1" value=".8" step="0.01"/>&nbsp;&nbsp;<span
+                    id="volumeshow">80</span>%</h5>
+            <h5>Stereo-Rotation<br><input type="range" id="rotate" min="0" max="1" value="0" step="1"/>&nbsp;&nbsp;<span
+                    id="rotateshow">Aus</span></h5>
+            <h5>Nebenfrequenzen<br><input type="range" id="solo" min="0" max="1" value="1" step="1"/>&nbsp;&nbsp;<span
+                    id="soloshow">An</span></h5>Die Nebenfrequenzen erleichtern das Zuhören und die Ausgabe auf
+            verschiedenen Lautsprechern.
+            <br><br>
+            <h5>Mentalboost (experimentell)<br><input type="range" id="boost" min="0" max="1" value="0" step="1"/>&nbsp;&nbsp;<span
+                    id="boostshow">Aus</span></h5>Die Hauptfrequenz wird leicht variiert.
+        </div>
+    </section>
+
+    <section class="pt-2 pb-1">
+        <div class="container pb-1">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" id="freq">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-12">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center p-5">
+                            <h3 class="pb-2 h3 mt-1 display-5 fw-bold text-uppercase text-primary">
+                                WARNUNG</h3>
+                            <p class="lead fw-bold text-black">Die Verwendung von solchen Frequenzmustern KANN Ihren
+                                Gleichgewichtssinn stören und Übelkeit hervorrufen!</p>
+                            <p class="text-black">Hören Sie diese Frequenzen niemals während Sie ein Fahrzeug steuern
+                                oder Ihre Aufmerksamkeit in anderer Weise gefordert ist!
+                                Sollten Sie unangenehme oder unerwünschte Effekte wahrnehmen, beenden Sie die Anwendung
+                                SOFORT! Sollten diese Effekte länger ahalten, kontaktieren Sie einen Arzt.
+                                Wir übernehmen keine Haftung/Verantwortung für jede Art von Schädigung.</p>
+                            <div class="btn   btn-lg btn-danger btn-rised   mt-md-4">Sorgen Sie unbedingt für eine
+                                stabile Position im Sitzen oder Liegen, bevor Sie ein Frequenz-Sitzung starten!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="display: block;" class="pro">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                    <h2 class="text-center mt-3 mb-3">
+                        Wie funktioniert es?
+                    </h2>
+                </div>
+                <div class="col-6 col-md-6 col-lg-6 col-xl-6 margin-top-20">
+                    <p>Elektro-magnetische Frequenzen umgeben uns in jeder Sekunde unseres Tages. Sie haben in
+                        verschiedenster Weise Einfluss auf unsere Befindlichkeit und Stimmungen. Am einfachsten wird das
+                        verständlich, wenn wir an Musik denken. Verschiedene Musikstile und Genres unterstützen unsere
+                        aktuelle Stimmung oder verändern unsere Stimmung in gewisser Weise.
+                        Ein trauriger, langsamer Song kann uns schnell in eine schwere Stimmung bringen, so wie ein
+                        beschwingtes Trompetensolo unsere Innenwelt zum Hüpfen bringen kann.</p>
+                </div>
+                <div class="col-6 col-md-6 col-lg-6 col-xl-6 margin-top-20">
+                    <p>Bestimmte isolierte Schwingungsmuster können diese Stimmungen gezielt erzeugen, verstärken oder
+                        auflösen.
+                        Wenn wir annehmen, dass jeder Teil unseres Körpers - und eventuell auch die Schwingungsfelder
+                        außerhalb unseres Körpers - eine eigene Stimmung haben, können wir mit isolierten Frequenzen
+                        auch auf diese Bereiche einwirken.
+                        <br><br>
+                        Jeder wird selbst seine Erfahrungen damit machen müssen - darum probieren Sie es aus!
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-8 col-md-8 col-lg-8 col-xl-7">
+                    <img class="img-fluid" src="img/wave-g3268afc0d_1280.jpg" alt="">
+                </div>
+                <div class="col-12 col-md-12 col-lg-12 col-xl-5">
+                    <h4 class="text-danger">
+                        Starten
+                    </h4>
+                    <p class="margin-top-20">Starten Sie eine Frequenz durch Klick auf eine der Bilder-Kacheln. Vorher
+                        können Sie über die Regler am Anfang der Seite die Sitzungsdauer (automatische Abschaltung) und
+                        die Lautstärke einstellen. Eine Sitzung ist auf 10 Minuten vor-eingestellt. Das erleichtert
+                        Neulingen den Einstieg ohne zu überfordern. Fortgeschrittene können die Sitzung auf bis zu 100
+                        Minuten verlängern. Längere Anwendung kann die Effekte durchaus verstärken, aber auch zu
+                        Überforderung führen.<br>Bitte handeln Sie verantwortungsvoll und umsichtig!</p>
+                    <h4 class="text-danger margin-top-20">Kopfhörer oder Lautsprecher</h4>
+                    <p class="margin-top-20">Verwenden Sie geeignete, gut funktionierende Kopfhörer oder Lautsprecher
+                        mit festem Stand. Ein knirschendes oder flirrendes Nebengeräusch kann die Erfahrung massiv
+                        verschlechtern. Verwenden Sie - wenn möglich - Lautsprecher oder Kopfhörer mit großen
+                        "Treibern". In der Regel können diese die Frequenzen deutlicher abbilden ohne Frequenzteile zu
+                        unterschlagen und damit den Effekt zu mindern.
+                    </p>
+                    <h4 class="text-danger margin-top-20">Anwendung</h4>
+                    <p class="margin-top-20">Es ist nicht nötig die Frequenzen über die Ohren zu konsumieren. Nach
+                        unserer Erfahrung ist es sinnvoller, die betroffenen Bereiche direkt zu beschallen. So z.B. ist
+                        es hilfreich bei schmerzenden Knien, den Kopfhörer direkt auf das Knie anzulegen.
+                    </p>
+                    <h4 class="text-danger margin-top-20">Frequenzen</h4>
+                    <p class="margin-top-20">
+                        Unser Programm erzeugt zu jeder Hauptfrequenz zwei Nebenfrequenzen, um das Hörgefühl angenehmer
+                        zu machen und den bestmöglichen Effekt auf allen Lautsprechern zu gewährleisten.
+                        <br>
+                        Die Nebenfrequenzen sind:<br>
+                        <b>Unter 530 Hz: 1 Oktave tiefer + 1 Oktave höher<br>
+                            Über 530 Hz: 1 Oktave tiefer + 2 Oktaven tiefer</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+{{footer}}
+</div>
+</body>
+</html>

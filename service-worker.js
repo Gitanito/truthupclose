@@ -1,5 +1,5 @@
 
-const newversion = '20230320213518';
+const newversion = '20230321214829';
 
 const cacheName = 'vibrations';
 
@@ -65,15 +65,19 @@ const filesToCache = [
 'img/daisy-gae05a0139_640.jpg',
 'img/dandelion-g0d325b257_640.jpg',
 'img/dandelions-g3b04e8636_640.jpg',
+'img/de.png',
 'img/droplet-gf9fbdcf52_640.jpg',
 'img/ear-ga3cfbb604_640.jpg',
 'img/eet-g0d5463b75_1280.jpg',
+'img/en.png',
+'img/es.png',
 'img/eye-g92873dafd_640.jpg',
 'img/eye-gd05c61b68_640.jpg',
 'img/filter-g5e7f24ab4_640.jpg',
 'img/flower-g686369a58_640.jpg',
 'img/forest-g8888c2f62_640.jpg',
 'img/fox-g273081c1e_640.jpg',
+'img/fr.png',
 'img/fractal-g2eed7d16c_640.jpg',
 'img/frequency-g5def81d85_640.jpg',
 'img/freude.jpg',
@@ -98,8 +102,10 @@ const filesToCache = [
 'img/hiking-gd967dfc21_640.jpg',
 'img/homebutton.jpg',
 'img/homebutton.png',
+'img/hr.png',
 'img/infant-g57184ba03_640.jpg',
 'img/inspiration-ge68dca3f4_1920.jpg',
+'img/it.png',
 'img/jonathan-borba-3eC5n6gHwe8-unsplash.jpg',
 'img/kidney-g824c2738d_640.jpg',
 'img/kiss-g4097dbd6e_640.jpg',

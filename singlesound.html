@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <title>Chakra Energizer - Übersinnliche Erfahrungen hautnah</title>
+    <title>Chakra Energizer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,7 +19,7 @@
 
     <script>
         let frequencies = [
-            {"freq": 369.000, "name": "Start", "desc": "Starten", "tags": "1 2 3", "img": "img/stud-g343e83bcd_640.jpg"}
+            {"freq": 369.000, "name": "Start", "de": "Starten", "en": "Start", "es": "Comenzar", "fr": "Commencer", "it": "Inizio", "hr": "Početak", "tags": "1 2 3", "img": "img/stud-g343e83bcd_640.jpg"}
         ];
         let hzpercm = 5;
         let first = 369;
@@ -42,7 +42,12 @@
                     "pan": [0, 0, 0],
                     "col": "#222",
                     "name": f + " Hz",
-                    "desc": frequencies[o].desc,
+                    "de": frequencies[o].de,
+                    "en": frequencies[o].en,
+                    "es": frequencies[o].es,
+                    "fr": frequencies[o].fr,
+                    "it": frequencies[o].it,
+                    "hr": frequencies[o].hr,
                     "tags": "1 2 3",
                     "img": frequencies[o].img
                 });
@@ -130,17 +135,19 @@
                 <div class="collapse navbar-collapse justify-content-center col-md-8" id="navbarNav4">
                     <ul class="navbar-nav justify-content-center">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Startseite
-                                <!--<span class="sr-only">(current)</span>--></a>
+                            <a class="nav-link lang de" href="index.html">Startseite</a>
+                            <a class="nav-link lang en es fr it hr" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="3dcourse.html">VR/3D-Kurse</a>
+                            <a class="nav-link lang de" href="3dcourse.html">VR/3D-Kurse</a>
+                            <a class="nav-link lang en es fr it hr" href="3dcourse.html">VR/3D-Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tools.html">Schwingungen</a>
+                            <a class="nav-link lang de" href="tools.html">Schwingungen</a>
+                            <a class="nav-link lang en es fr it hr" href="tools.html">Frequencies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="podcasts.html">Podcasts</a>
+                            <a class="nav-link lang de en es fr it hr" href="podcasts.html">Podcasts</a>
                         </li>
                     </ul>
                 </div>
@@ -170,19 +177,37 @@
              style="background-size: cover; min-height: 15vh;  background-position-x: center; background-position-y: center;  background-image: url(img/jonathan-borba-3eC5n6gHwe8-unsplash.jpg);">
         <div class="container-fluid zindex-1">
             <div class="row align-items-center justify-content-center  text-center text-shadow">
-                <div class="col-12 col-md-12  ">
-                    <h1 class=" text-light   mb-2 mt-5"><strong>Chakra Energizer
-                    </strong></h1>
-                    <p class="lead  text-light mb-5">Energetisiere Deine Chakren gezielt nach Deiner Körpergröße
-                    </p>
-                    <p class="lead  text-light mb-5">Andere Schwingungs-Generatoren:<br>
-                        <a class="btn   btn-lg btn-danger btn-rised   mt-md-4" href="sound.html">Solfeggio und
-                            Andere</a>
+                <div class="col-11 col-md-11  ">
+                    <h1 class=" text-light   mb-2 mt-5"><strong>Single Frequency Generator</strong></h1>
+                    <p class="lead  text-light mb-5 lang de">Wähle eine Frequenz ganz gezielt an</p>
+                    <p class="lead  text-light mb-5 lang en">Select a frequency specifically</p>
+                    <p class="lead  text-light mb-5 lang es">Seleccione una frecuencia específicamente</p>
+                    <p class="lead  text-light mb-5 lang fr">Sélectionnez une fréquence spécifiquement</p>
+                    <p class="lead  text-light mb-5 lang it">Seleziona una frequenza specifica</p>
+                    <p class="lead  text-light mb-5 lang hr">Odaberite određenu frekvenciju</p>
+
+                    <p class="lead  text-light mb-5">
+                        <span class="lang de">Andere Generatoren:</span>
+                        <span class="lang en">Other generators:</span>
+                        <span class="lang es">Otros generadores:</span>
+                        <span class="lang fr">Autres générateurs :</span>
+                        <span class="lang it">Altri generatori:</span>
+                        <span class="lang hr">Ostali generatori:</span>
+                        <br>
+                        <a class="btn   btn-lg btn-danger btn-rised   mt-md-4" href="sound.html">Solfeggio+</a>
                         <a class="btn   btn-lg btn-danger btn-rised   mt-md-4" href="binaural.html">Binaural Beats</a>
                         <a class="btn   btn-lg btn-danger btn-rised   mt-md-4" href="bodysound.html">Chakra Boost</a>
                         <a class="btn   btn-lg btn-danger btn-rised   mt-md-4" href="fullboost.html">Secret of Five</a>
-                        <a class="btn   btn-lg btn-danger btn-rised   mt-md-4" href="singlesound.html">Single-Ton</a>
+                        <a class="btn   btn-lg btn-danger btn-rised   mt-md-4" href="singlesound.html">Solo</a>
                     </p>
+                </div>
+                <div class="col-1 col-md-1  ">
+                    <a class="nav-link" href="javascript:setCookie('language','de',1000);changeLang();"><img src="img/de.png" height="30" width="30"/></a>
+                    <a class="nav-link" href="javascript:setCookie('language','en',1000);changeLang();"><img src="img/en.png" height="30" width="30"/></a>
+                    <a class="nav-link" href="javascript:setCookie('language','es',1000);changeLang();"><img src="img/es.png" height="30" width="30"/></a>
+                    <a class="nav-link" href="javascript:setCookie('language','fr',1000);changeLang();"><img src="img/fr.png" height="30" width="30"/></a>
+                    <a class="nav-link" href="javascript:setCookie('language','it',1000);changeLang();"><img src="img/it.png" height="30" width="30"/></a>
+                    <a class="nav-link" href="javascript:setCookie('language','hr',1000);changeLang();"><img src="img/hr.png" height="30" width="30"/></a>
                 </div>
             </div>
         </div>
@@ -192,24 +217,77 @@
     <br><br>
     <section class="pt-4 pb-1 bg-dark rounded-5 shadow-lg" id="settings">
         <div class="container pt-1 pb-3">
-            <h5>Sitzungslänge<br><input type="range" id="minutes" min="5" max="100" value="10"
+            <h5>
+                <span class="lang de">Sitzungslänge</span>
+                <span class="lang en">Session length</span>
+                <span class="lang es">Duración de la sesión</span>
+                <span class="lang fr">Durée de la session</span>
+                <span class="lang it">Durata della sessione</span>
+                <span class="lang hr">Duljina sesije</span>
+                <br><input type="range" id="minutes" min="5" max="100" value="10"
                                         step="5"/>&nbsp;&nbsp;<span id="minutesshow">10</span>&nbsp;Min.</h5>
-            <h5>Lautstärke<br><input type="range" id="volume" min="0" max="1" value=".8" step="0.01"/>&nbsp;&nbsp;<span
+            <h5>
+                <span class="lang de">Lautstärke</span>
+                <span class="lang en">Volume</span>
+                <span class="lang es">Volumen</span>
+                <span class="lang fr">Volume</span>
+                <span class="lang it">Volume</span>
+                <span class="lang hr">Volumen</span>
+                <br><input type="range" id="volume" min="0" max="1" value=".8" step="0.01"/>&nbsp;&nbsp;<span
                     id="volumeshow">80</span>%</h5>
-            <h5>Stereo-Rotation<br><input type="range" id="rotate" min="0" max="1" value="0" step="1"/>&nbsp;&nbsp;<span
-                    id="rotateshow">Aus</span></h5>
-            <h5>Nebenfrequenzen<br><input type="range" id="solo" min="0" max="1" value="1" step="1"/>&nbsp;&nbsp;<span
-                    id="soloshow">An</span></h5>Die Nebenfrequenzen erleichtern das Zuhören und die Ausgabe auf
-            verschiedenen Lautsprechern.<br><br>
-            <h5>Frequenz<br><input type="range" id="first" min="40" max="1100" value="369" step="1"/>&nbsp;&nbsp;<span
+            <h5>
+                <span class="lang de">Stereo-Rotation</span>
+                <span class="lang en">Stereo rotation</span>
+                <span class="lang es">Rotación estéreo</span>
+                <span class="lang fr">Rotation stéréo</span>
+                <span class="lang it">Rotazione stereo</span>
+                <span class="lang hr">Stereo rotacija</span>
+                <br><input type="range" id="rotate" min="0" max="1" value="0" step="1"/>&nbsp;&nbsp;<span
+                    id="rotateshow" class="xoff">Aus</span></h5>
+            <h5>
+                <span class="lang de">Nebenfrequenzen</span>
+                <span class="lang en">Additional frequencies</span>
+                <span class="lang es">Frecuencias adicionales</span>
+                <span class="lang fr">Fréquences supplémentaires</span>
+                <span class="lang it">Frequenze aggiuntive</span>
+                <span class="lang hr">Dodatne frekvencije</span>
+                <br><input type="range" id="solo" min="0" max="1" value="1" step="1"/>&nbsp;&nbsp;<span
+                    id="soloshow" class="xon">An</span></h5>
+            <span class="lang de">Die Nebenfrequenzen erleichtern das Zuhören und die Ausgabe auf verschiedenen Lautsprechern.</span>
+            <span class="lang en">The side frequencies make it easier to listen and output to different speakers.</span>
+            <span class="lang es">Las frecuencias laterales facilitan la escucha y la salida a diferentes altavoces.</span>
+            <span class="lang fr">Les fréquences latérales facilitent l'écoute et la sortie vers différents haut-parleurs.</span>
+            <span class="lang it">Le frequenze laterali facilitano l'ascolto e l'uscita a diversi altoparlanti.</span>
+            <span class="lang hr">Bočne frekvencije olakšavaju slušanje i izlaz na različite zvučnike.</span>
+            <br><br>
+            <h5>
+                <span class="lang de">Frequenz</span>
+                <span class="lang en">Frequency</span>
+                <span class="lang es">Frecuencia</span>
+                <span class="lang fr">Fréquence</span>
+                <span class="lang it">Frequenza</span>
+                <span class="lang hr">Frekvencija</span>
+                <br><input type="range" id="first" min="40" max="1100" value="369" step="1"/>&nbsp;&nbsp;<span
                     id="firstshow">369</span></h5>
-            <h5>Tausendstel<br><input type="range" id="second" min="0" max="999" value="0" step="1"/>&nbsp;&nbsp;<span
+            <h5>
+                <span class="lang de">Tausendstel</span>
+                <span class="lang en">Thousandth</span>
+                <span class="lang es">Milésimo</span>
+                <span class="lang fr">Millième</span>
+                <span class="lang it">Millesimo</span>
+                <span class="lang hr">Tisućiti</span>
+                <br><input type="range" id="second" min="0" max="999" value="0" step="1"/>&nbsp;&nbsp;<span
                     id="secondshow">000</span></h5>
 
             <br><br>
             <h5>Mentalboost (experimentell)<br><input type="range" id="boost" min="0" max="1" value="0" step="1"/>&nbsp;&nbsp;<span
-                    id="boostshow">Aus</span></h5>Die Hauptfrequenz wird leicht variiert.
-            <!--<h3>Mentalboost (experimentell)<br><input type="range" id="boost" min="0" max="1" value="0" step="1" />&nbsp;&nbsp;<span id="boostshow">Aus</span></h3>Dieser Schalter veranlasst, dass die Hauptfrequenz zufällig um bis zu 0.3% variiert wird. Das bewirkt, dass ein "Abschalten" des Gehirns erschwert wird und der Effekt intensiver wahrgenommen wird. Das "Eiern" kann aber auch unangenehm wirken. Bitte finden Sie ihre eigene optimale Einstellung! -->
+                    id="boostshow" class="xoff">Aus</span></h5>
+            <span class="lang de">Die Hauptfrequenz wird leicht variiert.</span>
+            <span class="lang en">The main frequency is slightly varied.</span>
+            <span class="lang es">La frecuencia principal es ligeramente variada.</span>
+            <span class="lang fr">La fréquence principale est légèrement variée.</span>
+            <span class="lang it">La frequenza principale è leggermente variata.</span>
+            <span class="lang hr">Glavna frekvencija malo varira.</span>
         </div>
     </section>
 
@@ -227,17 +305,76 @@
                 <div class="col-md-12">
                     <div class="card shadow-sm">
                         <div class="card-body text-center p-5">
-                            <h3 class="pb-2 h3 mt-1 display-5 fw-bold text-uppercase text-primary">
-                                WARNUNG</h3>
-                            <p class="lead fw-bold text-black">Die Verwendung von solchen Frequenzmustern KANN Ihren
+                            <h3 class="pb-2 h3 mt-1 display-5 fw-bold text-uppercase text-primary lang de">WARNUNG</h3>
+                            <h3 class="pb-2 h3 mt-1 display-5 fw-bold text-uppercase text-primary lang en">WARNING</h3>
+                            <h3 class="pb-2 h3 mt-1 display-5 fw-bold text-uppercase text-primary lang es">ADVERTENCIA</h3>
+                            <h3 class="pb-2 h3 mt-1 display-5 fw-bold text-uppercase text-primary lang fr">AVERTISSEMENT</h3>
+                            <h3 class="pb-2 h3 mt-1 display-5 fw-bold text-uppercase text-primary lang it">AVVERTIMENTO</h3>
+                            <h3 class="pb-2 h3 mt-1 display-5 fw-bold text-uppercase text-primary lang hr">UPOZORENJE</h3>
+
+                            <p class="lead fw-bold text-black lang de">Die Verwendung von solchen Frequenzmustern KANN Ihren
                                 Gleichgewichtssinn stören und Übelkeit hervorrufen!</p>
-                            <p class="text-black">Hören Sie diese Frequenzen niemals während Sie ein Fahrzeug steuern
+                            <p class="lead fw-bold text-black lang en">The use of such frequency patterns CAN affect your
+                                Disturb your sense of balance and cause nausea!</p>
+                            <p class="lead fw-bold text-black lang es">El uso de tales patrones de frecuencia PUEDE afectar su
+                                ¡Perturbe su sentido del equilibrio y provoque náuseas!</p>
+                            <p class="lead fw-bold text-black lang fr">DL'utilisation de tels modèles de fréquences PEUT affecter votre
+                                Perturbez votre sens de l'équilibre et provoquez des nausées !</p>
+                            <p class="lead fw-bold text-black lang it">L'uso di tali schemi di frequenza PUÒ influenzare il tuo
+                                Disturba il tuo senso dell'equilibrio e provoca nausea!</p>
+                            <p class="lead fw-bold text-black lang hr">Korištenje takvih frekvencijskih obrazaca MOŽE utjecati na vaše
+                                Poremetiti osjećaj ravnoteže i izazvati mučninu!</p>
+
+
+                            <p class="text-black lang de">Hören Sie diese Frequenzen niemals während Sie ein Fahrzeug steuern
                                 oder Ihre Aufmerksamkeit in anderer Weise gefordert ist!
                                 Sollten Sie unangenehme oder unerwünschte Effekte wahrnehmen, beenden Sie die Anwendung
                                 SOFORT! Sollten diese Effekte länger ahalten, kontaktieren Sie einen Arzt.
                                 Wir übernehmen keine Haftung/Verantwortung für jede Art von Schädigung.</p>
-                            <div class="btn   btn-lg btn-danger btn-rised   mt-md-4">Sorgen Sie unbedingt für eine
+                            <p class="text-black lang en">Never listen to these frequencies while operating a vehicle
+                                or your attention is required in some other way!
+                                If you notice any unpleasant or unwanted effects, stop using it
+                                IMMEDIATELY! If these effects persist, contact a doctor.
+                                We assume no liability/responsibility for any kind of damage.</p>
+                            <p class="text-black lang es">Nunca escuche estas frecuencias mientras conduce un vehículo.
+                                ¡o se requiere su atención de alguna otra manera!
+                                Si nota algún efecto desagradable o no deseado, deje de usarlo.
+                                ¡INMEDIATAMENTE! Si estos efectos persisten, póngase en contacto con un médico.
+                                No asumimos ninguna obligación/responsabilidad por ningún tipo de daño.</p>
+                            <p class="text-black lang fr">N'écoutez jamais ces fréquences lorsque vous conduisez un véhicule
+                                ou votre attention est requise d'une autre manière !
+                                Si vous remarquez des effets désagréables ou indésirables, arrêtez de l'utiliser
+                                IMMÉDIATEMENT! Si ces effets persistent, contactez un médecin.
+                                Nous n'assumons aucune responsabilité pour tout type de dommage.</p>
+                            <p class="text-black lang it">Non ascoltare mai queste frequenze durante la guida di un veicolo
+                                o la tua attenzione è richiesta in qualche altro modo!
+                                Se noti effetti spiacevoli o indesiderati, smetti di usarlo
+                                SUBITO! Se questi effetti persistono, contattare un medico.
+                                Non ci assumiamo alcuna responsabilità/responsabilità per qualsiasi tipo di danno.</p>
+                            <p class="text-black lang hr">Nikada ne slušajte ove frekvencije dok upravljate vozilom
+                                ili je vaša pozornost potrebna na neki drugi način!
+                                Ako primijetite bilo kakve neugodne ili neželjene učinke, prestanite ga koristiti
+                                ODMAH! Ako ovi učinci potraju, obratite se liječniku.
+                                Ne preuzimamo nikakvu odgovornost/odgovornost za bilo kakvu štetu.</p>
+
+
+                            <div class="btn   btn-lg btn-danger btn-rised   mt-md-4 lang de">Sorgen Sie unbedingt für eine
                                 stabile Position im Sitzen oder Liegen, bevor Sie ein Frequenz-Sitzung starten!
+                            </div>
+                            <div class="btn   btn-lg btn-danger btn-rised   mt-md-4 lang en">Be sure to provide one
+                                stable position while sitting or lying down before you start a frequency session!
+                            </div>
+                            <div class="btn   btn-lg btn-danger btn-rised   mt-md-4 lang es">Asegúrese de proporcionar uno
+                                ¡posición estable mientras está sentado o acostado antes de comenzar una sesión de frecuencia!
+                            </div>
+                            <div class="btn   btn-lg btn-danger btn-rised   mt-md-4 lang fr">Assurez-vous d'en fournir un
+                                position stable en position assise ou allongée avant de commencer une séance de fréquence !
+                            </div>
+                            <div class="btn   btn-lg btn-danger btn-rised   mt-md-4 lang it">Assicurati di fornirne uno
+                                posizione stabile da seduti o sdraiati prima di iniziare una sessione di frequenza!
+                            </div>
+                            <div class="btn   btn-lg btn-danger btn-rised   mt-md-4 lang hr">Obavezno dostavite jedan
+                                stabilan položaj dok sjedite ili ležite prije nego što započnete frekvencijsku sesiju!
                             </div>
                         </div>
                     </div>
@@ -251,26 +388,111 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-12 col-xl-12">
-                    <h2 class="text-center mt-3 mb-3">
+                    <h2 class="text-center mt-3 mb-3 lang de">
                         Wie funktioniert es?
+                    </h2>
+                    <h2 class="text-center mt-3 mb-3 lang en">
+                        How does it work?
+                    </h2>
+                    <h2 class="text-center mt-3 mb-3 lang es">
+                        ¿Como funciona?
+                    </h2>
+                    <h2 class="text-center mt-3 mb-3 lang fr">
+                        Comment ça marche?
+                    </h2>
+                    <h2 class="text-center mt-3 mb-3 lang it">
+                        Come funziona?
+                    </h2>
+                    <h2 class="text-center mt-3 mb-3 lang hr">
+                        Kako radi?
                     </h2>
                 </div>
                 <div class="col-6 col-md-6 col-lg-6 col-xl-6 margin-top-20">
-                    <p>Elektro-magnetische Frequenzen umgeben uns in jeder Sekunde unseres Tages. Sie haben in
+                    <p class="lang de">Elektro-magnetische Frequenzen umgeben uns in jeder Sekunde unseres Tages. Sie haben in
                         verschiedenster Weise Einfluss auf unsere Befindlichkeit und Stimmungen. Am einfachsten wird das
                         verständlich, wenn wir an Musik denken. Verschiedene Musikstile und Genres unterstützen unsere
                         aktuelle Stimmung oder verändern unsere Stimmung in gewisser Weise.
                         Ein trauriger, langsamer Song kann uns schnell in eine schwere Stimmung bringen, so wie ein
                         beschwingtes Trompetensolo unsere Innenwelt zum Hüpfen bringen kann.</p>
+                    <p class="lang en">Electro-magnetic frequencies surround us every second of our day. you have in
+                        influence our moods and moods in various ways. That will be the easiest
+                        understandable when we think of music. Various music styles and genres support our
+                        current mood or change our mood in some way.
+                        A sad, slow song can quickly get us in a heavy mood, like a
+                        lively trumpet solo can make our inner world jump.</p>
+                    <p class="lang es">Las frecuencias electromagnéticas nos rodean cada segundo de nuestro día. tienes en
+                        influir en nuestros estados de ánimo y estados de ánimo de diversas maneras. eso sera lo mas facil
+                        comprensible cuando pensamos en la música. Varios estilos y géneros musicales apoyan nuestra
+                        estado de ánimo actual o cambiar nuestro estado de ánimo de alguna manera.
+                        Una canción triste y lenta puede ponernos de mal humor rápidamente, como un
+                        un solo de trompeta animado puede hacer que nuestro mundo interior salte.</p>
+                    <p class="lang fr">Les fréquences électromagnétiques nous entourent à chaque seconde de notre journée. tu as dans
+                        influencer nos humeurs et nos humeurs de diverses manières. Ce sera le plus simple
+                        compréhensible quand on pense à la musique. Divers styles et genres musicaux soutiennent notre
+                        l'humeur actuelle ou changer notre humeur d'une manière ou d'une autre.
+                        Une chanson triste et lente peut rapidement nous mettre d'humeur lourde, comme un
+                        un solo de trompette animé peut faire bondir notre monde intérieur.</p>
+                    <p class="lang it">Le frequenze elettromagnetiche ci circondano ogni secondo della nostra giornata. hai dentro
+                        influenzare i nostri stati d'animo e stati d'animo in vari modi. Sarà il più facile
+                        comprensibile quando pensiamo alla musica. Vari stili e generi musicali supportano il nostro
+                        stato d'animo attuale o cambiare il nostro stato d'animo in qualche modo.
+                        Una canzone triste e lenta può metterci rapidamente di cattivo umore, come a
+                        un vivace assolo di tromba può far saltare il nostro mondo interiore.</p>
+                    <p class="lang hr">Elektromagnetske frekvencije okružuju nas svake sekunde našeg dana. imate u
+                        na razne načine utječu na naša raspoloženja i raspoloženja. Tako će biti najlakše
+                        razumljivo kada razmišljamo o glazbi. Razni glazbeni stilovi i žanrovi podržavaju naše
+                        trenutno raspoloženje ili na neki način promijeniti naše raspoloženje.
+                        Tužna, spora pjesma može nas brzo dovesti u teško raspoloženje, poput
+                        živahni solo na trubi može potaknuti naš unutarnji svijet.</p>
                 </div>
                 <div class="col-6 col-md-6 col-lg-6 col-xl-6 margin-top-20">
-                    <p>Bestimmte isolierte Schwingungsmuster können diese Stimmungen gezielt erzeugen, verstärken oder
+                    <p class="lang de">Bestimmte isolierte Schwingungsmuster können diese Stimmungen gezielt erzeugen, verstärken oder
                         auflösen.
                         Wenn wir annehmen, dass jeder Teil unseres Körpers - und eventuell auch die Schwingungsfelder
                         außerhalb unseres Körpers - eine eigene Stimmung haben, können wir mit isolierten Frequenzen
                         auch auf diese Bereiche einwirken.
                         <br><br>
                         Jeder wird selbst seine Erfahrungen damit machen müssen - darum probieren Sie es aus!
+                    </p>
+                    <p class="lang en">Certain isolated vibrational patterns can specifically create, amplify, or enhance these moods
+                        dissolve.
+                        If we accept that every part of our body - and possibly also the vibrational fields
+                        outside of our body - we can have our own mood with isolated frequencies
+                        also affect these areas.
+                        <br><br>
+                        Everyone will have to make their own experiences with it - so try it out!
+                    </p>
+                    <p class="lang es">Ciertos patrones vibratorios aislados pueden crear, amplificar o mejorar específicamente estos estados de ánimo.
+                        disolver.
+                        Si aceptamos que cada parte de nuestro cuerpo - y posiblemente también los campos vibratorios
+                        fuera de nuestro cuerpo: podemos tener nuestro propio estado de ánimo con frecuencias aisladas
+                        también afectan a estas áreas.
+                        <br><br>
+                        Todos tendrán que hacer sus propias experiencias con él, ¡así que pruébalo!
+                    </p>
+                    <p class="lang fr">Certains modèles vibratoires isolés peuvent spécifiquement créer, amplifier ou améliorer ces humeurs
+                        dissoudre.
+                        Si nous acceptons que chaque partie de notre corps - et peut-être aussi les champs vibratoires
+                        en dehors de notre corps - nous pouvons avoir notre propre humeur avec des fréquences isolées
+                        affectent également ces zones.
+                        <br><br>
+                        Chacun devra en faire sa propre expérience - alors essayez-le !
+                    </p>
+                    <p class="lang it">Alcuni schemi vibrazionali isolati possono creare, amplificare o migliorare specificamente questi stati d'animo
+                        sciogliere.
+                        Se accettiamo che ogni parte del nostro corpo - e possibilmente anche i campi vibrazionali
+                        al di fuori del nostro corpo - possiamo avere il nostro umore con frequenze isolate
+                        riguardano anche queste zone.
+                        <br><br>
+                        Ognuno dovrà fare le proprie esperienze con esso, quindi provalo!
+                    </p>
+                    <p class="lang hr">Određeni izolirani vibracijski obrasci mogu posebno stvoriti, pojačati ili poboljšati ova raspoloženja
+                        otopiti.
+                        Ako prihvatimo da svaki dio našeg tijela – a moguće i vibracijska polja
+                        izvan našeg tijela – možemo imati vlastito raspoloženje s izoliranim frekvencijama
+                        također utječu na ova područja.
+                        <br><br>
+                        Svatko će morati steći vlastito iskustvo s njim - stoga ga isprobajte!
                     </p>
                 </div>
             </div>
@@ -280,35 +502,200 @@
                     <img class="img-fluid" src="img/wave-g3268afc0d_1280.jpg" alt="">
                 </div>
                 <div class="col-12 col-md-12 col-lg-12 col-xl-5">
-                    <h4 class="text-danger">
+                    <h4 class="text-danger lang de">
                         Starten
                     </h4>
-                    <p class="margin-top-20">Starten Sie eine Frequenz durch Klick auf eine der Bilder-Kacheln. Vorher
+                    <h4 class="text-danger lang en">
+                        Start
+                    </h4>
+                    <h4 class="text-danger lang es">
+                        Comenzar
+                    </h4>
+                    <h4 class="text-danger lang fr">
+                        Commencer
+                    </h4>
+                    <h4 class="text-danger lang it">
+                        Inizio
+                    </h4>
+                    <h4 class="text-danger lang hr">
+                        Početak
+                    </h4>
+                    <p class="margin-top-20 lang de">Starten Sie eine Frequenz durch Klick auf eine der Bilder-Kacheln. Vorher
                         können Sie über die Regler am Anfang der Seite die Sitzungsdauer (automatische Abschaltung) und
                         die Lautstärke einstellen. Eine Sitzung ist auf 10 Minuten vor-eingestellt. Das erleichtert
                         Neulingen den Einstieg ohne zu überfordern. Fortgeschrittene können die Sitzung auf bis zu 100
                         Minuten verlängern. Längere Anwendung kann die Effekte durchaus verstärken, aber auch zu
                         Überforderung führen.<br>Bitte handeln Sie verantwortungsvoll und umsichtig!</p>
-                    <h4 class="text-danger margin-top-20">Kopfhörer oder Lautsprecher</h4>
-                    <p class="margin-top-20">Verwenden Sie geeignete, gut funktionierende Kopfhörer oder Lautsprecher
+                    <p class="margin-top-20 lang en">Start a frequency by clicking on one of the image tiles. Beforehand
+                        you can use the controls at the top of the page to set the session duration (automatic shutdown) and
+                        adjust the volume. A session is preset to 10 minutes. That makes it easier
+                        newcomers to get started without being overwhelmed. Advanced users can extend the session up to 100
+                        extend minutes. Longer use can definitely increase the effects, but also too
+                        lead to being overwhelmed.<br>Please act responsibly and prudently!</p>
+                    <p class="margin-top-20 lang es">Inicie una frecuencia haciendo clic en uno de los mosaicos de imágenes. Antemano
+                        puede usar los controles en la parte superior de la página para establecer la duración de la sesión (apagado automático) y
+                        ajusta el volumen. Una sesión está preestablecida en 10 minutos. Eso lo hace más fácil
+                        recién llegados a empezar sin sentirse abrumados. Los usuarios avanzados pueden extender la sesión hasta 100
+                        ampliar minutos. El uso prolongado definitivamente puede aumentar los efectos, pero también
+                        llevar a sentirse abrumado.<br>¡Actúe con responsabilidad y prudencia!</p>
+                    <p class="margin-top-20 lang fr">Démarrez une fréquence en cliquant sur l'une des tuiles d'image. Préalablement
+                        vous pouvez utiliser les commandes en haut de la page pour définir la durée de la session (arrêt automatique) et
+                        régler le volume. Une session est prédéfinie sur 10 minutes. Cela rend plus facile
+                        nouveaux arrivants pour démarrer sans être submergés. Les utilisateurs avancés peuvent prolonger la session jusqu'à 100
+                        prolonger les minutes. Une utilisation plus longue peut certainement augmenter les effets, mais aussi trop
+                        conduire à être submergé.<br>Veuillez agir de manière responsable et prudente !</p>
+                    <p class="margin-top-20 lang it">Avvia una frequenza facendo clic su uno dei riquadri immagine. In anticipo
+                        puoi utilizzare i controlli nella parte superiore della pagina per impostare la durata della sessione (spegnimento automatico) e
+                        regolare il volume. Una sessione è preimpostata a 10 minuti. Questo lo rende più facile
+                        nuovi arrivati ​​per iniziare senza essere sopraffatti. Gli utenti avanzati possono estendere la sessione fino a 100
+                        prolungare i minuti. Un uso più lungo può sicuramente aumentare gli effetti, ma anche troppo
+                        portare ad essere sopraffatti.<br>Si prega di agire in modo responsabile e prudente!</p>
+                    <p class="margin-top-20 lang hr">Započnite učestalost klikom na jednu od pločica slike. Unaprijed
+                        možete koristiti kontrole na vrhu stranice za postavljanje trajanja sesije (automatsko isključivanje) i
+                        podesite glasnoću. Sesija je unaprijed postavljena na 10 minuta. To olakšava
+                        pridošlicama da započnu bez preopterećenosti. Napredni korisnici mogu produžiti sesiju do 100
+                        produžiti minute. Dulja uporaba svakako može povećati učinke, ali i previše
+                        dovesti do preopterećenosti.<br>Molimo vas da se ponašate odgovorno i razborito!</p>
+
+
+
+
+                    <h4 class="text-danger margin-top-20 lang de">Kopfhörer oder Lautsprecher</h4>
+                    <h4 class="text-danger margin-top-20 lang en">Headphones or speakers</h4>
+                    <h4 class="text-danger margin-top-20 lang es">Auriculares o altavoces</h4>
+                    <h4 class="text-danger margin-top-20 lang fr">écouteurs ou haut-parleurs</h4>
+                    <h4 class="text-danger margin-top-20 lang it">Cuffie o altoparlanti</h4>
+                    <h4 class="text-danger margin-top-20 lang hr">Slušalice ili zvučnike</h4>
+
+
+                    <p class="margin-top-20 lang de">Verwenden Sie geeignete, gut funktionierende Kopfhörer oder Lautsprecher
                         mit festem Stand. Ein knirschendes oder flirrendes Nebengeräusch kann die Erfahrung massiv
                         verschlechtern. Verwenden Sie - wenn möglich - Lautsprecher oder Kopfhörer mit großen
                         "Treibern". In der Regel können diese die Frequenzen deutlicher abbilden ohne Frequenzteile zu
                         unterschlagen und damit den Effekt zu mindern.
                     </p>
-                    <h4 class="text-danger margin-top-20">Anwendung</h4>
-                    <p class="margin-top-20">Es ist nicht nötig die Frequenzen über die Ohren zu konsumieren. Nach
+                    <p class="margin-top-20 lang en">Use suitable, well-functioning headphones or speakers
+                        with a firm footing. A crunching or shimmering background noise can massively impact the experience
+                        deteriorate. If possible, use large speakers or headphones
+                        "drivers". As a rule, these can show the frequencies more clearly without frequency parts
+                        suppressed and thus reduce the effect.
+                    </p>
+                    <p class="margin-top-20 lang es">Use auriculares o parlantes adecuados y que funcionen bien
+                        con una base firme Un ruido de fondo crujiente o brillante puede impactar enormemente la experiencia
+                        deteriorarse. Si es posible, utilice altavoces o auriculares grandes
+                        "conductores". Por regla general, estos pueden mostrar las frecuencias más claramente sin partes de frecuencia
+                        suprimir y así reducir el efecto.
+                    </p>
+                    <p class="margin-top-20 lang fr">Utilisez des écouteurs ou des haut-parleurs adaptés et en bon état de fonctionnement
+                        Un bruit de fond craquant ou scintillant peut avoir un impact considérable sur l'expérience
+                        détériorer. Si possible, utilisez de grands haut-parleurs ou des écouteurs
+                        "Conducteurs". En règle générale, ceux-ci peuvent montrer les fréquences plus clairement sans parties de fréquence
+                        supprimé et ainsi réduire l'effet.
+                    </p>
+                    <p class="margin-top-20 lang it">Utilizzare cuffie o altoparlanti adatti e ben funzionanti
+                        con una base solida Un rumore di sottofondo scricchiolante o luccicante può avere un impatto enorme sull'esperienza
+                        deteriorare. Se possibile, utilizzare altoparlanti o cuffie di grandi dimensioni
+                        "autisti". Di norma, questi possono mostrare le frequenze in modo più chiaro senza parti di frequenza
+                        soppresso e quindi ridurre l'effetto.
+                    </p>
+                    <p class="margin-top-20 lang hr">Koristite odgovarajuće slušalice ili zvučnike koji dobro funkcioniraju
+                        s čvrstim osloncem. Škripanje ili svjetlucanje pozadinske buke može znatno utjecati na iskustvo
+                        pogoršati. Ako je moguće, koristite velike zvučnike ili slušalice
+                        "vozači". U pravilu, oni mogu jasnije prikazati frekvencije bez frekvencijskih dijelova
+                        potisnuti i time smanjiti učinak.
+                    </p>
+
+
+
+                    <h4 class="text-danger margin-top-20 lang de">Anwendung</h4>
+                    <h4 class="text-danger margin-top-20 lang en">Application</h4>
+                    <h4 class="text-danger margin-top-20 lang es">Solicitud</h4>
+                    <h4 class="text-danger margin-top-20 lang fr">Application</h4>
+                    <h4 class="text-danger margin-top-20 lang it">Applicazione</h4>
+                    <h4 class="text-danger margin-top-20 lang hr">Primjena</h4>
+
+
+                    <p class="margin-top-20 lang de">Es ist nicht nötig die Frequenzen über die Ohren zu konsumieren. Nach
                         unserer Erfahrung ist es sinnvoller, die betroffenen Bereiche direkt zu beschallen. So z.B. ist
                         es hilfreich bei schmerzenden Knien, den Kopfhörer direkt auf das Knie anzulegen.
                     </p>
-                    <h4 class="text-danger margin-top-20">Frequenzen</h4>
-                    <p class="margin-top-20">
+                    <p class="margin-top-20 lang en">It is not necessary to consume the frequencies through the ears. After
+                        In our experience, it makes more sense to irradiate the affected areas directly. So e.g. is
+                        it helps with aching knees to put the headphones directly on the knee.
+                    </p>
+                    <p class="margin-top-20 lang es">No es necesario consumir las frecuencias a través de los oídos. Después
+                        En nuestra experiencia, tiene más sentido irradiar directamente las áreas afectadas. Entonces, por ejemplo, es
+                        ayuda con el dolor de rodillas poner los auriculares directamente sobre la rodilla.
+                    </p>
+                    <p class="margin-top-20 lang fr">Il n'est pas nécessaire de consommer les fréquences par les oreilles. Après
+                        D'après notre expérience, il est plus logique d'irradier directement les zones touchées. Donc par exemple est
+                        cela aide avec les genoux douloureux de mettre les écouteurs directement sur le genou.
+                    </p>
+                    <p class="margin-top-20 lang it">Non è necessario consumare le frequenze attraverso le orecchie. Dopo
+                        Nella nostra esperienza, ha più senso irradiare direttamente le aree interessate. Così ad esempio è
+                        aiuta con le ginocchia doloranti per mettere le cuffie direttamente sul ginocchio.
+                    </p>
+                    <p class="margin-top-20 lang hr">Nije potrebno konzumirati frekvencije kroz uši. Nakon
+                        Prema našem iskustvu, ima smisla izravno zračiti zahvaćena područja. Tako je npr
+                        kod bolnih koljena pomaže stavljanje slušalica izravno na koljeno.
+                    </p>
+
+
+                    <h4 class="text-danger margin-top-20 lang de">Frequenzen</h4>
+                    <h4 class="text-danger margin-top-20 lang en">Frequencies</h4>
+                    <h4 class="text-danger margin-top-20 lang es">Frecuencias</h4>
+                    <h4 class="text-danger margin-top-20 lang fr">Fréquences</h4>
+                    <h4 class="text-danger margin-top-20 lang it">Frequenze</h4>
+                    <h4 class="text-danger margin-top-20 lang hr">Frekvencije</h4>
+
+
+                    <p class="margin-top-20 lang de">
                         Unser Programm erzeugt zu jeder Hauptfrequenz zwei Nebenfrequenzen, um das Hörgefühl angenehmer
                         zu machen und den bestmöglichen Effekt auf allen Lautsprechern zu gewährleisten.
                         <br>
                         Die Nebenfrequenzen sind:<br>
                         <b>Unter 530 Hz: 1 Oktave tiefer + 1 Oktave höher<br>
                             Über 530 Hz: 1 Oktave tiefer + 2 Oktaven tiefer</b>
+                    </p>
+                    <p class="margin-top-20 lang en">
+                        Our program generates two sub-frequencies for each main frequency in order to make the listening experience more pleasant
+                        and to ensure the best possible effect on all speakers.
+                        <br>
+                        The secondary frequencies are:<br>
+                        <b>Below 530 Hz: 1 octave down + 1 octave up<br>
+                            Above 530 Hz: 1 octave down + 2 octaves down</b>
+                    </p>
+                    <p class="margin-top-20 lang es">
+                        Nuestro programa genera dos subfrecuencias para cada frecuencia principal con el fin de hacer más agradable la experiencia auditiva
+                        y para garantizar el mejor efecto posible en todos los altavoces.
+                        <br>
+                        Las frecuencias secundarias son:<br>
+                        <b>Por debajo de 530 Hz: 1 octava abajo + 1 octava arriba<br>
+                            Por encima de 530 Hz: 1 octava abajo + 2 octavas abajo</b>
+                    </p>
+                    <p class="margin-top-20 lang fr">
+                        Notre programme génère deux sous-fréquences pour chaque fréquence principale afin de rendre l'expérience d'écoute plus agréable
+                        et pour assurer le meilleur effet possible sur tous les haut-parleurs.
+                        <br>
+                        Les fréquences secondaires sont :<br>
+                        <b>En dessous de 530 Hz : 1 octave vers le bas + 1 octave vers le haut<br>
+                            Au dessus de 530 Hz : 1 octave vers le bas + 2 octaves vers le bas</b>
+                    </p>
+                    <p class="margin-top-20 lang it">
+                        Il nostro programma genera due sottofrequenze per ogni frequenza principale in modo da rendere più piacevole l'esperienza di ascolto
+                        e per garantire il miglior effetto possibile su tutti gli altoparlanti.
+                        <br>
+                        Le frequenze secondarie sono:<br>
+                        <b>Al di sotto di 530 Hz: 1 ottava sotto + 1 ottava sopra<br>
+                            Oltre 530 Hz: 1 ottava sotto + 2 ottave sotto</b>
+                    </p>
+                    <p class="margin-top-20 lang hr">
+                        Naš program generira dvije podfrekvencije za svaku glavnu frekvenciju kako bi iskustvo slušanja bilo ugodnije
+                        te osigurati najbolji mogući učinak na sve zvučnike.
+                        <br>
+                        Sekundarne frekvencije su:<br>
+                        <b>Ispod 530 Hz: 1 oktava dolje + 1 oktava gore<br>
+                            Iznad 530 Hz: 1 oktava dolje + 2 oktave dolje</b>
                     </p>
                 </div>
             </div>
@@ -339,16 +726,26 @@
 
             <div class="row mt-5">
                 <div class="col text-center">
-                    © 2023 TruthUpClose.com. All Rights Reserved
+                    © 2023 TruthUpClose.com. All Rights Reserved<br>Images by Pixabay.com
                 </div>
             </div>
         </div>
     </footer>
     <!-- Cookie Banner -->
     <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
-        Diese Website nutzt Cookies um Deine Nutzererfahrung zu verbessern
+        <span class="lang de">Diese Website nutzt Cookies um Deine Nutzererfahrung zu verbessern</span>
+        <span class="lang en">This website uses cookies to improve your user experience</span>
+        <span class="lang es">Este sitio web utiliza cookies para mejorar su experiencia de usuario</span>
+        <span class="lang fr">Ce site utilise des cookies pour améliorer votre expérience utilisateur</span>
+        <span class="lang it">Questo sito Web utilizza i cookie per migliorare la tua esperienza utente</span>
+        <span class="lang hr">Ova web stranica koristi kolačiće za poboljšanje vašeg korisničkog iskustva</span>
         <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.hideCookieBanner()">
-            Ok, akzeptiert
+            <span class="lang de">Ok, akzeptiert</span>
+            <span class="lang en">OK, accepted</span>
+            <span class="lang es">ok, aceptado</span>
+            <span class="lang fr">D'accord, accepté</span>
+            <span class="lang it">Va bene, accettato</span>
+            <span class="lang hr">OK, prihvaćeno</span>
         </button>
     </div>
     <!-- End of Cookie Banner -->

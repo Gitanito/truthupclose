@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <title>Schwingungswerkzeuge - Übersinnliche Erfahrungen hautnah</title>
+    <title>Frequency tools</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="jquery.min.js"></script>
@@ -15,6 +15,8 @@
 
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <script src="fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="vibrations.css">
+    <script src="vibrations.js"></script>
 
 </head>
 <body>
@@ -36,17 +38,19 @@
                 <div class="collapse navbar-collapse justify-content-center col-md-8" id="navbarNav4">
                     <ul class="navbar-nav justify-content-center">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Startseite
-                                <!--<span class="sr-only">(current)</span>--></a>
+                            <a class="nav-link lang de" href="index.html">Startseite</a>
+                            <a class="nav-link lang en es fr it hr" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="3dcourse.html">VR/3D-Kurse</a>
+                            <a class="nav-link lang de" href="3dcourse.html">VR/3D-Kurse</a>
+                            <a class="nav-link lang en es fr it hr" href="3dcourse.html">VR/3D-Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tools.html">Schwingungen</a>
+                            <a class="nav-link lang de" href="tools.html">Schwingungen</a>
+                            <a class="nav-link lang en es fr it hr" href="tools.html">Frequencies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="podcasts.html">Podcasts</a>
+                            <a class="nav-link lang de en es fr it hr" href="podcasts.html">Podcasts</a>
                         </li>
                     </ul>
                 </div>
@@ -75,12 +79,31 @@
     <section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark cover ov-hidden"
              style="background-size: cover; min-height: 15vh; background-position-x: center; background-position-y: center; background-image: url(img/jonathan-borba-3eC5n6gHwe8-unsplash.jpg);">
         <div class="container-fluid zindex-1">
-            <div class="row align-items-center justify-content-center  text-center">
-                <div class="col-12 col-md-6  ">
-                    <h1 class=" text-light   mb-2 mt-5"><strong>Energetische Schwingungs-Werkzeuge
-                    </strong></h1>
-                    <p class="lead  text-light mb-5">Hier findest du die Werkzeuge zur Veränderung
-                    </p>
+            <div class="row align-items-center justify-content-center  text-center text-shadow">
+                <div class="col-11 col-md-11  ">
+                    <h1 class=" text-light   mb-2 mt-5">
+                        <strong class="lang de">Energetische Schwingungs-Werkzeuge</strong>
+                        <strong class="lang en">Energetic vibrational tools</strong>
+                        <strong class="lang es">Herramientas vibratorias energéticas.</strong>
+                        <strong class="lang fr">Outils vibratoires énergétiques</strong>
+                        <strong class="lang it">Strumenti vibrazionali energetici</strong>
+                        <strong class="lang hr">Energetski vibracijski alati</strong>
+                    </h1>
+
+                    <p class="lead  text-light mb-5 lang de">Hier findest du die Werkzeuge zur Veränderung</p>
+                    <p class="lead  text-light mb-5 lang en">Here you will find the tools for change</p>
+                    <p class="lead  text-light mb-5 lang es">Aquí encontrarás las herramientas para el cambio</p>
+                    <p class="lead  text-light mb-5 lang fr">Vous trouverez ici les outils du changement</p>
+                    <p class="lead  text-light mb-5 lang it">Qui troverai gli strumenti per il cambiamento</p>
+                    <p class="lead  text-light mb-5 lang hr">Ovdje ćete pronaći alate za promjenu</p>
+                </div>
+                <div class="col-1 col-md-1  ">
+                    <a class="nav-link" href="javascript:setCookie('language','de',1000);changeLang();"><img src="img/de.png" height="30" width="30"/></a>
+                    <a class="nav-link" href="javascript:setCookie('language','en',1000);changeLang();"><img src="img/en.png" height="30" width="30"/></a>
+                    <a class="nav-link" href="javascript:setCookie('language','es',1000);changeLang();"><img src="img/es.png" height="30" width="30"/></a>
+                    <a class="nav-link" href="javascript:setCookie('language','fr',1000);changeLang();"><img src="img/fr.png" height="30" width="30"/></a>
+                    <a class="nav-link" href="javascript:setCookie('language','it',1000);changeLang();"><img src="img/it.png" height="30" width="30"/></a>
+                    <a class="nav-link" href="javascript:setCookie('language','hr',1000);changeLang();"><img src="img/hr.png" height="30" width="30"/></a>
                 </div>
             </div>
         </div>
@@ -102,15 +125,36 @@
                                     <h5 class="card-price">
                                         Solfeggio Sounds
                                     </h5>
-                                    <h4 class="card-title">Schwingungs Generator</h4>
-                                    <p class="card-text">Erzeuge Schwingungen auf deinem Handy oder Computer, mit
-                                        welchen du deine Realitäten und Stimmungen veränderst.
-                                    </p>
+                                    <h4 class="card-title lang de">Schwingungs Generator</h4>
+                                    <h4 class="card-title lang en">Vibration generator</h4>
+                                    <h4 class="card-title lang es">Generador de vibraciones</h4>
+                                    <h4 class="card-title lang fr">Générateur de vibrations</h4>
+                                    <h4 class="card-title lang it">Generatore di vibrazioni</h4>
+                                    <h4 class="card-title lang hr">Generator vibracija</h4>
+
+                                    <p class="card-text lang de">Erzeuge Schwingungen auf deinem Handy oder Computer, mit
+                                        welchen du deine Realitäten und Stimmungen veränderst.</p>
+                                    <p class="card-text lang en">Generate vibrations on your phone or computer, with
+                                        which you change your realities and moods.</p>
+                                    <p class="card-text lang es">Genera vibraciones en tu teléfono o computadora, con
+                                        que cambias tus realidades y estados de ánimo.</p>
+                                    <p class="card-text lang fr">Générez des vibrations sur votre téléphone ou votre ordinateur, avec
+                                        que vous changez vos réalités et vos humeurs.</p>
+                                    <p class="card-text lang it">Genera vibrazioni sul tuo telefono o computer, con
+                                        che cambi le tue realtà e i tuoi stati d'animo.</p>
+                                    <p class="card-text lang hr">Generirajte vibracije na svom telefonu ili računalu, s
+                                        kojim mijenjate svoje stvarnosti i raspoloženja.</p>
                                 </div>
                                 <div class="card-footer">
                                     <a href="sound.html" class="btn btn-outline-primary w-100 btn-lg">
                                         <i class="fa fa-play" aria-hidden="true"></i>
-                                        Starten</a>
+                                        <span class="lang de">Starten</span>
+                                        <span class="lang en">Start</span>
+                                        <span class="lang es">Comenzar</span>
+                                        <span class="lang fr">Commencer</span>
+                                        <span class="lang it">Inizio</span>
+                                        <span class="lang hr">Početak</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -124,14 +168,35 @@
                                     <h5 class="card-price">
                                         Binaural Beats
                                     </h5>
-                                    <h4 class="card-title">Binaurale Schwingungen</h4>
-                                    <p class="card-text">Die Differenz zwischen zwei Frequenzen erzeugt intensive und
+                                    <h4 class="card-title lang de">Binaurale Schwingungen</h4>
+                                    <h4 class="card-title lang en">Binaural vibrations</h4>
+                                    <h4 class="card-title lang es">Vibraciones binaurales</h4>
+                                    <h4 class="card-title lang fr">Vibrations binaurales</h4>
+                                    <h4 class="card-title lang it">Vibrazioni binaurali</h4>
+                                    <h4 class="card-title lang hr">Binauralne vibracije</h4>
+                                    <p class="card-text lang de">Die Differenz zwischen zwei Frequenzen erzeugt intensive und
                                         interessante Effekte.</p>
+                                    <p class="card-text lang en">The difference between two frequencies creates intense and
+                                        interesting effects.</p>
+                                    <p class="card-text lang es">La diferencia entre dos frecuencias crea una intensa y
+                                        efectos interesantes.</p>
+                                    <p class="card-text lang fr">La différence entre deux fréquences crée une intense et
+                                        effets intéressants.</p>
+                                    <p class="card-text lang it">La differenza tra due frequenze crea intenso e
+                                        effetti interessanti.</p>
+                                    <p class="card-text lang hr">Razlika između dviju frekvencija stvara intenzivan i
+                                        zanimljivi efekti.</p>
                                 </div>
                                 <div class="card-footer">
                                     <a href="binaural.html" class="btn btn-outline-primary w-100 btn-lg">
                                         <i class="fa fa-play" aria-hidden="true"></i>
-                                        Starten</a>
+                                        <span class="lang de">Starten</span>
+                                        <span class="lang en">Start</span>
+                                        <span class="lang es">Comenzar</span>
+                                        <span class="lang fr">Commencer</span>
+                                        <span class="lang it">Inizio</span>
+                                        <span class="lang hr">Početak</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -145,14 +210,29 @@
                                     <h5 class="card-price">
                                         Chakra Energizer
                                     </h5>
-                                    <h4 class="card-title">Chakra gezielt ansprechen</h4>
-                                    <p class="card-text">Energetisiere Deine Chakren gezielt nach Deiner
-                                        Körpergröße.</p>
+                                    <h4 class="card-title lang de">Chakra gezielt ansprechen</h4>
+                                    <h4 class="card-title lang en">Target the chakra</h4>
+                                    <h4 class="card-title lang es">Apunta al chakra</h4>
+                                    <h4 class="card-title lang fr">Cibler le chakra</h4>
+                                    <h4 class="card-title lang it">Prendi di mira il chakra</h4>
+                                    <h4 class="card-title lang hr">Ciljajte čakru</h4>
+                                    <p class="card-text lang de">Energetisiere Deine Chakren gezielt nach Deiner Körpergröße.</p>
+                                    <p class="card-text lang en">Energize your chakras according to your height.</p>
+                                    <p class="card-text lang es">Energiza tus chakras de acuerdo a tu altura.</p>
+                                    <p class="card-text lang fr">Dynamisez vos chakras en fonction de votre taille.</p>
+                                    <p class="card-text lang it">Energizza i tuoi chakra in base alla tua altezza.</p>
+                                    <p class="card-text lang hr">Energizirajte svoje čakre u skladu sa svojom visinom.</p>
                                 </div>
                                 <div class="card-footer">
                                     <a href="bodysound.html" class="btn btn-outline-primary w-100 btn-lg">
                                         <i class="fa fa-play" aria-hidden="true"></i>
-                                        Starten</a>
+                                        <span class="lang de">Starten</span>
+                                        <span class="lang en">Start</span>
+                                        <span class="lang es">Comenzar</span>
+                                        <span class="lang fr">Commencer</span>
+                                        <span class="lang it">Inizio</span>
+                                        <span class="lang hr">Početak</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -166,13 +246,29 @@
                                     <h5 class="card-price">
                                         Secret of five
                                     </h5>
-                                    <h4 class="card-title">Fünf parallel</h4>
-                                    <p class="card-text">Nutze jeweils 5 Solfeggio-Frequenzen gleichzeitig.</p>
+                                    <h4 class="card-title lang de">Fünf parallel</h4>
+                                    <h4 class="card-title lang en">Five in parallel</h4>
+                                    <h4 class="card-title lang es">Cinco en paralelo</h4>
+                                    <h4 class="card-title lang fr">Cinq en parallèle</h4>
+                                    <h4 class="card-title lang it">Cinque in parallelo</h4>
+                                    <h4 class="card-title lang hr">Pet paralelno</h4>
+                                    <p class="card-text lang de">Nutze jeweils 5 Solfeggio-Frequenzen gleichzeitig.</p>
+                                    <p class="card-text lang en">Use 5 Solfeggio frequencies at the same time.</p>
+                                    <p class="card-text lang es">Utilice 5 frecuencias Solfeggio al mismo tiempo.</p>
+                                    <p class="card-text lang fr">Utilisez 5 fréquences de solfège en même temps.</p>
+                                    <p class="card-text lang it">Usa 5 frequenze di Solfeggio contemporaneamente.</p>
+                                    <p class="card-text lang hr">Koristite 5 Solfeggio frekvencija u isto vrijeme.</p>
                                 </div>
                                 <div class="card-footer">
                                     <a href="fullboost.html" class="btn btn-outline-primary w-100 btn-lg">
                                         <i class="fa fa-play" aria-hidden="true"></i>
-                                        Starten</a>
+                                        <span class="lang de">Starten</span>
+                                        <span class="lang en">Start</span>
+                                        <span class="lang es">Comenzar</span>
+                                        <span class="lang fr">Commencer</span>
+                                        <span class="lang it">Inizio</span>
+                                        <span class="lang hr">Početak</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -184,15 +280,31 @@
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-price">
-                                        Single
+                                        Solo
                                     </h5>
-                                    <h4 class="card-title">Einzelfrequenz</h4>
-                                    <p class="card-text">Starte eine einzelne Frequenz.</p>
+                                    <h4 class="card-title lang de">Einzelfrequenz</h4>
+                                    <h4 class="card-title lang en">Single frequency</h4>
+                                    <h4 class="card-title lang es">Frecuencia única</h4>
+                                    <h4 class="card-title lang fr">Fréquence unique</h4>
+                                    <h4 class="card-title lang it">Singola frequenza</h4>
+                                    <h4 class="card-title lang hr">Jednostruka frekvencija</h4>
+                                    <p class="card-text lang de">Starte eine einzelne Frequenz.</p>
+                                    <p class="card-text lang en">Start a single frequency.</p>
+                                    <p class="card-text lang es">Inicie una sola frecuencia.</p>
+                                    <p class="card-text lang fr">Démarrer une seule fréquence.</p>
+                                    <p class="card-text lang it">Avvia una singola frequenza.</p>
+                                    <p class="card-text lang hr">Pokrenite jednu frekvenciju.</p>
                                 </div>
                                 <div class="card-footer">
                                     <a href="singlesound.html" class="btn btn-outline-primary w-100 btn-lg">
                                         <i class="fa fa-play" aria-hidden="true"></i>
-                                        Starten</a>
+                                        <span class="lang de">Starten</span>
+                                        <span class="lang en">Start</span>
+                                        <span class="lang es">Comenzar</span>
+                                        <span class="lang fr">Commencer</span>
+                                        <span class="lang it">Inizio</span>
+                                        <span class="lang hr">Početak</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -208,16 +320,26 @@
 
             <div class="row mt-5">
                 <div class="col text-center">
-                    © 2023 TruthUpClose.com. All Rights Reserved
+                    © 2023 TruthUpClose.com. All Rights Reserved<br>Images by Pixabay.com
                 </div>
             </div>
         </div>
     </footer>
     <!-- Cookie Banner -->
     <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
-        Diese Website nutzt Cookies um Deine Nutzererfahrung zu verbessern
+        <span class="lang de">Diese Website nutzt Cookies um Deine Nutzererfahrung zu verbessern</span>
+        <span class="lang en">This website uses cookies to improve your user experience</span>
+        <span class="lang es">Este sitio web utiliza cookies para mejorar su experiencia de usuario</span>
+        <span class="lang fr">Ce site utilise des cookies pour améliorer votre expérience utilisateur</span>
+        <span class="lang it">Questo sito Web utilizza i cookie per migliorare la tua esperienza utente</span>
+        <span class="lang hr">Ova web stranica koristi kolačiće za poboljšanje vašeg korisničkog iskustva</span>
         <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.hideCookieBanner()">
-            Ok, akzeptiert
+            <span class="lang de">Ok, akzeptiert</span>
+            <span class="lang en">OK, accepted</span>
+            <span class="lang es">ok, aceptado</span>
+            <span class="lang fr">D'accord, accepté</span>
+            <span class="lang it">Va bene, accettato</span>
+            <span class="lang hr">OK, prihvaćeno</span>
         </button>
     </div>
     <!-- End of Cookie Banner -->
