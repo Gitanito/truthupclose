@@ -1,5 +1,5 @@
 
-const newversion = '20230321223348';
+const newversion = '20230322190622';
 
 const cacheName = 'vibrations';
 
@@ -25,7 +25,7 @@ const filesToCache = [
 'tools.html',
 'vibrations.css',
 'vibrations.js',
-'video.html',
+'video.htmlx',
 'img/259735.jpg',
 'img/259929.jpg',
 'img/3053969.jpg',

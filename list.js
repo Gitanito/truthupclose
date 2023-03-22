@@ -1364,7 +1364,7 @@ list = [
         "hr": "Svaka druga frekvencija",
         "tags": "1 2 3",
         "img": "img/symbol-gd2ba77619_640.jpg"
-    },
+    }
 
 
 ];
