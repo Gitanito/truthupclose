@@ -1,5 +1,5 @@
 
-const newversion = '20230322190622';
+const newversion = '20230410235058';
 
 const cacheName = 'vibrations';
 
@@ -36,6 +36,7 @@ const filesToCache = [
 'img/animal-g6e29370ee_640.jpg',
 'img/arm-g636c9e0fa_640.jpg',
 'img/athens-g6f41add55_1280.jpg',
+'img/back-ga0eefef51_640.jpg',
 'img/background-ge4989a578_640.jpg',
 'img/belly-gf80e2a51b_640.jpg',
 'img/bg_space.jpg',
@@ -43,12 +44,15 @@ const filesToCache = [
 'img/birds-in-flight-g79cbc6175_1280.jpg',
 'img/black-hole-g00cc7c7dd_640.jpg',
 'img/boarding-gbb481ed70_640.jpg',
+'img/body-gc12349c46_640.jpg',
 'img/books-g545e686c6_640.jpg',
 'img/books-g89d0d5e37_640.jpg',
 'img/brain-gdf54a8d74_640.jpg',
 'img/breakfast-g36eabe351_1280.jpg',
+'img/burnout-gb6434d2d7_640.jpg',
 'img/care-gb1da9284c_640.jpg',
 'img/castle-g24f13cd1d_1280.jpg',
+'img/cat-g904bb0086_640.jpg',
 'img/chakra-blau.jpg',
 'img/chakra-flieder.jpg',
 'img/chakra-gelb.jpg',
@@ -72,6 +76,7 @@ const filesToCache = [
 'img/en.png',
 'img/es.png',
 'img/eye-g92873dafd_640.jpg',
+'img/eye-gc16197ec0_640.jpg',
 'img/eye-gd05c61b68_640.jpg',
 'img/filter-g5e7f24ab4_640.jpg',
 'img/flower-g686369a58_640.jpg',
@@ -119,6 +124,7 @@ const filesToCache = [
 'img/lotus-g4284cce54_640.jpg',
 'img/love-g0c3de754e_1280.jpg',
 'img/male-g907e9db8b_640.jpg',
+'img/male-gcc9d37102_640.jpg',
 'img/man-g43f96aba3_640.jpg',
 'img/man-g5106a4ee5_1280.jpg',
 'img/man-g7652a3983_640.jpg',
@@ -139,6 +145,7 @@ const filesToCache = [
 'img/positive-g363c7b752_1280.jpg',
 'img/room-g791600391_1280.jpg',
 'img/saint-ga85fbbdfc_640.jpg',
+'img/school-gec7aa12a9_640.jpg',
 'img/selbstliebe.jpg',
 'img/shoe-gad2c2199b_640.jpg',
 'img/silhouette-g31411df0b_640.jpg',
@@ -151,6 +158,7 @@ const filesToCache = [
 'img/stomach-gc91ce83a7_640.png',
 'img/stop.png',
 'img/stud-g343e83bcd_640.jpg',
+'img/sunblock-g88c7fca6c_640.jpg',
 'img/swirl-geda463af3_640.jpg',
 'img/symbol-gd2ba77619_640.jpg',
 'img/tealights-geb8741839_640.jpg',
@@ -171,6 +179,7 @@ const filesToCache = [
 'img/woman-g4836b432a_640.jpg',
 'img/woman-g7443a7634_640.jpg',
 'img/woman-g904eb5e0b_640.jpg',
+'img/woman-ge5959ecab_640.jpg',
 'img/woman-gffb1fd51d_640.jpg',
 'img/yoga-gea58ede33_640.jpg',
 'img/yt.jpg'

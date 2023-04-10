@@ -1518,24 +1518,4 @@ list = [
         "tags": "1 2 3",
         "img": "img/cat-g904bb0086_640.jpg"
     },
-    /*
-    {
-        "type": "five",
-        "group": "9",
-        "freq": [432, 432 / 2, 432 * 2, 432 / 4 * 5, 432 / 2 * 3],
-        "vol": [.4, .5, .4, .4, .4],
-        "pan": [0, 0, 0, 0, 0],
-        "col": "#512396",
-        "name": "432Hz",
-        "de": "A Dur",
-        "en": "A major",
-        "es": "La mayor",
-        "fr": "La majeur",
-        "it": "La maggiore",
-        "hr": "A-dur",
-        "tags": "1 2 3",
-        "img": "img/symbol-gd2ba77619_640.jpg"
-    },
-*/
-
 ];
