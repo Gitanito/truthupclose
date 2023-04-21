@@ -52,6 +52,7 @@ let cats = {
     "7": {"de": "Frequenzen", "en": "Frequencies", "es": "Frecuencias", "fr": "Fréquences", "it": "Frequenze", "hr": "Frekvencije"},
     "8": {"de": "", "en": "", "es": "", "fr": "", "it": "", "hr": ""},
     "9": {"de": "432Hz Tonleiter", "en": "432Hz scale", "es": "escala de 432Hz", "fr": "Échelle 432Hz", "it": "Scala 432Hz", "hr": "Skala 432Hz"},
+    "10": {"de": "Gefühle/Emotionen", "en": "Feelings/Emotions", "es": "Sentimientos/Emociones", "fr": "sentiments/émotions", "it": "sentimenti/emozioni", "hr": "osjećaji/emocije"},
 
 }
 function setCookie(cname, cvalue, exdays) {

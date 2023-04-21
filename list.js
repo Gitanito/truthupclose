@@ -1518,4 +1518,21 @@ list = [
         "tags": "1 2 3",
         "img": "img/cat-g904bb0086_640.jpg"
     },
+    {
+        "type": "five",
+        "group": "10",
+        "freq": [527.343 / 4, 527.343 / 2, 527.343, 528, 540],
+        "vol": [.4, .4, .5, .4, .4],
+        "pan": [0, 0, 0, 0, 0],
+        "col": "#9eee54",
+        "name": "527.343",
+        "de": "Dankbarkeit",
+        "en": "Gratitude",
+        "es": "Gratitud",
+        "fr": "Gratitude",
+        "it": "Gratitudine",
+        "hr": "Zahvalnost",
+        "tags": "1 2 3",
+        "img": "img/man-g4448e1319_640.jpg"
+    },
 ];
