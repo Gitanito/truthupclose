@@ -1,5 +1,5 @@
 
-const newversion = '20230418124128';
+const newversion = '20230425201054';
 
 const cacheName = 'vibrations';
 
@@ -32,6 +32,7 @@ const filesToCache = [
 'img/3D.jpg',
 'img/5250691.jpg',
 'img/abacus-g4f6c2fe99_640.jpg',
+'img/acne-g9679220a6_640.jpg',
 'img/adult-ge16ab3c40_640.jpg',
 'img/animal-g6e29370ee_640.jpg',
 'img/arm-g636c9e0fa_640.jpg',
@@ -126,6 +127,7 @@ const filesToCache = [
 'img/male-g907e9db8b_640.jpg',
 'img/male-gcc9d37102_640.jpg',
 'img/man-g43f96aba3_640.jpg',
+'img/man-g4448e1319_640.jpg',
 'img/man-g5106a4ee5_1280.jpg',
 'img/man-g7652a3983_640.jpg',
 'img/man-gd0343b94c_640.jpg',
@@ -151,6 +153,7 @@ const filesToCache = [
 'img/silhouette-g31411df0b_640.jpg',
 'img/singing-bowls-g49e03b978_640.jpg',
 'img/singing-bowls-gd99284f40_640.jpg',
+'img/skin-care-gf5cdb7556_640.jpg',
 'img/slimming-gd616c88f2_640.jpg',
 'img/sound.png',
 'img/soundoff.png',
