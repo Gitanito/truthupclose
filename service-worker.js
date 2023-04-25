@@ -1,5 +1,5 @@
 
-const newversion = '20230425201054';
+const newversion = '20230425211801';
 
 const cacheName = 'vibrations';
 
@@ -96,11 +96,13 @@ const filesToCache = [
 'img/hand-gca6fa87ca_640.png',
 'img/hand-gd00280d7e_1280.jpg',
 'img/hands-g27189ad3f_1280.jpg',
+'img/hands-g77a214e5e_640.jpg',
 'img/hands-gc41d68a32_640.jpg',
 'img/hands-gf96359ece_640.jpg',
 'img/happy-mothers-day-gbdb1f8275_640.jpg',
 'img/harmony-g46ec50c30_640.jpg',
 'img/hd-wallpaper-g741dccedf_1280.jpg',
+'img/hd-wallpaper-g930180156_640.jpg',
 'img/headphones-g5f0ca1b5a_640.jpg',
 'img/heart-g11c2ae39d_1920.jpg',
 'img/heart-g9a27ca01c_640.jpg',
@@ -117,6 +119,7 @@ const filesToCache = [
 'img/kiss-g4097dbd6e_640.jpg',
 'img/kreativ.jpg',
 'img/lamp-ga434e4fc3_640.jpg',
+'img/light-bulb-g946b1a600_640.jpg',
 'img/light-gc12a26841_640.jpg',
 'img/light-gcb07a0af4_640.jpg',
 'img/lion-g89034e545_640.jpg',
@@ -137,6 +140,8 @@ const filesToCache = [
 'img/maple-leaf-g038a1e4f1_640.jpg',
 'img/meadow-ga6a0d7d67_640.jpg',
 'img/men-g29e1ca941_640.jpg',
+'img/mountains-g7ab304a38_640.jpg',
+'img/nature-gab3959806_640.jpg',
 'img/nature-gf527aac49_640.jpg',
 'img/night-view-g7f6fe0e4e_640.jpg',
 'img/nose-g66bc60356_640.jpg',
@@ -150,6 +155,7 @@ const filesToCache = [
 'img/school-gec7aa12a9_640.jpg',
 'img/selbstliebe.jpg',
 'img/shoe-gad2c2199b_640.jpg',
+'img/shoots-g779f87293_640.jpg',
 'img/silhouette-g31411df0b_640.jpg',
 'img/singing-bowls-g49e03b978_640.jpg',
 'img/singing-bowls-gd99284f40_640.jpg',
