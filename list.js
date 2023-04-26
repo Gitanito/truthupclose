@@ -40,7 +40,7 @@ list = [
         "vol": [.8, .4, .3],
         "pan": [0, 0, 0],
         "col": "#e33235",
-        "name": "369 Hz",
+        "name": "396 Hz",
         "de": "Auflösung negativer Glaubenssätze und Ängste (Wurzelchakra) (AUM)",
         "en": "Dissolution of negative beliefs and fears (root chakra) (AUM)",
         "es": "Disolución de creencias negativas y miedos (chakra raíz) (AUM)",
