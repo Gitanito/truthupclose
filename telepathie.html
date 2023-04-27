@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <title>Telepathie - Übersinnliche Erfahrungen hautnah</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.min.js"></script>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <script src="fontawesome/js/all.min.js"></script>
+
+    <script>
+        let icons = ["arrows_anticlockwise.svg", "arrows_anticlockwise_dashed.svg", "arrows_button_down.svg", "arrows_button_off.svg", "arrows_button_on.svg", "arrows_button_up.svg", "arrows_check.svg", "arrows_circle_check.svg", "arrows_circle_down.svg", "arrows_circle_downleft.svg", "arrows_circle_downright.svg", "arrows_circle_left.svg", "arrows_circle_minus.svg", "arrows_circle_plus.svg", "arrows_circle_remove.svg", "arrows_circle_right.svg", "arrows_circle_up.svg", "arrows_circle_upleft.svg", "arrows_circle_upright.svg", "arrows_clockwise.svg", "arrows_clockwise_dashed.svg", "arrows_compress.svg", "arrows_deny.svg", "arrows_diagonal.svg", "arrows_diagonal2.svg", "arrows_down.svg", "arrows_down_double-34.svg", "arrows_downleft.svg", "arrows_downright.svg", "arrows_drag_down.svg", "arrows_drag_down_dashed.svg", "arrows_drag_horiz.svg", "arrows_drag_left.svg", "arrows_drag_left_dashed.svg", "arrows_drag_right.svg", "arrows_drag_right_dashed.svg", "arrows_drag_up.svg", "arrows_drag_up_dashed.svg", "arrows_drag_vert.svg", "arrows_exclamation.svg", "arrows_expand.svg", "arrows_expand_diagonal1.svg", "arrows_expand_horizontal1.svg", "arrows_expand_vertical1.svg", "arrows_fit_horizontal.svg", "arrows_fit_vertical.svg", "arrows_glide.svg", "arrows_glide_horizontal.svg", "arrows_glide_vertical.svg", "arrows_hamburger1.svg", "arrows_hamburger2.svg", "arrows_horizontal.svg", "arrows_info.svg", "arrows_keyboard_alt.svg", "arrows_keyboard_cmd-29.svg", "arrows_keyboard_delete.svg", "arrows_keyboard_down-28.svg", "arrows_keyboard_left.svg", "arrows_keyboard_return.svg", "arrows_keyboard_right.svg", "arrows_keyboard_shift.svg", "arrows_keyboard_tab.svg", "arrows_keyboard_up.svg", "arrows_left.svg", "arrows_left_double-32.svg", "arrows_minus.svg", "arrows_move.svg", "arrows_move2.svg", "arrows_move_bottom.svg", "arrows_move_left.svg", "arrows_move_right.svg", "arrows_move_top.svg", "arrows_plus.svg", "arrows_question.svg", "arrows_remove.svg", "arrows_right.svg", "arrows_right_double-31.svg", "arrows_rotate.svg", "arrows_rotate_anti.svg", "arrows_rotate_anti_dashed.svg", "arrows_rotate_dashed.svg", "arrows_shrink.svg", "arrows_shrink_diagonal1.svg", "arrows_shrink_diagonal2.svg", "arrows_shrink_horizonal2.svg", "arrows_shrink_horizontal1.svg", "arrows_shrink_vertical1.svg", "arrows_shrink_vertical2.svg", "arrows_sign_down.svg", "arrows_sign_left.svg", "arrows_sign_right.svg", "arrows_sign_up.svg", "arrows_slide_down1.svg", "arrows_slide_down2.svg", "arrows_slide_left1.svg", "arrows_slide_left2.svg", "arrows_slide_right1.svg", "arrows_slide_right2.svg", "arrows_slide_up1.svg", "arrows_slide_up2.svg", "arrows_slim_down.svg", "arrows_slim_down_dashed.svg", "arrows_slim_left.svg", "arrows_slim_left_dashed.svg", "arrows_slim_right.svg", "arrows_slim_right_dashed.svg", "arrows_slim_up.svg", "arrows_slim_up_dashed.svg", "arrows_square_check.svg", "arrows_square_down.svg", "arrows_square_downleft.svg", "arrows_square_downright.svg", "arrows_square_left.svg", "arrows_square_minus.svg", "arrows_square_plus.svg", "arrows_square_remove.svg", "arrows_square_right.svg", "arrows_square_up.svg", "arrows_square_upleft.svg", "arrows_square_upright.svg", "arrows_squares.svg", "arrows_stretch_diagonal1.svg", "arrows_stretch_diagonal2.svg", "arrows_stretch_diagonal3.svg", "arrows_stretch_diagonal4.svg", "arrows_stretch_horizontal1.svg", "arrows_stretch_horizontal2.svg", "arrows_stretch_vertical1.svg", "arrows_stretch_vertical2.svg", "arrows_switch_horizontal.svg", "arrows_switch_vertical.svg", "arrows_up.svg", "arrows_up_double-33.svg", "arrows_upleft.svg", "arrows_upright.svg", "arrows_vertical.svg", "basic_accelerator.svg", "basic_alarm.svg", "basic_anchor.svg", "basic_anticlockwise.svg", "basic_archive.svg", "basic_archive_full.svg", "basic_ban.svg", "basic_battery_charge.svg", "basic_battery_empty.svg", "basic_battery_full.svg", "basic_battery_half.svg", "basic_bolt.svg", "basic_book.svg", "basic_book_pen.svg", "basic_book_pencil.svg", "basic_bookmark.svg", "basic_calculator.svg", "basic_calendar.svg", "basic_cards_diamonds.svg", "basic_cards_hearts.svg", "basic_case.svg", "basic_chronometer.svg", "basic_clessidre.svg", "basic_clock.svg", "basic_clockwise.svg", "basic_cloud.svg", "basic_clubs.svg", "basic_compass.svg", "basic_cup.svg", "basic_diamonds.svg", "basic_display.svg", "basic_download.svg", "basic_elaboration_bookmark_checck.svg", "basic_elaboration_bookmark_minus.svg", "basic_elaboration_bookmark_plus.svg", "basic_elaboration_bookmark_remove.svg", "basic_elaboration_briefcase_check.svg", "basic_elaboration_briefcase_download.svg", "basic_elaboration_briefcase_flagged.svg", "basic_elaboration_briefcase_minus.svg", "basic_elaboration_briefcase_plus.svg", "basic_elaboration_briefcase_refresh.svg", "basic_elaboration_briefcase_remove.svg", "basic_elaboration_briefcase_search.svg", "basic_elaboration_briefcase_star.svg", "basic_elaboration_briefcase_upload.svg", "basic_elaboration_browser_check.svg", "basic_elaboration_browser_download.svg", "basic_elaboration_browser_minus.svg", "basic_elaboration_browser_plus.svg", "basic_elaboration_browser_refresh.svg", "basic_elaboration_browser_remove.svg", "basic_elaboration_browser_search.svg", "basic_elaboration_browser_star.svg", "basic_elaboration_browser_upload.svg", "basic_elaboration_calendar_check.svg", "basic_elaboration_calendar_cloud.svg", "basic_elaboration_calendar_download.svg", "basic_elaboration_calendar_empty.svg", "basic_elaboration_calendar_flagged.svg", "basic_elaboration_calendar_heart.svg", "basic_elaboration_calendar_minus.svg", "basic_elaboration_calendar_next.svg", "basic_elaboration_calendar_noaccess.svg", "basic_elaboration_calendar_pencil.svg", "basic_elaboration_calendar_plus.svg", "basic_elaboration_calendar_previous.svg", "basic_elaboration_calendar_refresh.svg", "basic_elaboration_calendar_remove.svg", "basic_elaboration_calendar_search.svg", "basic_elaboration_calendar_star.svg", "basic_elaboration_calendar_upload.svg", "basic_elaboration_cloud_check.svg", "basic_elaboration_cloud_download.svg", "basic_elaboration_cloud_minus.svg", "basic_elaboration_cloud_noaccess.svg", "basic_elaboration_cloud_plus.svg", "basic_elaboration_cloud_refresh.svg", "basic_elaboration_cloud_remove.svg", "basic_elaboration_cloud_search.svg", "basic_elaboration_cloud_upload.svg", "basic_elaboration_document_check.svg", "basic_elaboration_document_cloud.svg", "basic_elaboration_document_download.svg", "basic_elaboration_document_flagged.svg", "basic_elaboration_document_graph.svg", "basic_elaboration_document_heart.svg", "basic_elaboration_document_minus.svg", "basic_elaboration_document_next.svg", "basic_elaboration_document_noaccess.svg", "basic_elaboration_document_note.svg", "basic_elaboration_document_pencil.svg", "basic_elaboration_document_picture.svg", "basic_elaboration_document_plus.svg", "basic_elaboration_document_previous.svg", "basic_elaboration_document_refresh.svg", "basic_elaboration_document_remove.svg", "basic_elaboration_document_search.svg", "basic_elaboration_document_star.svg", "basic_elaboration_document_upload.svg", "basic_elaboration_folder_check.svg", "basic_elaboration_folder_cloud.svg", "basic_elaboration_folder_document.svg", "basic_elaboration_folder_download.svg", "basic_elaboration_folder_flagged.svg", "basic_elaboration_folder_graph.svg", "basic_elaboration_folder_heart.svg", "basic_elaboration_folder_minus.svg", "basic_elaboration_folder_next.svg", "basic_elaboration_folder_noaccess.svg", "basic_elaboration_folder_note.svg", "basic_elaboration_folder_pencil.svg", "basic_elaboration_folder_picture.svg", "basic_elaboration_folder_plus.svg", "basic_elaboration_folder_previous.svg", "basic_elaboration_folder_refresh.svg", "basic_elaboration_folder_remove.svg", "basic_elaboration_folder_search.svg", "basic_elaboration_folder_star.svg", "basic_elaboration_folder_upload.svg", "basic_elaboration_mail_check.svg", "basic_elaboration_mail_cloud.svg", "basic_elaboration_mail_document.svg", "basic_elaboration_mail_download.svg", "basic_elaboration_mail_flagged.svg", "basic_elaboration_mail_heart.svg", "basic_elaboration_mail_next.svg", "basic_elaboration_mail_noaccess.svg", "basic_elaboration_mail_note.svg", "basic_elaboration_mail_pencil.svg", "basic_elaboration_mail_picture.svg", "basic_elaboration_mail_previous.svg", "basic_elaboration_mail_refresh.svg", "basic_elaboration_mail_remove.svg", "basic_elaboration_mail_search.svg", "basic_elaboration_mail_star.svg", "basic_elaboration_mail_upload.svg", "basic_elaboration_message_check.svg", "basic_elaboration_message_dots.svg", "basic_elaboration_message_happy.svg", "basic_elaboration_message_heart.svg", "basic_elaboration_message_minus.svg", "basic_elaboration_message_note.svg", "basic_elaboration_message_plus.svg", "basic_elaboration_message_refresh.svg", "basic_elaboration_message_remove.svg", "basic_elaboration_message_sad.svg", "basic_elaboration_smartphone_cloud.svg", "basic_elaboration_smartphone_heart.svg", "basic_elaboration_smartphone_noaccess.svg", "basic_elaboration_smartphone_note.svg", "basic_elaboration_smartphone_pencil.svg", "basic_elaboration_smartphone_picture.svg", "basic_elaboration_smartphone_refresh.svg", "basic_elaboration_smartphone_search.svg", "basic_elaboration_tablet_cloud.svg", "basic_elaboration_tablet_heart.svg", "basic_elaboration_tablet_noaccess.svg", "basic_elaboration_tablet_note.svg", "basic_elaboration_tablet_pencil.svg", "basic_elaboration_tablet_picture.svg", "basic_elaboration_tablet_refresh.svg", "basic_elaboration_tablet_search.svg", "basic_elaboration_todolist_2.svg", "basic_elaboration_todolist_check.svg", "basic_elaboration_todolist_cloud.svg", "basic_elaboration_todolist_download.svg", "basic_elaboration_todolist_flagged.svg", "basic_elaboration_todolist_minus.svg", "basic_elaboration_todolist_noaccess.svg", "basic_elaboration_todolist_pencil.svg", "basic_elaboration_todolist_plus.svg", "basic_elaboration_todolist_refresh.svg", "basic_elaboration_todolist_remove.svg", "basic_elaboration_todolist_search.svg", "basic_elaboration_todolist_star.svg", "basic_elaboration_todolist_upload.svg", "basic_exclamation.svg", "basic_eye.svg", "basic_eye_closed.svg", "basic_female.svg", "basic_flag1.svg", "basic_flag2.svg", "basic_floppydisk.svg", "basic_folder.svg", "basic_folder_multiple.svg", "basic_gear.svg", "basic_geolocalize-01.svg", "basic_geolocalize-05.svg", "basic_globe.svg", "basic_gunsight.svg", "basic_hammer.svg", "basic_headset.svg", "basic_heart.svg", "basic_heart_broken.svg", "basic_helm.svg", "basic_home.svg", "basic_info.svg", "basic_ipod.svg", "basic_joypad.svg", "basic_key.svg", "basic_keyboard.svg", "basic_laptop.svg", "basic_life_buoy.svg", "basic_lightbulb.svg", "basic_link.svg", "basic_lock.svg", "basic_lock_open.svg", "basic_magic_mouse.svg", "basic_magnifier.svg", "basic_magnifier_minus.svg", "basic_magnifier_plus.svg", "basic_mail.svg", "basic_mail_multiple.svg", "basic_mail_open.svg", "basic_mail_open_text.svg", "basic_male.svg", "basic_map.svg", "basic_message.svg", "basic_message_multiple.svg", "basic_message_txt.svg", "basic_mixer2.svg", "basic_mouse.svg", "basic_notebook.svg", "basic_notebook_pen.svg", "basic_notebook_pencil.svg", "basic_paperplane.svg", "basic_pencil_ruler.svg", "basic_pencil_ruler_pen.svg", "basic_photo.svg", "basic_picture.svg", "basic_picture_multiple.svg", "basic_pin1.svg", "basic_pin2.svg", "basic_postcard.svg", "basic_postcard_multiple.svg", "basic_printer.svg", "basic_question.svg", "basic_rss.svg", "basic_server.svg", "basic_server2.svg", "basic_server_cloud.svg", "basic_server_download.svg", "basic_server_upload.svg", "basic_settings.svg", "basic_share.svg", "basic_sheet.svg", "basic_sheet_multiple.svg", "basic_sheet_pen.svg", "basic_sheet_pencil.svg", "basic_sheet_txt.svg", "basic_signs.svg", "basic_smartphone.svg", "basic_spades.svg", "basic_spread.svg", "basic_spread_bookmark.svg", "basic_spread_text.svg", "basic_spread_text_bookmark.svg", "basic_star.svg", "basic_tablet.svg", "basic_target.svg", "basic_todo.svg", "basic_todo_pen.svg", "basic_todo_pencil.svg", "basic_todo_txt.svg", "basic_todolist_pen.svg", "basic_todolist_pencil.svg", "basic_trashcan.svg", "basic_trashcan_full.svg", "basic_trashcan_refresh.svg", "basic_trashcan_remove.svg", "basic_upload.svg", "basic_usb.svg", "basic_video.svg", "basic_watch.svg", "basic_webpage.svg", "basic_webpage_img_txt.svg", "basic_webpage_multiple.svg", "basic_webpage_txt.svg", "basic_world.svg", "ecommerce_bag.svg", "ecommerce_bag_check.svg", "ecommerce_bag_cloud.svg", "ecommerce_bag_download.svg", "ecommerce_bag_minus.svg", "ecommerce_bag_plus.svg", "ecommerce_bag_refresh.svg", "ecommerce_bag_remove.svg", "ecommerce_bag_search.svg", "ecommerce_bag_upload.svg", "ecommerce_banknote.svg", "ecommerce_banknotes.svg", "ecommerce_basket.svg", "ecommerce_basket_check.svg", "ecommerce_basket_cloud.svg", "ecommerce_basket_download.svg", "ecommerce_basket_minus.svg", "ecommerce_basket_plus.svg", "ecommerce_basket_refresh.svg", "ecommerce_basket_remove.svg", "ecommerce_basket_search.svg", "ecommerce_basket_upload.svg", "ecommerce_bath.svg", "ecommerce_cart.svg", "ecommerce_cart_check.svg", "ecommerce_cart_cloud.svg", "ecommerce_cart_content.svg", "ecommerce_cart_download.svg", "ecommerce_cart_minus.svg", "ecommerce_cart_plus.svg", "ecommerce_cart_refresh.svg", "ecommerce_cart_remove.svg", "ecommerce_cart_search.svg", "ecommerce_cart_upload.svg", "ecommerce_cent.svg", "ecommerce_colon.svg", "ecommerce_creditcard.svg", "ecommerce_diamond.svg", "ecommerce_dollar.svg", "ecommerce_euro.svg", "ecommerce_franc.svg", "ecommerce_gift.svg", "ecommerce_graph1.svg", "ecommerce_graph2.svg", "ecommerce_graph3.svg", "ecommerce_graph_decrease.svg", "ecommerce_graph_increase.svg", "ecommerce_guarani.svg", "ecommerce_kips.svg", "ecommerce_lira.svg", "ecommerce_megaphone.svg", "ecommerce_money.svg", "ecommerce_naira.svg", "ecommerce_pesos.svg", "ecommerce_pound.svg", "ecommerce_receipt.svg", "ecommerce_receipt_bath.svg", "ecommerce_receipt_cent.svg", "ecommerce_receipt_dollar.svg", "ecommerce_receipt_euro.svg", "ecommerce_receipt_franc.svg", "ecommerce_receipt_guarani.svg", "ecommerce_receipt_kips.svg", "ecommerce_receipt_lira.svg", "ecommerce_receipt_naira.svg", "ecommerce_receipt_pesos.svg", "ecommerce_receipt_pound.svg", "ecommerce_receipt_rublo.svg", "ecommerce_receipt_rupee.svg", "ecommerce_receipt_tugrik.svg", "ecommerce_receipt_won.svg", "ecommerce_receipt_yen.svg", "ecommerce_receipt_yen2.svg", "ecommerce_recept_colon.svg", "ecommerce_rublo.svg", "ecommerce_rupee.svg", "ecommerce_safe.svg", "ecommerce_sale.svg", "ecommerce_sales.svg", "ecommerce_ticket.svg", "ecommerce_tugriks.svg", "ecommerce_wallet.svg", "ecommerce_won.svg", "ecommerce_yen.svg", "ecommerce_yen2.svg", "music_beginning_button.svg", "music_bell.svg", "music_cd.svg", "music_diapason.svg", "music_eject_button.svg", "music_end_button.svg", "music_fastforward_button.svg", "music_headphones.svg", "music_ipod.svg", "music_loudspeaker.svg", "music_microphone.svg", "music_microphone_old.svg", "music_mixer.svg", "music_mute.svg", "music_note_multiple.svg", "music_note_single.svg", "music_pause_button.svg", "music_play_button.svg", "music_playlist.svg", "music_radio_ghettoblaster.svg", "music_radio_portable.svg", "music_record.svg", "music_recordplayer.svg", "music_repeat_button.svg", "music_rewind_button.svg", "music_shuffle_button.svg", "music_stop_button.svg", "music_tape.svg", "music_volume_down.svg", "music_volume_up.svg", "software-horizontal_align_left.svg", "software_add_vectorpoint.svg", "software_box_oval.svg", "software_box_polygon.svg", "software_box_rectangle.svg", "software_box_roundedrectangle.svg", "software_character.svg", "software_crop.svg", "software_eyedropper.svg", "software_font_allcaps.svg", "software_font_baseline_shift.svg", "software_font_horizontal_scale.svg", "software_font_kerning.svg", "software_font_leading.svg", "software_font_size.svg", "software_font_smallcapital.svg", "software_font_smallcaps.svg", "software_font_strikethrough.svg", "software_font_tracking.svg", "software_font_underline.svg", "software_font_vertical_scale.svg", "software_horizontal_align_center.svg", "software_horizontal_align_right.svg", "software_horizontal_distribute_center.svg", "software_horizontal_distribute_left.svg", "software_horizontal_distribute_right.svg", "software_indent_firstline.svg", "software_indent_left.svg", "software_indent_right.svg", "software_lasso.svg", "software_layers1.svg", "software_layers2.svg", "software_layout-8boxes.svg", "software_layout.svg", "software_layout_2columns.svg", "software_layout_3columns.svg", "software_layout_4boxes.svg", "software_layout_4columns.svg", "software_layout_4lines.svg", "software_layout_header.svg", "software_layout_header_2columns.svg", "software_layout_header_3columns.svg", "software_layout_header_4boxes.svg", "software_layout_header_4columns.svg", "software_layout_header_complex.svg", "software_layout_header_complex2.svg", "software_layout_header_complex3.svg", "software_layout_header_complex4.svg", "software_layout_header_sideleft.svg", "software_layout_header_sideright.svg", "software_layout_sidebar_left.svg", "software_layout_sidebar_right.svg", "software_magnete.svg", "software_pages.svg", "software_paintbrush.svg", "software_paintbucket.svg", "software_paintroller.svg", "software_paragraph.svg", "software_paragraph_align_left.svg", "software_paragraph_align_right.svg", "software_paragraph_center.svg", "software_paragraph_justify_all.svg", "software_paragraph_justify_center.svg", "software_paragraph_justify_left.svg", "software_paragraph_justify_right.svg", "software_paragraph_space_after.svg", "software_paragraph_space_before.svg", "software_pathfinder_exclude.svg", "software_pathfinder_intersect.svg", "software_pathfinder_subtract.svg", "software_pathfinder_unite.svg", "software_pen.svg", "software_pen_add.svg", "software_pen_remove.svg", "software_pencil.svg", "software_polygonallasso.svg", "software_reflect_horizontal.svg", "software_reflect_vertical.svg", "software_remove_vectorpoint.svg", "software_scale_expand.svg", "software_scale_reduce.svg", "software_selection_oval.svg", "software_selection_polygon.svg", "software_selection_rectangle.svg", "software_selection_roundedrectangle.svg", "software_shape_oval.svg", "software_shape_polygon.svg", "software_shape_rectangle.svg", "software_shape_roundedrectangle.svg", "software_slice.svg", "software_transform_bezier.svg", "software_vector_box.svg", "software_vector_composite.svg", "software_vector_line.svg", "software_vertical_align_bottom.svg", "software_vertical_align_center.svg", "software_vertical_align_top.svg", "software_vertical_distribute_bottom.svg", "software_vertical_distribute_center.svg", "software_vertical_distribute_top.svg", "weather_aquarius.svg", "weather_aries.svg", "weather_cancer.svg", "weather_capricorn.svg", "weather_cloud.svg", "weather_cloud_drop.svg", "weather_cloud_lightning.svg", "weather_cloud_snowflake.svg", "weather_downpour_fullmoon.svg", "weather_downpour_halfmoon.svg", "weather_downpour_sun.svg", "weather_drop.svg", "weather_first_quarter.svg", "weather_fog.svg", "weather_fog_fullmoon.svg", "weather_fog_halfmoon.svg", "weather_fog_sun.svg", "weather_fullmoon.svg", "weather_gemini.svg", "weather_hail.svg", "weather_hail_fullmoon.svg", "weather_hail_halfmoon.svg", "weather_hail_sun.svg", "weather_last_quarter.svg", "weather_leo.svg", "weather_libra.svg", "weather_lightning.svg", "weather_mistyrain.svg", "weather_mistyrain_fullmoon.svg", "weather_mistyrain_halfmoon.svg", "weather_mistyrain_sun.svg", "weather_moon.svg", "weather_moondown_full.svg", "weather_moondown_half.svg", "weather_moonset_full.svg", "weather_moonset_half.svg", "weather_move2.svg", "weather_newmoon.svg", "weather_pisces.svg", "weather_rain.svg", "weather_rain_fullmoon.svg", "weather_rain_halfmoon.svg", "weather_rain_sun.svg", "weather_sagittarius.svg", "weather_scorpio.svg", "weather_snow.svg", "weather_snow_fullmoon.svg", "weather_snow_halfmoon.svg", "weather_snow_sun.svg", "weather_snowflake.svg", "weather_star.svg", "weather_storm-11.svg", "weather_storm-32.svg", "weather_storm_fullmoon.svg", "weather_storm_halfmoon.svg", "weather_storm_sun.svg", "weather_sun.svg", "weather_sundown.svg", "weather_sunset.svg", "weather_taurus.svg", "weather_tempest.svg", "weather_tempest_fullmoon.svg", "weather_tempest_halfmoon.svg", "weather_tempest_sun.svg", "weather_variable_fullmoon.svg", "weather_variable_halfmoon.svg", "weather_variable_sun.svg", "weather_virgo.svg", "weather_waning_cresent.svg", "weather_waning_gibbous.svg", "weather_waxing_cresent.svg", "weather_waxing_gibbous.svg", "weather_wind.svg", "weather_wind_E.svg", "weather_wind_N.svg", "weather_wind_NE.svg", "weather_wind_NW.svg", "weather_wind_S.svg", "weather_wind_SE.svg", "weather_wind_SW.svg", "weather_wind_W.svg", "weather_wind_fullmoon.svg", "weather_wind_halfmoon.svg", "weather_wind_sun.svg", "weather_windgust.svg"];
+        function newIcon () {
+            let myicon = icons[icons.length * Math.random() | 0];
+            $('#icon img').attr('src', "img/icons/"+myicon);
+            $('#icon').show();
+        }
+        function closeIcon () {
+           $('#icon').hide();
+        }
+
+    </script>
+
+</head>
+<body>
+<div class="container">
+
+
+    <section class="">
+        <nav class="navbar navbar-light bg-white  navbar-expand-md ">
+            <div class="container">
+                <div class="col-2 pl-md-0 text-left">
+                    <a href="/">
+                        <img src="img/logo.png" height="30"/>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav4"
+                        aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center col-md-8" id="navbarNav4">
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Startseite
+                                <!--<span class="sr-only">(current)</span>--></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="3dcourse.html">VR/3D-Kurse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tools.html">Schwingungen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="podcasts.html">Podcasts</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav col-2 justify-content-end d-none d-md-flex">
+                    <!--
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fab fa-github"></i></a>
+                    </li>
+                    -->
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://www.youtube.com/@ubersinnliche_erfahrungen"><i
+                                class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+
+    <section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark cover ov-hidden"
+             style="background-size: cover; min-height: 15vh; background-position-x: center; background-position-y: center; background-image: url(img/jonathan-borba-3eC5n6gHwe8-unsplash.jpg);">
+        <div class="container-fluid zindex-1">
+            <div class="row align-items-center justify-content-center  text-center">
+                <div class="col-12 col-md-6  ">
+                    <h1 class=" text-light   mb-2 mt-5"><strong>Telepathie-Trainer
+                    </strong></h1>
+                    <p class="lead  text-light mb-5">Tools um die eigene Telepathie zu entwickeln.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between ">
+                <div class="col-12 col-md-7 ">
+                    <h1 class="mb-3 mt-5 fw-bold">Gedanke-Lese-Trainer</h1>
+                    <p class="lead">Ein Spiel für 2 oder mehr Personen.
+                    Eine Person startet das Programm, welches ein zufälliges Bild anzeigt. Die Person konzentriert sich stark auf das Bild.
+                    Die andere Person, welche das ausgewählte Bild nicht gesehen hat, versucht sich in die Gedanken der ersten Person hineinzufühlen und zeichnet oder beschreibt das Bild, welche die erste Person betrachtet.
+                    Zum Abschluss werden die Bilder verglichen und Verbesserungen besprochen.</p>
+                    <div class="  d-flex mt-3 mb-1">
+                        <a class="btn btn-primary btn-raised    mt-md-3 "
+                           href="javascript:newIcon();"
+                           role="button">Starten</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4   mt-7 mt-md-0">
+                    <div class="ratio ratio-16x9">
+                        <img src="img/telepathie.png" height="194" width="259"/></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between ">
+                <div class="col-12 col-md-7   mt-4 mt-md-0">
+                    <div class="ratio ratio-16x9 shadow">
+                        <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/videoseries?list=PLQTcMZOWI3HXa-TQ0hCJBi-2paial_ROS"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <h1 class="mb-3 mt-5 fw-bold">Nah-Tod Erfahrungen in den Religionen</h1>
+                    <p class="lead  ">Jede Religion und Glaubensgemeinschaft hat ihren ganz eigenen Umgang mit dem
+                        "Nach-Tod". Manche ziehen tiefe Lehren aus den Berichten, Andere interpretieren die Erlebnisse
+                        eher negativ. Einen Überblick findest du hier als Podcast-Playlist.</p>
+                    <div class="  d-flex mt-3 mb-1">
+                        <a class="btn btn-primary btn-raised    mt-md-3 " target="_blank"
+                           href="https://www.youtube.com/playlist?list=PLQTcMZOWI3HXa-TQ0hCJBi-2paial_ROS"
+                           role="button">Auf YouTube öffnen</a>
+                        <a class="btn btn-outline-secondary  mt-md-3 ms-md-3" target="_blank"
+                           href="https://www.youtube.com/@ubersinnliche_erfahrungen" role="button">Zum ganzen
+                            YouTube-Kanal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between ">
+                <div class="col-12 col-md-4 ">
+                    <h1 class="mb-3 mt-5 fw-bold">Gruseliges</h1>
+                    <p class="lead">Manche Aufnahmen sind beklemmend gruselig. Hier findest du eine Zusammenstellung von
+                        Kurz-Videos, die auch nicht immer ganz "real" sind.</p>
+                    <div class="  d-flex mt-3 mb-1">
+                        <a class="btn btn-primary btn-raised    mt-md-3 " target="_blank"
+                           href="https://www.youtube.com/playlist?list=PLQTcMZOWI3HVamLEhIgjRZ3ZiRkBGBoDh"
+                           role="button">Auf YouTube öffnen</a>
+                        <a class="btn btn-outline-secondary  mt-md-3 ms-md-3" target="_blank"
+                           href="https://www.youtube.com/@ubersinnliche_erfahrungen" role="button">Zum ganzen
+                            YouTube-Kanal</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7   mt-4 mt-md-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/videoseries?list=PLQTcMZOWI3HVamLEhIgjRZ3ZiRkBGBoDh"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+    <section class="pt-5 pb-5 bg-light">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-12">
+                    <div class="card border-0 bg-light ">
+                        <div class="card-body p-4">
+                            <div class="row d-flex equal align-items-center">
+                                <br><br><br><br><br>
+                                <div class="col-md-12  text-center">
+                                    <a href="index.html" class="btn btn-xs btn-round   btn-dark btn-rised  "> Zurück zur
+                                        Übersicht </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="pt-5 pb-5  bg-dark text-light">
+        <div class="container">
+
+            <div class="row mt-5">
+                <div class="col text-center">
+                    © 2023 TruthUpClose.com. All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Cookie Banner -->
+    <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+        Diese Website nutzt Cookies um Deine Nutzererfahrung zu verbessern
+        <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.hideCookieBanner()">
+            Ok, akzeptiert
+        </button>
+    </div>
+    <!-- End of Cookie Banner -->
+
+    <div id="icon" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;text-align:right;background:white;">
+        <span onclick="closeIcon()" style="color:lightgray; font-size:20px;padding:10px;cursor: pointer;">x</span><br>
+        <img src="" style="height:90%; max-width: 100%; padding:5%;" onclick="newIcon();">
+    </div>
+</div>
+</body>
+</html>
