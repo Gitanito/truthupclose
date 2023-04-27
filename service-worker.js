@@ -1,5 +1,5 @@
 
-const newversion = '20230427201955';
+const newversion = '20230427202444';
 
 const cacheName = 'vibrations';
 
@@ -140,7 +140,6 @@ const filesToCache = [
 'img/mandala-1.jpg',
 'img/mandala-2.jpg',
 'img/maple-leaf-g038a1e4f1_640.jpg',
-'img/material-design-icons-0.14.6.zip',
 'img/meadow-ga6a0d7d67_640.jpg',
 'img/men-g29e1ca941_640.jpg',
 'img/mountains-g7ab304a38_640.jpg',
