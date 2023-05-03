@@ -130,7 +130,7 @@ function start() {
 
     let set = list[activelement.data("f")];
 
-    $('#lightshow').css('animation-duration', set.lightshow + 's');
+    $('#lightshow').css('animation-duration', (Math.round(set.lightshow*100)/100) + 's');
     $('#lightshowbutton').show();
 
     freqcount = set.freq.length;
