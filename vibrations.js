@@ -128,8 +128,11 @@ function start() {
     activelement.parent().addClass('sticky-element');
     $("#settings").addClass('sticky-settings');
 
-
     let set = list[activelement.data("f")];
+
+    $('#lightshow').css('animation-duration', set.lightshow + 's');
+    $('#lightshowbutton').show();
+
     freqcount = set.freq.length;
     activelement.find('.balken').addClass('activebalken');
     activelement.find('.playbutton').hide();
@@ -227,6 +230,9 @@ function changeFreq(set) {
 
 function stop() {
     if (running) {
+        hideLightshow();
+        $('#lightshowbutton').hide();
+
         $('.activebalken').css('width', '0%');
         $('.activebalken').removeClass('activebalken');
         $('.stopbutton').hide();
@@ -435,3 +441,10 @@ function initializeCookieBanner() {
     }
 }
 
+function showLightshow() {
+    $('#lightshow').show();
+}
+
+function hideLightshow() {
+    $('#lightshow').hide();
+}

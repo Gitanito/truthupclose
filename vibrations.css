@@ -85,3 +85,36 @@ input {
 .lang {
     display: none;
 }
+
+
+#lightshowbutton {
+    display: none;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+@keyframes blink{
+    0%{background: #FFE87C;}
+    30%{background:black;}
+    100%{background:black;}
+}
+
+#lightshow {
+    display:none;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    text-align: right;
+
+    animation-name:blink;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+
+}
