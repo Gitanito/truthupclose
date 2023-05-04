@@ -98,7 +98,7 @@ input {
 @keyframes blink{
     0%{background: #FFE87C;}
     40%{background: #FFE87C;}
-    70%{background:black;}
+    41%{background:black;}
     100%{background:black;}
 }
 
@@ -115,6 +115,6 @@ input {
     text-align: right;
 
     animation-name:blink;
-    animation-duration:10s;
+    animation-duration:1000s;
     animation-iteration-count:infinite;
 }
