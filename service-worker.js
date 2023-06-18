@@ -1,5 +1,5 @@
 
-const newversion = '20230519211520';
+const newversion = '20230618144853';
 
 const cacheName = 'vibrations';
 
@@ -17,6 +17,7 @@ const filesToCache = [
 'jquery.min.js',
 'list.js',
 'manifest.json',
+'meetings.html',
 'papaparse.min.js',
 'podcasts.html',
 'service-worker.js',
@@ -173,6 +174,7 @@ const filesToCache = [
 'img/swirl-geda463af3_640.jpg',
 'img/symbol-gd2ba77619_640.jpg',
 'img/tealights-geb8741839_640.jpg',
+'img/team-g883b60eaf_640.jpg',
 'img/teeth-g1ca9189ed_640.jpg',
 'img/telepathie.png',
 'img/testicles-g3c5f2b0e9_640.jpg',
