@@ -27,6 +27,131 @@
            $('#icon').hide();
         }
 
+
+
+
+
+
+
+
+
+
+        const apiKey = "5ae2e3f221c38a28845f05b6257a1fdc196bd3c44763e3d8458647fc";
+        const pageLength = 500; // number of objects per page
+        let destlist = ["Vienna", "Rome", "Paris", "New York City", "Barcelona", "Ipiales", "Isfahan", "Kyoto", "Krakau", "Abu Dhabi", "Luang Prabang", "Meknes", "Samarkand", "Kathmandu", "Santorini", "Boracay", "Lhasa", "Borobudur", "New Orleans", "Amsterdam", "Chicago", "Venice", "Machu Picchu", "Athens", "Giza", "Angkor Wat", "Petra", "Sydney", "Prague"];
+
+        let lon; // place longitude
+        let lat; // place latitude
+
+        let offset = 0; // offset from first object in the list
+
+        function apiGet(method, query) {
+            return new Promise(function(resolve, reject) {
+                var otmAPI =
+                    "https://api.opentripmap.com/0.1/en/places/" +
+                    method +
+                    "?apikey=" +
+                    apiKey;
+                if (query !== undefined) {
+                    otmAPI += "&" + query;
+                }
+                console.log(otmAPI);
+                fetch(otmAPI)
+                    .then(response => response.json())
+                    .then(data => resolve(data))
+                    .catch(function(err) {
+                        console.log("Fetch Error :-S", err);
+                    });
+            });
+        }
+
+
+        function loadList() {
+            apiGet(
+                "radius",
+                `radius=10000&limit=${pageLength}&offset=0&lon=${lon}&lat=${lat}&rate=3h&format=json`
+            ).then(function(data) {
+                let mydata = data[Math.round(Math.random()*(data.length-1))];
+                $("#mynumber").html(mydata.wikidata.substring(1) + "<br><a href='https://www.wikidata.org/wiki/"+mydata.wikidata+"' role=\"button\" class='btn btn-primary btn-raised    mt-md-3' target=_blank>Show Target</a> ");
+            });
+        }
+
+        function runRemote () {
+            apiGet("geoname", "name=" + destlist[Math.round(Math.random()*(destlist.length-1))]).then(function(data) {
+                let message = "Name not found";
+                if (data.status === "OK") {
+                    message = data.name + ", " + data.country;
+                    lon = data.lon;
+                    lat = data.lat;
+                    loadList();
+                }
+            });
+        }
+
+        function newRemote () {
+            $('#remote').show();
+            runRemote();
+        }
+        function closeRemote () {
+            $('#remote').hide();
+            $("#mynumber").html("");
+        }
+
+
+
+
+
+
+        let canvas = null;
+        let context = null;
+        let running = null;
+        let count_white = 0;
+        let count_black = 0;
+        let iteration_count = 0;
+        let overall_percentage = 0;
+
+        $(document).ready(function(){
+            canvas = document.getElementById("acanvas");
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            context = canvas.getContext("2d");
+        })
+
+        function runTele () {
+            iteration_count++;
+            for (let vline = 0; vline < canvas.height/10; vline++ ){
+                for (let hline = 0; hline < canvas.width/10; hline++ ){
+                    let cell = Math.round(Math.random())*10;
+                    if (cell < 5) {
+                        context.fillStyle = "rgba(0, 0, 0, 1)";
+                        count_black++;
+                    } else {
+                        context.fillStyle = "rgba(255, 255, 255, 1)";
+                        count_white++;
+                    }
+                    context.fillRect(hline*10, vline*10, 10, 10);
+                }
+            }
+            $("#tele").css("background", "url("+canvas.toDataURL()+")");
+            let percentage = Math.floor((count_black/(count_black + count_white))*100);
+            overall_percentage += percentage;
+            $("#percentage").html( "Schwarz/Weiss-Verhältnis: " + percentage + "% | Durchschnitt: " + Math.round(overall_percentage/iteration_count) + "%");
+        }
+
+        function newTele () {
+            $('#tele').show();
+            iteration_count = 0;
+            overall_percentage = 0;
+            running = window.setInterval("runTele()", 200);
+        }
+        function closeTele () {
+            $('#tele').hide();
+            clearInterval(running);
+        }
+
+
+
+
     </script>
 
 </head>
@@ -117,6 +242,57 @@
                 <div class="col-12 col-md-4   mt-7 mt-md-0">
                     <div class="ratio ratio-16x9">
                         <img src="img/telepathie.png" height="194" width="259"/></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between ">
+                <div class="col-12 col-md-7 ">
+                    <h1 class="mb-3 mt-5 fw-bold">Remote-View-Trainer</h1>
+                    <p class="lead">Ein Spiel für 1 oder mehr Personen.
+                        Sobald Sie das Programm starten wird automatisch ein Objekt irgendwo auf der Welt ausgewählt und mit einem Zahlencode verknüpft.
+                        Konzentrieren Sie sich auf die Zahl und "reisen" Sie in ihren Gedanken zu diesem Objekt/Ort, welcher mit dieser Zahl verbunden ist.
+                        Beschreiben Sie alle Eindrücke dieses Ortes oder Objektes oder arbeiten Sie ein Remote-View-Protokoll der Geheimdienste durch. Versuchen Sie
+                        das Objekt so genau wie möglich zu beschreiben.
+                        Zur Auflösung klicken Sie auf den Button. Damit öffnet sich die Seite der www.wikidata.org
+                    </p>
+                    <div class="  d-flex mt-3 mb-1">
+                        <a class="btn btn-primary btn-raised    mt-md-3 "
+                           href="javascript:newRemote();"
+                           role="button">Starten</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4   mt-7 mt-md-0">
+                    <div class="ratio ratio-16x9">
+                        <img src="img/forest-g8888c2f62_640.jpg" height="194" width="259"/></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between ">
+                <div class="col-12 col-md-7 ">
+                    <h1 class="mb-3 mt-5 fw-bold">Telekinese-Trainer</h1>
+                    <p class="lead">Ein Spiel für 1 oder mehr Personen.
+                        Starten Sie das Programm und versuchen Sie das Schwarz-Weiss-Verhältnis der Punkte mit Ihren Gedanken zu beeinflussen.
+                        Versuchen Sie unter 48% oder über 52% zu kommen.
+                    </p>
+                    <div class="  d-flex mt-3 mb-1">
+                        <a class="btn btn-primary btn-raised    mt-md-3 "
+                           href="javascript:newTele();"
+                           role="button">Starten</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4   mt-7 mt-md-0">
+                    <div class="ratio ratio-16x9">
+                        <img src="img/man-g5106a4ee5_1280.jpg" height="194" width="259"/></div>
                 </div>
             </div>
         </div>
@@ -248,5 +424,19 @@
     <span onclick="closeIcon()" style="color:lightgray; font-size:20px;padding:10px;cursor: pointer;">x</span><br>
     <img src="" style="height:90%; max-width: 100%; padding:5%;" onclick="newIcon();">
 </div>
+
+
+<div id="remote" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;text-align:right;background:white;">
+    <span onclick="closeRemote()" style="color:red; font-size:30px;padding:10px;cursor: pointer;">x</span>
+    <div id="mynumber" style="color:black; font-size:120px; position: absolute; top:40px;left:0;width:100%;height:100%;font-weight:bold;text-align:center;vertical-align: middle;"> </div>
+</div>
+
+
+<div id="tele" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;text-align:right;">
+    <span onclick="closeTele()" style="color:red; font-size:30px;padding:10px;cursor: pointer;">x</span>
+    <div id="percentage" style="color:red; font-size:20px; position: absolute; top:3px;left:20px;font-weight:bold;"> </div>
+</div>
+
+<canvas id="acanvas"></canvas>
 </body>
 </html>
