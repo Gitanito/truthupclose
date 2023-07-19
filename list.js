@@ -748,7 +748,7 @@ list = [
         "pan": [1, -1],
         "col": "#15961b",
         "lightshow": 1 / (3 / 100),
-        "name": "3.5 Hz",
+        "name": "3 Hz",
         "de": "Delta Spezial - Schumann + Delta 3",
         "en": "Delta Special - Schumann + Delta 3",
         "es": "Delta Special - Schumann + Delta 3",
