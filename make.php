@@ -21,14 +21,14 @@
             $list[] = 'img/' . $sd;
         }
     }
-
+/*
     $scanned_directory = array_diff(scandir('./img/icons'), array('..', '.'));
     foreach($scanned_directory as $sd) {
         if (is_file('./img/icons/' . $sd) && !in_array($sd, $exclude)) {
             $list[] = 'img/icons/' . $sd;
         }
     }
-
+*/
     $out = ",
 '".join("',
 '", $list)."'";

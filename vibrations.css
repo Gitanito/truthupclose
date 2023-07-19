@@ -28,6 +28,10 @@ body {
     text-shadow: 2px 2px #000000;
 }
 
+.text-shadow .btn {
+    text-shadow: none;
+}
+
 #ex1Slider .slider-selection {
     background: #BABABA;
 }
