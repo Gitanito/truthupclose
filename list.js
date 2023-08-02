@@ -739,6 +739,24 @@ list = [
         "tags": "1 2 3",
         "img": "img/meadow-ga6a0d7d67_640.jpg"
     },
+    {
+        "type": "sound",
+        "group": "4",
+        "freq": [222, 444, 888],
+        "vol": [.5, .4, .8],
+        "pan": [0, 0, 0],
+        "col": "#334976",
+        "lightshow": 1 / (444 / 100),
+        "name": "888 Hz",
+        "de": "Manifestation",
+        "en": "Manifestation",
+        "es": "Manifestación",
+        "fr": "Manifestation",
+        "it": "Manifestazione",
+        "hr": "Manifestacija",
+        "tags": "1 2 3",
+        "img": "img/be-gc787e4800_640.jpg"
+    },
 
     {
         "type": "bin",
