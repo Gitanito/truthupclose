@@ -413,6 +413,24 @@ list = [
         "tags": "1 2 3",
         "img": "img/tribal-g6fb1667ac_640.jpg"
     },
+    {
+        "type": "sound",
+        "group": "2",
+        "freq": [888, 444, 222],
+        "vol": [.7, .4, .5],
+        "pan": [0, 0, 0],
+        "col": "#334976",
+        "lightshow": 1 / (444 / 100),
+        "name": "888 Hz",
+        "de": "Manifestation",
+        "en": "Manifestation",
+        "es": "Manifestación",
+        "fr": "Manifestation",
+        "it": "Manifestazione",
+        "hr": "Manifestacija",
+        "tags": "1 2 3",
+        "img": "img/be-gc787e4800_640.jpg"
+    },
 
     {
         "type": "sound",
@@ -738,24 +756,6 @@ list = [
         "hr": "Frekvencija liječenja (150MHz/256)",
         "tags": "1 2 3",
         "img": "img/meadow-ga6a0d7d67_640.jpg"
-    },
-    {
-        "type": "sound",
-        "group": "4",
-        "freq": [888, 444, 222],
-        "vol": [.7, .4, .5],
-        "pan": [0, 0, 0],
-        "col": "#334976",
-        "lightshow": 1 / (444 / 100),
-        "name": "888 Hz",
-        "de": "Manifestation",
-        "en": "Manifestation",
-        "es": "Manifestación",
-        "fr": "Manifestation",
-        "it": "Manifestazione",
-        "hr": "Manifestacija",
-        "tags": "1 2 3",
-        "img": "img/be-gc787e4800_640.jpg"
     },
 
     {

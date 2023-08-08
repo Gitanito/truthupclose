@@ -122,3 +122,7 @@ input {
     animation-duration:1000s;
     animation-iteration-count:infinite;
 }
+
+.active .nav-link {
+    font-weight: bold;
+}
