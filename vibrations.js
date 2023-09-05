@@ -450,5 +450,5 @@ function showLightshow() {
 
 function hideLightshow() {
     $('#lightshow').hide();
-    $('#lightshow').css('animation-duration', '1000s');
+    //$('#lightshow').css('animation-duration', '1000s');
 }
