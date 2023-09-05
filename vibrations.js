@@ -145,7 +145,10 @@ function start() {
     pans = [];
     rotators = [];
 
-    audioCtx = new window.AudioContext({sampleRate: 8000});
+    audioCtx = new window.AudioContext({
+        latencyHint: "playback",
+        sampleRate: 8000
+    });
 
 
     for (let o = 0; o < freqcount; o++) {
