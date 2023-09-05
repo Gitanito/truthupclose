@@ -126,3 +126,7 @@ input {
 .active .nav-link {
     font-weight: bold;
 }
+
+.card {
+    cursor: pointer;
+}
