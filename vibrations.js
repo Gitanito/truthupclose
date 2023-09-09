@@ -198,7 +198,7 @@ function start() {
     $("#settings").addClass('sticky-settings');
 
     if (activelement.data("desc") !== "") {
-        $("#playingdesc").html("<br><h5>Details:</h5>" + activelement.data("desc"));
+        $("#playingdesc").html("<br><h5>Details:</h5>" + activelement.data("desc") + "<br><br><br>");
     }
     let set = list[activelement.data("f")];
     runningindex = activelement.data("f");

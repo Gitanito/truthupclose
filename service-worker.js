@@ -1,5 +1,5 @@
 
-const newversion = '20230910001557';
+const newversion = '20230910003910';
 
 const cacheName = 'vibrations';
 
@@ -198,6 +198,7 @@ const filesToCache = [
 'img/whale-g9b2a1dedb_640.jpg',
 'img/wildlife-g82dff3606_640.jpg',
 'img/wohlstand.jpg',
+'img/woman-6810514_640_.png',
 'img/woman-g0e390c31b_640.jpg',
 'img/woman-g3e45f5c16_1280.jpg',
 'img/woman-g4836b432a_640.jpg',
