@@ -18,91 +18,10 @@
     <script src="fontawesome/js/all.min.js"></script>
 
     <script>
-        let frequencies = [
-            {"freq": 396.000, "name": "Start", "de": "Starten", "en": "Start", "es": "Comenzar", "fr": "Commencer", "it": "Inizio", "hr": "Početak", "tags": "1 2 3", "img": "img/stud-g343e83bcd_640.jpg"}
-        ];
-        let hzpercm = 5;
-        let first = 396;
-        let second = 0;
         let list = [];
-        let firstControl = null;
-        let secondControl = null;
-        let listtype = "single";
-
-        function calcpositions() {
-            list = [];
-
-            let f = ((parseInt(first) * 1000) + parseInt(second)) / 1000;
-            for (let o = 0; o < frequencies.length; o++) {
-                list.push({
-                    "type": "single",
-                    "group": "8",
-                    "freq": [f, f / 2, (f > 530 ? f / 4 : f * 2)],
-                    "vol": [.8, .4, .3],
-                    "pan": [0, 0, 0],
-                    "col": "#222",
-                    "name": f + " Hz",
-                    "de": frequencies[o].de,
-                    "en": frequencies[o].en,
-                    "es": frequencies[o].es,
-                    "fr": frequencies[o].fr,
-                    "it": frequencies[o].it,
-                    "hr": frequencies[o].hr,
-                    "tags": "1 2 3",
-                    "img": frequencies[o].img
-                });
-            }
-            //console.log(list);
-        }
-
-        $(document).ready(function () {
-            calcpositions();
-            firstControl = document.querySelector("#first");
-            secondControl = document.querySelector("#second");
-            firstControl.addEventListener(
-                "input",
-                () => {
-                    try {
-                        first = firstControl.value;
-                        second = secondControl.value;
-                        $('#firstshow').text(first);
-                        if (!running) {
-                            calcpositions();
-                            $('#freq').empty();
-                            drawTiles();
-                            $('.box').on('click', function () {
-                                activelement = $(this);
-                                start()
-                            });
-                        }
-                    } catch (e) {
-                    }
-                },
-                false
-            );
-            secondControl.addEventListener(
-                "input",
-                () => {
-                    try {
-                        first = firstControl.value;
-                        second = secondControl.value;
-                        $('#secondshow').text(second);
-                        if (!running) {
-                            calcpositions();
-                            $('#freq').empty();
-                            drawTiles();
-                            $('.box').on('click', function () {
-                                activelement = $(this);
-                                start()
-                            });
-                        }
-                    } catch (e) {
-                    }
-                },
-                false
-            );
-        })
+        let listtype = "program";
     </script>
+    <script src="list.js"></script>
     <script src="vibrations.js"></script>
     <link rel="stylesheet" href="vibrations.css">
     <style>
@@ -178,7 +97,7 @@
 
 
     <section class="pt-1 pb-1 mt-0 align-items-center d-flex bg-dark cover ov-hidden"
-             style="background-size: cover; min-height: 15vh;  background-position-x: center; background-position-y: center;  background-image: url(img/wave-378786_640.jpg);">
+             style="background-size: cover; min-height: 15vh;  background-position-x: center; background-position-y: center;  background-image: url(img/cd-2711212_640.jpg);">
         <div class="container-fluid zindex-1">
             <div class="row align-items-center justify-content-center  text-center text-shadow">
                 <div class="col-5 col-md-5">
@@ -206,13 +125,13 @@
             </div>
             <div class="row align-items-center justify-content-center  text-center text-shadow">
                 <div class="col-12 col-md-12  ">
-                    <h1 class=" text-light   mb-2 mt-5"><strong>Single Frequency Generator</strong></h1>
-                    <p class="lead  text-light mb-5 lang de" lang="de">Wähle eine Frequenz ganz gezielt an</p>
-                    <p class="lead  text-light mb-5 lang en" lang="en">Select a frequency specifically</p>
-                    <p class="lead  text-light mb-5 lang es" lang="es">Seleccione una frecuencia específicamente</p>
-                    <p class="lead  text-light mb-5 lang fr" lang="fr">Sélectionnez une fréquence spécifiquement</p>
-                    <p class="lead  text-light mb-5 lang it" lang="it">Seleziona una frequenza specifica</p>
-                    <p class="lead  text-light mb-5 lang hr" lang="hr">Odaberite određenu frekvenciju</p>
+                    <h1 class=" text-light   mb-2 mt-5"><strong>Automatic Programs</strong></h1>
+                    <p class="lead  text-light mb-5 lang de" lang="de">Hörprogramme, welche verschiedene Techniken kombinieren</p>
+                    <p class="lead  text-light mb-5 lang en" lang="en">Hearing programs that combine different techniques</p>
+                    <p class="lead  text-light mb-5 lang es" lang="es">Programas de audición que combinan diferentes técnicas</p>
+                    <p class="lead  text-light mb-5 lang fr" lang="fr">Programmes auditifs combinant différentes techniques</p>
+                    <p class="lead  text-light mb-5 lang it" lang="it">Programmi per l'udito che combinano diverse tecniche</p>
+                    <p class="lead  text-light mb-5 lang hr" lang="hr">Slušni programi koji kombiniraju različite tehnike</p>
 
                     <p class="lead  text-light mb-5">
                         <span class="lang de" lang="de">Andere Generatoren:</span>
@@ -226,7 +145,7 @@
                         <a class="btn   btn-lg btn-light btn-rised   mt-md-4 mb-1" href="fullboost.html"> <img src="img/hand-gca6fa87ca_640.png" class="card-img img-fluid" style="width:40px;height:60px;"> Secret of Five</a>
                         <a class="btn   btn-lg btn-light btn-rised   mt-md-4 mb-1" href="binaural.html"> <img src="img/headphones-g5f0ca1b5a_640.jpg" class="card-img img-fluid" style="width:40px;height:60px;"> Binaural Beats</a>
                         <a class="btn   btn-lg btn-light btn-rised   mt-md-4 mb-1" href="bodysound.html"> <img src="img/chakras-gd67167a40_640.png" class="card-img img-fluid" style="width:40px;height:60px;"> Chakra Boost</a>
-                        <a class="btn   btn-lg btn-light btn-rised   mt-md-4 mb-1" href="programs.html"> <img src="img/cd-2711212_640.jpg" class="card-img img-fluid" style="width:40px;height:60px;"> Programs</a>
+                        <a class="btn   btn-lg btn-light btn-rised   mt-md-4 mb-1" href="singlesound.html"> <img src="img/wave-378786_640.jpg" class="card-img img-fluid" style="width:40px;height:60px;"> Single frequency</a>
                     </p>
                 </div>
             </div>
@@ -238,15 +157,6 @@
     <section class="pt-4 pb-1 bg-dark rounded-5 shadow-lg" id="settings">
         <div class="container pt-1 pb-3">
             <h5>
-                <span class="lang de" lang="de">Sitzungslänge</span>
-                <span class="lang en" lang="en">Session length</span>
-                <span class="lang es" lang="es">Duración de la sesión</span>
-                <span class="lang fr" lang="fr">Durée de la session</span>
-                <span class="lang it" lang="it">Durata della sessione</span>
-                <span class="lang hr" lang="hr">Duljina sesije</span>
-                <br><input type="range" id="minutes" min="5" max="100" value="10"
-                                        step="5"/>&nbsp;&nbsp;<span id="minutesshow">10</span>&nbsp;Min.</h5>
-            <h5>
                 <span class="lang de" lang="de">Lautstärke</span>
                 <span class="lang en" lang="en">Volume</span>
                 <span class="lang es" lang="es">Volumen</span>
@@ -255,67 +165,17 @@
                 <span class="lang hr" lang="hr">Volumen</span>
                 <br><input type="range" id="volume" min="0" max="1" value=".8" step="0.01"/>&nbsp;&nbsp;<span
                     id="volumeshow">80</span>%</h5>
-            <h5>
-                <span class="lang de" lang="de">Stereo-Rotation</span>
-                <span class="lang en" lang="en">Stereo rotation</span>
-                <span class="lang es" lang="es">Rotación estéreo</span>
-                <span class="lang fr" lang="fr">Rotation stéréo</span>
-                <span class="lang it" lang="it">Rotazione stereo</span>
-                <span class="lang hr" lang="hr">Stereo rotacija</span>
-                <br><input type="range" id="rotate" min="0" max="1" value="0" step="1"/>&nbsp;&nbsp;<span
-                    id="rotateshow" class="xoff">Aus</span></h5>
-            <h5>
-                <span class="lang de" lang="de">Nebenfrequenzen</span>
-                <span class="lang en" lang="en">Additional frequencies</span>
-                <span class="lang es" lang="es">Frecuencias adicionales</span>
-                <span class="lang fr" lang="fr">Fréquences supplémentaires</span>
-                <span class="lang it" lang="it">Frequenze aggiuntive</span>
-                <span class="lang hr" lang="hr">Dodatne frekvencije</span>
-                <br><input type="range" id="solo" min="0" max="1" value="1" step="1"/>&nbsp;&nbsp;<span
-                    id="soloshow" class="xon">An</span></h5>
-            <span class="lang de" lang="de">Die Nebenfrequenzen erleichtern das Zuhören und die Ausgabe auf verschiedenen Lautsprechern.</span>
-            <span class="lang en" lang="en">The side frequencies make it easier to listen and output to different speakers.</span>
-            <span class="lang es" lang="es">Las frecuencias laterales facilitan la escucha y la salida a diferentes altavoces.</span>
-            <span class="lang fr" lang="fr">Les fréquences latérales facilitent l'écoute et la sortie vers différents haut-parleurs.</span>
-            <span class="lang it" lang="it">Le frequenze laterali facilitano l'ascolto e l'uscita a diversi altoparlanti.</span>
-            <span class="lang hr" lang="hr">Bočne frekvencije olakšavaju slušanje i izlaz na različite zvučnike.</span>
-            <br><br>
-            <h5>
-                <span class="lang de" lang="de">Frequenz</span>
-                <span class="lang en" lang="en">Frequency</span>
-                <span class="lang es" lang="es">Frecuencia</span>
-                <span class="lang fr" lang="fr">Fréquence</span>
-                <span class="lang it" lang="it">Frequenza</span>
-                <span class="lang hr" lang="hr">Frekvencija</span>
-                <br><input type="range" id="first" min="40" max="1100" value="396" step="1"/>&nbsp;&nbsp;<span
-                    id="firstshow">396</span></h5>
-            <h5>
-                <span class="lang de" lang="de">Tausendstel</span>
-                <span class="lang en" lang="en">Thousandth</span>
-                <span class="lang es" lang="es">Milésimo</span>
-                <span class="lang fr" lang="fr">Millième</span>
-                <span class="lang it" lang="it">Millesimo</span>
-                <span class="lang hr" lang="hr">Tisućiti</span>
-                <br><input type="range" id="second" min="0" max="999" value="0" step="1"/>&nbsp;&nbsp;<span
-                    id="secondshow">000</span></h5>
 
-            <br><br>
-            <h5>Mentalboost (experimentell)<br><input type="range" id="boost" min="0" max="1" value="0" step="1"/>&nbsp;&nbsp;<span
-                    id="boostshow" class="xoff">Aus</span></h5>
-            <span class="lang de" lang="de">Die Hauptfrequenz wird leicht variiert.</span>
-            <span class="lang en" lang="en">The main frequency is slightly varied.</span>
-            <span class="lang es" lang="es">La frecuencia principal es ligeramente variada.</span>
-            <span class="lang fr" lang="fr">La fréquence principale est légèrement variée.</span>
-            <span class="lang it" lang="it">La frequenza principale è leggermente variata.</span>
-            <span class="lang hr" lang="hr">Glavna frekvencija malo varira.</span>
+            <input type="hidden" id="minutes" value="1"/>
+            <input type="hidden" id="solo" value="1"/>
+            <input type="hidden" id="boost" value="0"/>
+            <input type="hidden" id="rotate" value="0"/>
         </div>
     </section>
 
     <section class="pt-2 pb-1">
         <div class="container pb-1">
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" id="freq">
-
-            </div>
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" id="freq"><!-- freqstart --><h2 lang='de'>10 Min Extreme Erdung</h2> <h2 lang='en'>10 Min Extreme grounding</h2> <h2 lang='es'>10 Min Puesta a tierra extrema</h2> <h2 lang='fr'>10 Min Mise à la terre extrême</h2> <h2 lang='it'>10 Min Messa a terra estrema</h2> <h2 lang='hr'>10 Min Ekstremno uzemljenje</h2> <h2 lang='de'>20 Min  Freude und Liebe</h2> <h2 lang='en'>20 Min  joy and love</h2> <h2 lang='es'>20 Min  alegría y amor</h2> <h2 lang='fr'>20 Min  joie et amour</h2> <h2 lang='it'>20 Min  gioia e amore</h2> <h2 lang='hr'>20 Min  radost i ljubav</h2> <h2 lang='de'>30 Min Wellen-Meditation</h2> <h2 lang='en'>30 Min Wave meditation</h2> <h2 lang='es'>30 Min Meditación de olas</h2> <h2 lang='fr'>30 Min Méditation des vagues</h2> <h2 lang='it'>30 Min Meditazione sulle onde</h2> <h2 lang='hr'>30 Min Valna meditacija</h2><!-- freqend --></div>
         </div>
     </section>
 

@@ -21,8 +21,12 @@ let startsec = 0;
 let endsec = 0;
 let running = false;
 let runningfreq = 0;
+let runningindex = null;
+let timeoutlist = [];
+let bell = null;
+let bellplayed = false;
 
-let minutesControl = null;
+    let minutesControl = null;
 let volumeControl = null;
 let mbControl = null;
 let soloControl = null;
@@ -31,8 +35,8 @@ let activelement = null;
 let rotateControl = null;
 
 let warning_ok = false;
-let xon = { "de": "An", "en": "On", "es": "encendido", "fr": "allumé", "it": "acceso", "hr": "upaljeno"};
-let xoff = { "de": "Aus", "en": "Off", "es": "apagado", "fr": "éteint", "it": "spento", "hr": "isključen"};
+let xon = {"de": "An", "en": "On", "es": "encendido", "fr": "allumé", "it": "acceso", "hr": "upaljeno"};
+let xoff = {"de": "Aus", "en": "Off", "es": "apagado", "fr": "éteint", "it": "spento", "hr": "isključen"};
 let w = {
     "de": "WARNUNG!\nVerwenden Sie diese Funktion NICHT während Sie ein Fahrzeug bewegen, oder in anderer Weise Ihre volle Aufmerksamkeit gefordert ist. Diese Frequenzen KÖNNEN direkt auf Ihr Wohlbefinden wirken. Nehmen Sie eine entspannte Position im Sitzen oder Liegen ein bevor Sie starten.\nDiese Nachricht wird alle 24 Stunden angezeigt.",
     "en": "WARNING!\nDO NOT use this feature while moving a vehicle or otherwise requires your full attention. These frequencies CAN have a direct effect on your well-being. Sit or lie down in a relaxed position before you start.\nThis message is displayed every 24 hours.",
@@ -42,19 +46,77 @@ let w = {
     "hr": "UPOZORENJE!\nNEMOJTE koristiti ovu značajku dok se krećete vozilom ili na neki drugi način zahtijeva vašu punu pozornost. Ove frekvencije MOGU imati izravan učinak na vaše blagostanje. Sjednite ili legnite u opušteni položaj prije nego što počnete.\nOva poruka se prikazuje svaka 24 sata."
 };
 let cats = {
-    "0": {"de": "Solfeggio Frequenzen", "en": "Solfeggio Frequencies", "es": "Frecuencias de solfeo", "fr": "Fréquences du solfège", "it": "Frequenze di solfeggio", "hr": "Solfeggio frekvencije"},
+    "0": {
+        "de": "Solfeggio Frequenzen",
+        "en": "Solfeggio Frequencies",
+        "es": "Frecuencias de solfeo",
+        "fr": "Fréquences du solfège",
+        "it": "Frequenze di solfeggio",
+        "hr": "Solfeggio frekvencije"
+    },
     "1": {"de": "Hilfe", "en": "Help", "es": "Ayuda", "fr": "Aider", "it": "Aiuto", "hr": "Pomozite"},
     "2": {"de": "Unterstützung", "en": "Support", "es": "Apoyo", "fr": "Soutien", "it": "Supporto", "hr": "Podrška"},
-    "3": {"de": "Körperliche Entsprechungen", "en": "Physical equivalents", "es": "Equivalentes físicos", "fr": "équivalents physiques", "it": "Equivalenti fisici", "hr": "Fizički ekvivalenti"},
-    "4": {"de": "Experimentell", "en": "Experimental", "es": "Experimental", "fr": "Expérimental", "it": "Sperimentale", "hr": "Eksperimentalni"},
+    "3": {
+        "de": "Körperliche Entsprechungen",
+        "en": "Physical equivalents",
+        "es": "Equivalentes físicos",
+        "fr": "équivalents physiques",
+        "it": "Equivalenti fisici",
+        "hr": "Fizički ekvivalenti"
+    },
+    "4": {
+        "de": "Experimentell",
+        "en": "Experimental",
+        "es": "Experimental",
+        "fr": "Expérimental",
+        "it": "Sperimentale",
+        "hr": "Eksperimentalni"
+    },
     "5": {"de": "Verschiedenes", "en": "Various", "es": "Varios", "fr": "Divers", "it": "Vari", "hr": "Razne"},
-    "6": {"de": "5er Set", "en": "Set of 5", "es": "Conjunto de 5", "fr": "Lot de 5", "it": "Insieme di 5", "hr": "Set od 5"},
-    "7": {"de": "Frequenzen", "en": "Frequencies", "es": "Frecuencias", "fr": "Fréquences", "it": "Frequenze", "hr": "Frekvencije"},
+    "6": {
+        "de": "5er Set",
+        "en": "Set of 5",
+        "es": "Conjunto de 5",
+        "fr": "Lot de 5",
+        "it": "Insieme di 5",
+        "hr": "Set od 5"
+    },
+    "7": {
+        "de": "Frequenzen",
+        "en": "Frequencies",
+        "es": "Frecuencias",
+        "fr": "Fréquences",
+        "it": "Frequenze",
+        "hr": "Frekvencije"
+    },
     "8": {"de": "", "en": "", "es": "", "fr": "", "it": "", "hr": ""},
-    "9": {"de": "432Hz Tonleiter", "en": "432Hz scale", "es": "escala de 432Hz", "fr": "Échelle 432Hz", "it": "Scala 432Hz", "hr": "Skala 432Hz"},
-    "10": {"de": "Gefühle/Emotionen", "en": "Feelings/Emotions", "es": "Sentimientos/Emociones", "fr": "sentiments/émotions", "it": "sentimenti/emozioni", "hr": "osjećaji/emocije"},
+    "9": {
+        "de": "432Hz Tonleiter",
+        "en": "432Hz scale",
+        "es": "escala de 432Hz",
+        "fr": "Échelle 432Hz",
+        "it": "Scala 432Hz",
+        "hr": "Skala 432Hz"
+    },
+    "10": {
+        "de": "Gefühle/Emotionen",
+        "en": "Feelings/Emotions",
+        "es": "Sentimientos/Emociones",
+        "fr": "sentiments/émotions",
+        "it": "sentimenti/emozioni",
+        "hr": "osjećaji/emocije"
+    },
+    "11": {
+        "de": "Programme",
+        "en": "Programs",
+        "es": "Programas",
+        "fr": "Programmes",
+        "it": "Programmi",
+        "hr": "Programa"
+    },
 
 }
+
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -100,7 +162,7 @@ function drawTiles() {
     }
 }
 
-function startRotation () {
+function startRotation() {
     for (let o = 0; o < freqcount; o++) {
         rotators[o].connect(pans[o].pan);
     }
@@ -124,13 +186,16 @@ function start() {
 
     running = true;
 
+    bell = new Audio("bell.wav");
+    bell.loop = false;
 
     activelement.parent().addClass('sticky-element');
     $("#settings").addClass('sticky-settings');
 
     let set = list[activelement.data("f")];
+    runningindex = activelement.data("f");
 
-    $('#lightshow').css('animation-duration', (Math.round(set.lightshow*100)/100) + 's');
+    $('#lightshow').css('animation-duration', (Math.round(set.lightshow * 100) / 100) + 's');
     $('#lightshowbutton').show();
 
     freqcount = set.freq.length;
@@ -176,10 +241,11 @@ function start() {
         rotators[o].type = 'sine';
         rotators[o].frequency.value = .5;
 
-        window.setTimeout(function(){
+        window.setTimeout(function () {
             try {
                 rotators[o].start();
-            } catch (e) {}
+            } catch (e) {
+            }
         }, 1000 / freqcount * o);
     }
 
@@ -193,13 +259,33 @@ function start() {
     fullvolume.gain.setValueAtTime(0.0001, audioCtx.currentTime);
     fullvolume.gain.linearRampToValueAtTime(volumeControl.value, audioCtx.currentTime + 2);
 
-    startsec = Date.now();
-    duration = minutesControl.value;
-    endsec = startsec + (duration * 60000);
-
     if (rotateControl.value === "1") {
         startRotation();
     }
+
+
+    if (typeof list[runningindex].program !== "undefined") {
+        for (let p = 0; p < list[runningindex].program.length; p++) {
+            timeoutlist.push(
+                window.setTimeout(
+                    function () {
+                        for (let o = 0; o < list[runningindex].program[p].freq.length; o++) {
+                            oscillators[o].frequency.setValueAtTime(oscillators[o].frequency.value, audioCtx.currentTime);
+                            oscillators[o].frequency.linearRampToValueAtTime(list[runningindex].program[p].freq[o], audioCtx.currentTime + list[runningindex].program[p].changespeedsec);
+                        }
+                    },
+                    list[runningindex].program[p].startsec * 1000
+                )
+            )
+        }
+        duration = list[runningindex].durationsec / 60;
+    } else {
+        duration = minutesControl.value;
+    }
+
+    startsec = Date.now();
+    endsec = startsec + (duration * 60000);
+
 }
 
 
@@ -231,6 +317,22 @@ function changeFreq(set) {
 
 }
 
+
+function changeFreqProgram(set, time) {
+    //console.log(freq);
+
+    let freq = set.freq;
+
+    if (oscillators[0].frequency.value !== freq[0]) {
+        for (let o = 0; o < freq.length; o++) {
+            console.log(time);
+            console.log(oscillators[o].frequency.value + " --- " + freq[o]);
+            oscillators[o].frequency.linearRampToValueAtTime(freq[o], time + 5);
+        }
+    }
+
+}
+
 function stop() {
     if (running) {
         hideLightshow();
@@ -244,16 +346,22 @@ function stop() {
         activelement.parent().removeClass('sticky-element');
         $("#settings").removeClass('sticky-settings');
 
+        runningindex = null;
+        bell = null;
+
         try {
 
             fullvolume.gain.setValueAtTime(fullvolume.gain.value, audioCtx.currentTime);
-            fullvolume.gain.linearRampToValueAtTime(0.0001, audioCtx.currentTime + .01);
+            fullvolume.gain.linearRampToValueAtTime(0.0001, audioCtx.currentTime + .25);
 
             window.setTimeout(function () {
                 for (let o = 0; o < freqcount; o++) {
                     oscillators[o].stop();
                 }
-            }, 10);
+                for (let x = 0; x < timeoutlist.length; x++) {
+                    clearTimeout(timeoutlist[x]);
+                }
+            }, 250);
         } catch (e) {
         }
     }
@@ -268,7 +376,7 @@ function changeLang() {
     }
 
     $('.lang').hide();
-    $('.'+language).show();
+    $('.' + language).show();
     $('.xon').text(xon[language]);
     $('.xoff').text(xoff[language]);
 
@@ -390,9 +498,15 @@ $(document).ready(function () {
             if (endsec > Date.now()) {
                 let newwidth = ((Date.now() - startsec) / ((endsec - startsec) / 100));
                 $('.activebalken').css('width', newwidth + '%');
-                if (newwidth >= 99.9) {
+                if (newwidth >= 98 && !bellplayed && bell != null) {
+                    bell.play();
+                    bellplayed = true;
+                }
+
+                if (newwidth >= 99) {
                     stop();
                     running = false;
+                    bellplayed = false;
                 }
 
                 if (running && mbControl.value === "1") {
@@ -403,8 +517,6 @@ $(document).ready(function () {
     }
 
     initializeCookieBanner();
-
-
 });
 
 window.onpopstate = function () {

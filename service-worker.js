@@ -1,5 +1,5 @@
 
-const newversion = '20230905131457';
+const newversion = '20230909085459';
 
 const cacheName = 'vibrations';
 
@@ -10,6 +10,7 @@ const filesToCache = [
     'fontawesome/css/all.min.css',
     'fontawesome/js/all.min.js',
 '3dcourse.html',
+'bell.wav',
 'binaural.html',
 'bodysound.html',
 'fullboost.html',
@@ -20,6 +21,7 @@ const filesToCache = [
 'meetings.html',
 'papaparse.min.js',
 'podcasts.html',
+'programs.html',
 'service-worker.js',
 'singlesound.html',
 'sound.html',
@@ -39,6 +41,7 @@ const filesToCache = [
 'img/ai-generated-g94ce76027_640.jpg',
 'img/animal-g6e29370ee_640.jpg',
 'img/arm-g636c9e0fa_640.jpg',
+'img/arrangement-2790019_640_.jpg',
 'img/athens-g6f41add55_1280.jpg',
 'img/back-ga0eefef51_640.jpg',
 'img/background-ge4989a578_640.jpg',
@@ -59,6 +62,7 @@ const filesToCache = [
 'img/care-gb1da9284c_640.jpg',
 'img/castle-g24f13cd1d_1280.jpg',
 'img/cat-g904bb0086_640.jpg',
+'img/cd-2711212_640.jpg',
 'img/chakra-blau.jpg',
 'img/chakra-flieder.jpg',
 'img/chakra-gelb.jpg',
@@ -144,6 +148,7 @@ const filesToCache = [
 'img/mandala-2.jpg',
 'img/maple-leaf-g038a1e4f1_640.jpg',
 'img/meadow-ga6a0d7d67_640.jpg',
+'img/meditation-6808541_640_.jpg',
 'img/men-g29e1ca941_640.jpg',
 'img/mountains-g7ab304a38_640.jpg',
 'img/nature-gab3959806_640.jpg',
@@ -186,7 +191,9 @@ const filesToCache = [
 'img/upper-body-g61a50f82f_640.jpg',
 'img/vacation-g4cdf340f8_1280.jpg',
 'img/virtual-reality-g843fa476e_1280.jpg',
+'img/wave-378786_640.jpg',
 'img/wave-g3268afc0d_1280.jpg',
+'img/waves-4527441_640_.jpg',
 'img/whale-g9b2a1dedb_640.jpg',
 'img/wildlife-g82dff3606_640.jpg',
 'img/wohlstand.jpg',

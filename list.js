@@ -1,5 +1,6 @@
 list = [
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "0",
         "freq": [174, 174 / 2, 174 * 2],
@@ -18,6 +19,7 @@ list = [
         "img": "img/nature-gf527aac49_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "0",
         "freq": [285, 285 / 2, 285 * 2],
@@ -36,6 +38,7 @@ list = [
         "img": "img/hand-g507065235_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "0",
         "freq": [396, 396 / 2, 396 * 2],
@@ -54,6 +57,7 @@ list = [
         "img": "img/lotus-g4284cce54_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "0",
         "freq": [417, 417 / 2, 417 * 2],
@@ -72,6 +76,7 @@ list = [
         "img": "img/dandelions-g3b04e8636_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "0",
         "freq": [528, 528 / 2, 528 * 2],
@@ -90,6 +95,7 @@ list = [
         "img": "img/infant-g57184ba03_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "0",
         "freq": [639, 639 / 2, 639 / 4],
@@ -108,6 +114,7 @@ list = [
         "img": "img/conversation-g36eb3ddfe_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "0",
         "freq": [741, 741 / 2, 741 / 4],
@@ -126,6 +133,7 @@ list = [
         "img": "img/light-gc12a26841_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "0",
         "freq": [852, 852 / 2, 852 / 4],
@@ -144,6 +152,7 @@ list = [
         "img": "img/woman-g4836b432a_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "0",
         "freq": [963, 963 / 2, 963 / 4],
@@ -162,6 +171,7 @@ list = [
         "img": "img/heaven-g7a51feb35_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "1",
         "freq": [144, 144 / 2, 144 * 2],
@@ -180,6 +190,7 @@ list = [
         "img": "img/man-gd6adb4c93_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "1",
         "freq": [664, 664 / 2, 664 / 4],
@@ -198,6 +209,7 @@ list = [
         "img": "img/boarding-gbb481ed70_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "1",
         "freq": [965, 965 / 2, 965 / 4],
@@ -216,6 +228,7 @@ list = [
         "img": "img/connective-tissue-ga6d7e598b_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "1",
         "freq": [802, 802 / 2, 802 / 4],
@@ -234,6 +247,7 @@ list = [
         "img": "img/ginger-g0c1145b24_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "1",
         "freq": [304, 304 / 2, 304 * 2],
@@ -252,6 +266,7 @@ list = [
         "img": "img/yoga-gea58ede33_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "1",
         "freq": [330, 330 / 2, 330 * 2],
@@ -270,6 +285,7 @@ list = [
         "img": "img/flower-g686369a58_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "2",
         "freq": [40, 40 / 2, 40 * 2],
@@ -288,6 +304,7 @@ list = [
         "img": "img/adult-ge16ab3c40_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "2",
         "freq": [432, 432 / 2, 432 * 2],
@@ -306,6 +323,7 @@ list = [
         "img": "img/fox-g273081c1e_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "2",
         "freq": [8.3 * 32, 8.3 * 32 / 2, 8.3 * 32 * 2],
@@ -324,6 +342,7 @@ list = [
         "img": "img/whale-g9b2a1dedb_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "2",
         "freq": [90, 90 / 2, 90 * 2],
@@ -342,6 +361,7 @@ list = [
         "img": "img/silhouette-g31411df0b_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "2",
         "freq": [108, 108 / 2, 108 * 2],
@@ -360,6 +380,7 @@ list = [
         "img": "img/books-g545e686c6_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "2",
         "freq": [420.82, 420.82 / 2, 420.82 * 2],
@@ -378,6 +399,7 @@ list = [
         "img": "img/woman-gffb1fd51d_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "2",
         "freq": [20.215 * 16, 20.215 * 16 / 2, 20.215 * 16 * 2],
@@ -396,6 +418,7 @@ list = [
         "img": "img/forest-g8888c2f62_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "2",
         "freq": [4.5 * 32, 4.5 * 32 / 2, 4.5 * 32 * 2],
@@ -414,6 +437,7 @@ list = [
         "img": "img/tribal-g6fb1667ac_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "2",
         "freq": [888, 444, 222],
@@ -433,6 +457,7 @@ list = [
     },
 
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "3",
         "freq": [4.11 * 32, 4.11 * 32 / 2, 4.11 * 32 * 2],
@@ -451,6 +476,7 @@ list = [
         "img": "img/kidney-g824c2738d_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "3",
         "freq": [4.6 * 32, 4.6 * 32 / 2, 4.6 * 32 * 2],
@@ -469,6 +495,7 @@ list = [
         "img": "img/planet-gd76ab1f98_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "3",
         "freq": [5.14 * 32, 5.14 * 32 / 2, 5.14 * 32 * 2],
@@ -487,6 +514,7 @@ list = [
         "img": "img/stomach-gc91ce83a7_640.png"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "3",
         "freq": [5.35 * 32, 5.35 * 32 / 2, 5.35 * 32 * 2],
@@ -505,6 +533,7 @@ list = [
         "img": "img/upper-body-g61a50f82f_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "3",
         "freq": [6.15 * 32, 6.15 * 32 / 2, 6.15 * 32 * 2],
@@ -523,6 +552,7 @@ list = [
         "img": "img/care-gb1da9284c_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "3",
         "freq": [6.88 * 32, 6.88 * 32 / 2, 6.88 * 32 * 2],
@@ -541,6 +571,7 @@ list = [
         "img": "img/male-g907e9db8b_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "3",
         "freq": [7.69 * 32, 7.69 * 32 / 2, 7.69 * 32 * 2],
@@ -559,6 +590,7 @@ list = [
         "img": "img/arm-g636c9e0fa_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "3",
         "freq": [8.22 * 32, 8.22 * 32 / 2, 8.22 * 32 * 2],
@@ -577,6 +609,7 @@ list = [
         "img": "img/teeth-g1ca9189ed_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "3",
         "freq": [9.19 * 32, 9.19 * 32 / 2, 9.19 * 32 * 2],
@@ -595,6 +628,7 @@ list = [
         "img": "img/kiss-g4097dbd6e_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "3",
         "freq": [9.4 * 32, 9.4 * 32 / 2, 9.4 * 32 * 2],
@@ -613,6 +647,7 @@ list = [
         "img": "img/testicles-g3c5f2b0e9_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "3",
         "freq": [10.3 * 16, 10.3 * 16 / 2, 10.3 * 16 * 2],
@@ -631,6 +666,7 @@ list = [
         "img": "img/nose-g66bc60356_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "3",
         "freq": [10.7 * 16, 10.7 * 16 / 2, 10.7 * 16 * 2],
@@ -649,6 +685,7 @@ list = [
         "img": "img/ear-ga3cfbb604_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "3",
         "freq": [12.3 * 16, 12.3 * 16 / 2, 12.3 * 16 * 2],
@@ -667,6 +704,7 @@ list = [
         "img": "img/eye-g92873dafd_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "3",
         "freq": [13.8 * 16, 13.8 * 16 / 2, 13.8 * 16 * 2],
@@ -685,6 +723,7 @@ list = [
         "img": "img/brain-gdf54a8d74_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "3",
         "freq": [295.8, 295.8 / 2, 295.8 * 2],
@@ -704,6 +743,7 @@ list = [
     },
 
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "4",
         "freq": [7.83 * 32, 7.83 * 32 / 2, 7.83 * 32 * 2],
@@ -722,6 +762,7 @@ list = [
         "img": "img/planet-gd76ab1f98_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "4",
         "freq": [126.22, 126.22 / 2, 126.22 * 2],
@@ -740,6 +781,7 @@ list = [
         "img": "img/dandelion-g0d325b257_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "sound",
         "group": "4",
         "freq": [585.9375, 585.9375 / 2, 585.9375 * 2],
@@ -759,6 +801,7 @@ list = [
     },
 
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [(7.83*11), (7.83*11) + 3],
@@ -777,6 +820,7 @@ list = [
         "img": "img/ai-generated-g94ce76027_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 3.5],
@@ -795,6 +839,7 @@ list = [
         "img": "img/lion-g89034e545_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 5.5],
@@ -813,6 +858,7 @@ list = [
         "img": "img/filter-g5e7f24ab4_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 6.3],
@@ -831,6 +877,7 @@ list = [
         "img": "img/abacus-g4f6c2fe99_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 7],
@@ -849,6 +896,7 @@ list = [
         "img": "img/paper-g84892f294_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 7.5],
@@ -867,6 +915,7 @@ list = [
         "img": "img/colorful-gf04857371_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 7.83],
@@ -885,6 +934,7 @@ list = [
         "img": "img/frequency-g5def81d85_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 8],
@@ -903,6 +953,7 @@ list = [
         "img": "img/night-view-g7f6fe0e4e_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 8.3],
@@ -921,6 +972,7 @@ list = [
         "img": "img/maple-leaf-g038a1e4f1_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 9],
@@ -939,6 +991,7 @@ list = [
         "img": "img/hands-gc41d68a32_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 10.5],
@@ -957,6 +1010,7 @@ list = [
         "img": "img/gemstone-g28de21b17_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 12],
@@ -975,6 +1029,7 @@ list = [
         "img": "img/harmony-g46ec50c30_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 33],
@@ -993,6 +1048,7 @@ list = [
         "img": "img/swirl-geda463af3_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 35],
@@ -1013,6 +1069,7 @@ list = [
 
 
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 55],
@@ -1031,6 +1088,7 @@ list = [
         "img": "img/saint-ga85fbbdfc_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 62],
@@ -1049,6 +1107,7 @@ list = [
         "img": "img/man-g43f96aba3_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 63],
@@ -1067,6 +1126,7 @@ list = [
         "img": "img/black-hole-g00cc7c7dd_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 70],
@@ -1085,6 +1145,7 @@ list = [
         "img": "img/lamp-ga434e4fc3_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 80],
@@ -1103,6 +1164,7 @@ list = [
         "img": "img/compass-gb5b3731da_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 83],
@@ -1121,6 +1183,7 @@ list = [
         "img": "img/eye-gd05c61b68_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 90],
@@ -1139,6 +1202,7 @@ list = [
         "img": "img/animal-g6e29370ee_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 105],
@@ -1157,6 +1221,7 @@ list = [
         "img": "img/fractal-g2eed7d16c_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 108],
@@ -1175,6 +1240,7 @@ list = [
         "img": "img/books-g89d0d5e37_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 196],
@@ -1193,6 +1259,7 @@ list = [
         "img": "img/tealights-geb8741839_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 247],
@@ -1211,6 +1278,7 @@ list = [
         "img": "img/meadow-ga6a0d7d67_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 333],
@@ -1229,6 +1297,7 @@ list = [
         "img": "img/hiking-gd967dfc21_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 348],
@@ -1247,6 +1316,7 @@ list = [
         "img": "img/heart-g9a27ca01c_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 440],
@@ -1265,6 +1335,7 @@ list = [
         "img": "img/background-ge4989a578_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 494],
@@ -1283,6 +1354,7 @@ list = [
         "img": "img/daisy-gae05a0139_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 698],
@@ -1301,6 +1373,7 @@ list = [
         "img": "img/happy-mothers-day-gbdb1f8275_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 794],
@@ -1319,6 +1392,7 @@ list = [
         "img": "img/pointing-gd2ad379fc_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 880],
@@ -1337,6 +1411,7 @@ list = [
         "img": "img/wildlife-g82dff3606_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 988],
@@ -1355,6 +1430,7 @@ list = [
         "img": "img/hands-gf96359ece_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "bin",
         "group": "5",
         "freq": [432, 432 + 1925],
@@ -1374,6 +1450,7 @@ list = [
     },
 
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "6",
         "freq": [174, 285, 396, 417, 528],
@@ -1392,6 +1469,7 @@ list = [
         "img": "img/men-g29e1ca941_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "6",
         "freq": [285, 396, 417, 528, 639],
@@ -1410,6 +1488,7 @@ list = [
         "img": "img/shoe-gad2c2199b_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "6",
         "freq": [396, 417, 528, 639, 741],
@@ -1428,6 +1507,7 @@ list = [
         "img": "img/belly-gf80e2a51b_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "6",
         "freq": [417, 528, 639, 741, 852],
@@ -1446,6 +1526,7 @@ list = [
         "img": "img/woman-g7443a7634_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "6",
         "freq": [528, 639, 741, 852, 963],
@@ -1464,6 +1545,7 @@ list = [
         "img": "img/woman-g904eb5e0b_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "6",
         "freq": [174, 396, 528, 741, 963],
@@ -1482,6 +1564,7 @@ list = [
         "img": "img/symbol-gd2ba77619_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "2",
         "freq": [55, 110, 220, 400, 830],
@@ -1500,6 +1583,7 @@ list = [
         "img": "img/burnout-gb6434d2d7_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "2",
         "freq": [150, 160, 180, 550, 950],
@@ -1518,6 +1602,7 @@ list = [
         "img": "img/woman-ge5959ecab_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "2",
         "freq": [60, 70, 370, 830, 970],
@@ -1536,6 +1621,7 @@ list = [
         "img": "img/male-gcc9d37102_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "2",
         "freq": [60, 120, 190, 370, 490],
@@ -1554,6 +1640,7 @@ list = [
         "img": "img/sunblock-g88c7fca6c_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "2",
         "freq": [50, 78.125, 93.75, 370, 830],
@@ -1572,6 +1659,7 @@ list = [
         "img": "img/acne-g9679220a6_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "2",
         "freq": [80, 160, 350, 273.4375, 546.875],
@@ -1590,6 +1678,7 @@ list = [
         "img": "img/skin-care-gf5cdb7556_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "2",
         "freq": [110, 160, 240, 350, 570],
@@ -1608,6 +1697,7 @@ list = [
         "img": "img/body-gc12349c46_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "2",
         "freq": [90, 260, 520, 650, 930],
@@ -1626,6 +1716,7 @@ list = [
         "img": "img/back-ga0eefef51_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "2",
         "freq": [80, 140, 147.85, 570, 730],
@@ -1644,6 +1735,7 @@ list = [
         "img": "img/school-gec7aa12a9_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "2",
         "freq": [12.3 * 4, 25 * 4, 126.22, 393, 787],
@@ -1662,6 +1754,7 @@ list = [
         "img": "img/eye-gc16197ec0_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "2",
         "freq": [126.22, 130, 396, 400, 620],
@@ -1680,6 +1773,7 @@ list = [
         "img": "img/cat-g904bb0086_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "2",
         "freq": [211.44 / 2, 211.44 * 2, 211.44, 333, 666],
@@ -1698,6 +1792,7 @@ list = [
         "img": "img/light-bulb-g946b1a600_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "10",
         "freq": [527.343 / 4, 527.343 / 2, 527.343, 528, 540],
@@ -1716,6 +1811,7 @@ list = [
         "img": "img/man-g4448e1319_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "10",
         "freq": [488.28125 / 4, 488.28125 / 2, 488.28125, 488, 500],
@@ -1734,6 +1830,7 @@ list = [
         "img": "img/mountains-g7ab304a38_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "10",
         "freq": [390.625 / 4, 390.625 / 2, 390.625, 391, 400],
@@ -1752,6 +1849,7 @@ list = [
         "img": "img/nature-gab3959806_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "10",
         "freq": [341.796875 / 4, 341.796875 / 2, 341.796875, 342, 350],
@@ -1770,6 +1868,7 @@ list = [
         "img": "img/hd-wallpaper-g930180156_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "10",
         "freq": [302.734375 / 4, 302.734375 / 2, 302.734375, 303, 310],
@@ -1788,6 +1887,7 @@ list = [
         "img": "img/shoots-g779f87293_640.jpg"
     },
     {
+        "date": "2023-09-09",
         "type": "five",
         "group": "10",
         "freq": [244.140625 * 2, 244.140625 / 2, 244.140625, 244, 250],
@@ -1805,4 +1905,227 @@ list = [
         "tags": "1 2 3",
         "img": "img/hands-g77a214e5e_640.jpg"
     },
+    {
+        "date": "2023-09-09",
+        "type": "program",
+        "group": "11",
+        "col": "#795be5",
+        "freq": [173, 174, 108, 285, 284], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "10 Min",
+        "de": "Extreme Erdung",
+        "en": "Extreme grounding",
+        "es": "Puesta a tierra extrema",
+        "fr": "Mise à la terre extrême",
+        "it": "Messa a terra estrema",
+        "hr": "Ekstremno uzemljenje",
+        "tags": "1 2 3",
+        "img": "img/waves-4527441_640_.jpg",
+        "durationsec": 10 * 60,
+        "program": [
+            {
+                "startsec": 60 * 1,
+                "freq": [284, 285, 108, 174, 173], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 1,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 2,
+                "freq": [173, 174, 108, 285, 284], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 1,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 3,
+                "freq": [284, 285, 108, 174, 173], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 1,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 4,
+                "freq": [173, 174, 108, 285, 284], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 1,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 5,
+                "freq": [284, 285, 108, 174, 173], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 1,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 6,
+                "freq": [173, 174, 108, 285, 284], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 1,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 7,
+                "freq": [284, 285, 108, 174, 173], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 1,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 8,
+                "freq": [173, 174, 108, 285, 284], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 1,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 9,
+                "freq": [174, 174, 108, 174, 174], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 1,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            }
+        ]
+    },
+    {
+        "date": "2023-09-09",
+        "type": "program",
+        "group": "11",
+        "col": "#daa27f",
+        "freq": [530, 526, 417, 637, 641], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "20 Min ",
+        "de": "Freude und Liebe",
+        "en": "joy and love",
+        "es": "alegría y amor",
+        "fr": "joie et amour",
+        "it": "gioia e amore",
+        "hr": "radost i ljubav",
+        "tags": "1 2 3",
+        "img": "img/arrangement-2790019_640_.jpg",
+        "durationsec": 20 * 60,
+        "program": [
+            {
+                "startsec": 60 * 1,
+                "freq": [637, 641, 852, 530, 526], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 4,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 5,
+                "freq": [530, 526, 417, 637, 641], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 4,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 10,
+                "freq": [637, 641, 852, 530, 526], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 4,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 15,
+                "freq": [530, 526, 417, 637, 641], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 4,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            }
+        ]
+    },
+    {
+        "date": "2023-09-09",
+        "type": "program",
+        "group": "11",
+        "col": "#222",
+        "freq": [397, 395, 7.83 * 11, 407, 409], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "30 Min",
+        "de": "Wellen-Meditation",
+        "en": "Wave meditation",
+        "es": "Meditación de olas",
+        "fr": "Méditation des vagues",
+        "it": "Meditazione sulle onde",
+        "hr": "Valna meditacija",
+        "tags": "1 2 3",
+        "img": "img/meditation-6808541_640_.jpg",
+        "durationsec": 30 * 60,
+        "program": [
+            {
+                "startsec": 60 * 1,
+                "freq": [964, 962, 7.83 * 9, 972, 974], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 3,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 4,
+                "freq": [286, 284, 7.83 * 13, 292, 294], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 3,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 8,
+                "freq": [853, 851, 7.83 * 10, 858, 860], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 3,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 12,
+                "freq": [175, 173, 7.83 * 12, 179, 181], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 3,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 16,
+                "freq": [742, 740, 7.83 * 11, 745, 747], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 3,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 20,
+                "freq": [286, 284, 7.83 * 13, 287, 289], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 3,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 27,
+                "freq": [528, 528, 7.83 * 17, 528, 528], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 2,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            }
+        ]
+    }
 ];

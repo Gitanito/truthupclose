@@ -84,7 +84,7 @@ file_put_contents("sitemap.xml", $smtemplate);
 
 $findlangs = ["de","en","es","fr","it","hr"];
 $list_ = file_get_contents("list.js");
-$tokens = explode("{", $list_);
+$tokens = explode('date":', $list_);
 $groups = [];
 foreach($tokens as $t) {
     // find group
@@ -109,7 +109,8 @@ foreach($tokens as $t) {
 $fillupfiles = [
     'sound.html' => ["sound"],
     'binaural.html' => ["bin"],
-    'fullboost.html' => ["five"]
+    'fullboost.html' => ["five"],
+    'programs.html' => ["program"]
 ];
 foreach ($fillupfiles as $fuf => $cats) {
 
