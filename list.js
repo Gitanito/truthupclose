@@ -9,12 +9,12 @@ list = [
         "col": "#880808",
         "lightshow": 1 / (174 / 100),
         "name": "174 Hz",
-        "de": "Erdenergie (Schmerzlinderung)",
-        "en": "Earth Energy (Pain Relief)",
-        "es": "Energía de la tierra (alivio del dolor)",
-        "fr": "Énergie terrestre (soulagement de la douleur)",
-        "it": "Energia terrestre (sollievo dal dolore)",
-        "hr": "Zemaljska energija (ublažavanje bolova)",
+        "de": "Erdenergie (Schmerzlinderung)|Die Frequenz von 174 Hz wird oft als die Schwingung der Erdenergie betrachtet, und es wird behauptet, dass sie eine heilsame Auswirkung auf das Empfinden von Schmerz hat.",
+        "en": "Earth Energy (Pain Relief)|The frequency of 174 Hz is often considered the vibration of earth energy and is said to have a healing effect on the sensation of pain.",
+        "es": "Energía de la tierra (alivio del dolor)|La frecuencia de 174 Hz a menudo se considera la vibración de la energía terrestre y se dice que tiene un efecto curativo sobre la sensación de dolor.",
+        "fr": "Énergie terrestre (soulagement de la douleur)|La fréquence de 174 Hz est souvent considérée comme la vibration de l’énergie terrestre et aurait un effet curatif sur la sensation de douleur.",
+        "it": "Energia terrestre (sollievo dal dolore)|La frequenza di 174 Hz è spesso considerata la vibrazione dell'energia terrestre e si dice che abbia un effetto curativo sulla sensazione di dolore.",
+        "hr": "Zemaljska energija (ublažavanje bolova)|Frekvencija od 174 Hz često se smatra vibracijom zemljine energije i navodno ima ljekovito djelovanje na osjećaj boli.",
         "tags": "1 2 3",
         "img": "img/nature-gf527aac49_640.jpg"
     },
@@ -2124,6 +2124,126 @@ list = [
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 60 * 2,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            }
+        ]
+    },
+    {
+        "date": "2023-09-09",
+        "type": "program",
+        "group": "11",
+        "col": "#f3e936",
+        "freq": [396 + 3.5, 396, 396 / 6, 396, 396 + 3.5], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "25 Min",
+        "de": "UFO Flug",
+        "en": "UFO flight",
+        "es": "Vuelo ovni",
+        "fr": "Vol d'OVNI",
+        "it": "Volo dell'UFO",
+        "hr": "NLO let",
+        "tags": "1 2 3",
+        "img": "img/ufo-1448947_640_.jpg",
+        "durationsec": 25 * 60,
+        "program": [
+            {
+                "startsec": 5,
+                "freq": [396 + 3.5, 396, 396 / 6, 396 + 3.5, 396 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.5, .4, .5, .4, .5],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60,
+                "loop": 1,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60,
+                "freq": [741 + 2.5, 741, 741 / 6, 741 + 2.5, 741 + 3], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60,
+                "loop": 1,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 2,
+                "freq": [396 + 3.5, 396, 396 / 6, 396 + 3.5, 396 + 3], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.5, .4, .5, .4, .5],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 10,
+                "loop": 17,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 5,
+                "freq": [417 + 3.5, 417, 417 / 6, 417 + 3.5, 417 + 4], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 10,
+                "loop": 17,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 8,
+                "freq": [396 + 3.5, 396, 396 / 6, 396 + 3.5, 396 + 3], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.5, .4, .5, .4, .5],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 10,
+                "loop": 17,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 12,
+                "freq": [396 + 3.5, 396, 396 / 6, 396 + 3.5, 396 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.5, .4, .5, .4, .5],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60,
+                "loop": 1,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 13,
+                "freq": [741 + 2.5, 741, 741 / 6, 741 + 2.5, 741 + 3], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60,
+                "loop": 1,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 14,
+                "freq": [396 + 3.5, 396, 396 / 6, 396 + 3.5, 396 + 3], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.5, .4, .5, .4, .5],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 10,
+                "loop": 17,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 17,
+                "freq": [417 + 3.5, 417, 417 / 6, 417 + 3.5, 417 + 4], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 10,
+                "loop": 17,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 20,
+                "freq": [396 + 3.5, 396, 396 / 6, 396 + 3.5, 396 + 3], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.5, .4, .5, .4, .5],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 10,
+                "loop": 17,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            },
+            {
+                "startsec": 60 * 23,
+                "freq": [396, 396, 396 / 12, 396, 396], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.5, .4, .5, .4, .5],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 120,
+                "loop": 1,
                 "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
             }
         ]

@@ -145,15 +145,20 @@ function drawTiles() {
             }
             mytext = mytext.charAt(0).toUpperCase() + mytext.slice(1);
 
+            let desctext = mytext.split("|");
+            if (typeof desctext[1] === "undefined") {
+                desctext[1] = "";
+            }
+
             $('#freq').append(
                 '<div class="col ' + list[i].tags + '">\n' +
-                '                        <div data-f="' + i + '" class="box card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="border: 5px solid ' + list[i].col + ';background-size: cover; background-position-x: center; background-position-y: center; background-image: url(' + list[i].img + ');">\n' +
+                '                        <div data-f="' + i + '" data-desc="' + desctext[1] + '" class="box card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="border: 5px solid ' + list[i].col + ';background-size: cover; background-position-x: center; background-position-y: center; background-image: url(' + list[i].img + ');">\n' +
                 '                            <img class="playbutton" src="img/play.png">' +
                 '                            <img class="stopbutton" src="img/stop.png">' +
                 '            <div class="balken" style="background-color: ' + list[i].col + '"></div>' +
                 '            <div class="d-flex flex-column h-100 p-2 pb-3 text-white text-shadow-3">\n' +
                 '                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-white text-shadow text-decoration-none">\n' +
-                '                                    ' + list[i].name + '</h2><h5 class="text-shadow"> ' + mytext + '</h5>\n' +
+                '                                    ' + list[i].name + '</h2><h5 class="text-shadow"> ' + desctext[0] + '</h5>\n' +
                 '                            </div>\n' +
                 '                        </div>\n' +
                 '                </div>'
@@ -192,6 +197,9 @@ function start() {
     activelement.parent().addClass('sticky-element');
     $("#settings").addClass('sticky-settings');
 
+    if (activelement.data("desc") !== "") {
+        $("#playingdesc").html("<br><h5>Details:</h5>" + activelement.data("desc"));
+    }
     let set = list[activelement.data("f")];
     runningindex = activelement.data("f");
 
@@ -266,17 +274,45 @@ function start() {
 
     if (typeof list[runningindex].program !== "undefined") {
         for (let p = 0; p < list[runningindex].program.length; p++) {
-            timeoutlist.push(
-                window.setTimeout(
-                    function () {
-                        for (let o = 0; o < list[runningindex].program[p].freq.length; o++) {
-                            oscillators[o].frequency.setValueAtTime(oscillators[o].frequency.value, audioCtx.currentTime);
-                            oscillators[o].frequency.linearRampToValueAtTime(list[runningindex].program[p].freq[o], audioCtx.currentTime + list[runningindex].program[p].changespeedsec);
-                        }
-                    },
-                    list[runningindex].program[p].startsec * 1000
-                )
-            )
+            let loopme = 1;
+            if (list[runningindex].program[p].loop > 1) {
+                loopme = list[runningindex].program[p].loop;
+            }
+            let startsec = list[runningindex].program[p].startsec;
+            for (let l = 0; l < loopme; l++) {
+                timeoutlist.push(
+                    window.setTimeout(
+                        function () {
+                            for (let o = 0; o < list[runningindex].program[p].freq.length; o++) {
+                                oscillators[o].frequency.setValueAtTime(oscillators[o].frequency.value, audioCtx.currentTime);
+                                oscillators[o].frequency.linearRampToValueAtTime(list[runningindex].program[p].freq[o], audioCtx.currentTime + list[runningindex].program[p].changespeedsec);
+                                gains[o].gain.setValueAtTime(gains[o].gain.value, audioCtx.currentTime);
+                                gains[o].gain.linearRampToValueAtTime(list[runningindex].program[p].vol[o], audioCtx.currentTime + list[runningindex].program[p].changespeedsec);
+                                pans[o].pan.setValueAtTime(pans[o].pan.value, audioCtx.currentTime);
+                                pans[o].pan.linearRampToValueAtTime(list[runningindex].program[p].pan[o], audioCtx.currentTime + list[runningindex].program[p].changespeedsec);
+                            }
+                        },
+                        (startsec + (list[runningindex].program[p].changespeedsec * l) ) * 1000
+                    )
+                );
+                if (loopme > 1 && l < loopme - 1) {
+                    timeoutlist.push(
+                        window.setTimeout(
+                            function () {
+                                for (let o = 0; o < runningfreq.freq.length; o++) {
+                                    oscillators[o].frequency.setValueAtTime(oscillators[o].frequency.value, audioCtx.currentTime);
+                                    oscillators[o].frequency.linearRampToValueAtTime(runningfreq.freq[o], audioCtx.currentTime + .01);
+                                    gains[o].gain.setValueAtTime(gains[o].gain.value, audioCtx.currentTime);
+                                    gains[o].gain.linearRampToValueAtTime(runningfreq.vol[o], audioCtx.currentTime + .01);
+                                    pans[o].pan.setValueAtTime(pans[o].pan.value, audioCtx.currentTime);
+                                    pans[o].pan.linearRampToValueAtTime(runningfreq.pan[o], audioCtx.currentTime + .01);
+                                }
+                            },
+                            (startsec + (list[runningindex].program[p].changespeedsec * (l + 1)) + .1 ) * 1000
+                        )
+                    );
+                }
+            }
         }
         duration = list[runningindex].durationsec / 60;
     } else {
@@ -345,6 +381,7 @@ function stop() {
         $('.transparent').removeClass('transparent');
         activelement.parent().removeClass('sticky-element');
         $("#settings").removeClass('sticky-settings');
+        $("#playingdesc").html("");
 
         runningindex = null;
         bell = null;
