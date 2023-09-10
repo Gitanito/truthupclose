@@ -1929,72 +1929,63 @@ list = [
                 "freq": [284, 285, 108, 174, 173], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 1,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 1
             },
             {
                 "startsec": 60 * 2,
                 "freq": [173, 174, 108, 285, 284], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 1,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 1
             },
             {
                 "startsec": 60 * 3,
                 "freq": [284, 285, 108, 174, 173], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 1,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 1
             },
             {
                 "startsec": 60 * 4,
                 "freq": [173, 174, 108, 285, 284], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 1,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 1
             },
             {
                 "startsec": 60 * 5,
                 "freq": [284, 285, 108, 174, 173], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 1,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 1
             },
             {
                 "startsec": 60 * 6,
                 "freq": [173, 174, 108, 285, 284], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 1,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 1
             },
             {
                 "startsec": 60 * 7,
                 "freq": [284, 285, 108, 174, 173], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 1,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 1
             },
             {
                 "startsec": 60 * 8,
                 "freq": [173, 174, 108, 285, 284], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 1,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 1
             },
             {
                 "startsec": 60 * 9,
                 "freq": [174, 174, 108, 174, 174], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 1,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 1
             }
         ]
     },
@@ -2022,32 +2013,28 @@ list = [
                 "freq": [637, 641, 852, 530, 526], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 4,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 4
             },
             {
                 "startsec": 60 * 5,
                 "freq": [530, 526, 417, 637, 641], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 4,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 4
             },
             {
                 "startsec": 60 * 10,
                 "freq": [637, 641, 852, 530, 526], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 4,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 4
             },
             {
                 "startsec": 60 * 15,
                 "freq": [530, 526, 417, 637, 641], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 4,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 4
             }
         ]
     },
@@ -2075,56 +2062,49 @@ list = [
                 "freq": [964, 962, 7.83 * 9, 972, 974], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 3,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 3
             },
             {
                 "startsec": 60 * 4,
                 "freq": [286, 284, 7.83 * 13, 292, 294], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 3,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 3
             },
             {
                 "startsec": 60 * 8,
                 "freq": [853, 851, 7.83 * 10, 858, 860], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 3,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 3
             },
             {
                 "startsec": 60 * 12,
                 "freq": [175, 173, 7.83 * 12, 179, 181], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 3,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 3
             },
             {
                 "startsec": 60 * 16,
                 "freq": [742, 740, 7.83 * 11, 745, 747], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 3,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 3
             },
             {
                 "startsec": 60 * 20,
                 "freq": [286, 284, 7.83 * 13, 287, 289], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 3,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 3
             },
             {
                 "startsec": 60 * 27,
                 "freq": [528, 528, 7.83 * 17, 528, 528], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 2,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "changespeedsec": 60 * 2
             }
         ]
     },
@@ -2153,8 +2133,7 @@ list = [
                 "vol": [.5, .4, .5, .4, .5],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 60,
-                "loop": 1,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "loop": 1
             },
             {
                 "startsec": 60,
@@ -2162,8 +2141,7 @@ list = [
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 60,
-                "loop": 1,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "loop": 1
             },
             {
                 "startsec": 60 * 2,
@@ -2171,8 +2149,7 @@ list = [
                 "vol": [.5, .4, .5, .4, .5],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 10,
-                "loop": 17,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "loop": 17
             },
             {
                 "startsec": 60 * 5,
@@ -2180,8 +2157,7 @@ list = [
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 10,
-                "loop": 17,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "loop": 17
             },
             {
                 "startsec": 60 * 8,
@@ -2189,8 +2165,7 @@ list = [
                 "vol": [.5, .4, .5, .4, .5],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 10,
-                "loop": 17,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "loop": 17
             },
             {
                 "startsec": 60 * 12,
@@ -2198,8 +2173,7 @@ list = [
                 "vol": [.5, .4, .5, .4, .5],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 60,
-                "loop": 1,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "loop": 1
             },
             {
                 "startsec": 60 * 13,
@@ -2207,8 +2181,7 @@ list = [
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 60,
-                "loop": 1,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "loop": 1
             },
             {
                 "startsec": 60 * 14,
@@ -2216,8 +2189,7 @@ list = [
                 "vol": [.5, .4, .5, .4, .5],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 10,
-                "loop": 17,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "loop": 17
             },
             {
                 "startsec": 60 * 17,
@@ -2225,8 +2197,7 @@ list = [
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 10,
-                "loop": 17,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "loop": 17
             },
             {
                 "startsec": 60 * 20,
@@ -2234,8 +2205,7 @@ list = [
                 "vol": [.5, .4, .5, .4, .5],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 10,
-                "loop": 17,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "loop": 17
             },
             {
                 "startsec": 60 * 23,
@@ -2243,8 +2213,7 @@ list = [
                 "vol": [.5, .4, .5, .4, .5],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 120,
-                "loop": 1,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "loop": 1
             }
         ]
     },
@@ -2258,11 +2227,11 @@ list = [
         "pan": [-1, -1, 0, 1, 1],
         "name": "20 Min ",
         "de": "Konzentration und Fokus",
-        "en": "joy and love",
-        "es": "alegría y amor",
-        "fr": "joie et amour",
-        "it": "gioia e amore",
-        "hr": "radost i ljubav",
+        "en": "concentration and focus",
+        "es": "concentración y enfoque",
+        "fr": "concentration",
+        "it": "concentrazione e attenzione",
+        "hr": "koncentracija i fokus",
         "tags": "1 2 3",
         "img": "img/arrows-3274962_640_.jpg",
         "durationsec": 20 * 60,
@@ -2273,8 +2242,7 @@ list = [
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 60,
-                "loop": 20,
-                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+                "loop": 20
             }
         ]
     }
