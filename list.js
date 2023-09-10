@@ -2247,5 +2247,35 @@ list = [
                 "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
             }
         ]
+    },
+    {
+        "date": "2023-09-10",
+        "type": "program",
+        "group": "11",
+        "col": "#0c6410",
+        "freq": [40 * 6 + 7, 40 * 6, 40 * 4, 40 * 6, 40 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "20 Min ",
+        "de": "Konzentration und Fokus",
+        "en": "joy and love",
+        "es": "alegría y amor",
+        "fr": "joie et amour",
+        "it": "gioia e amore",
+        "hr": "radost i ljubav",
+        "tags": "1 2 3",
+        "img": "img/arrows-3274962_640_.jpg",
+        "durationsec": 20 * 60,
+        "program": [
+            {
+                "startsec": 1,
+                "freq": [40 * 6 + .5, 40 * 6, 40 * 4, 40 * 6, 40 * 6 + .5], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60,
+                "loop": 20,
+                "effect": "rundown_70_10" // program + _ + target-hz + _ + loop-seconds
+            }
+        ]
     }
 ];
