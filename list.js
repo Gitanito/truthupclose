@@ -2117,12 +2117,12 @@ list = [
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
         "name": "25 Min",
-        "de": "UFO Flug",
-        "en": "UFO flight",
-        "es": "Vuelo ovni",
-        "fr": "Vol d'OVNI",
-        "it": "Volo dell'UFO",
-        "hr": "NLO let",
+        "de": "UFO Flug|Intensive Erfahrung auf Basis von 396Hz, welche dich auf den spannenden Trip von Schwerelosigkeit entführt.",
+        "en": "UFO flight|Intense experience based on 396Hz, which takes you on the exciting trip of weightlessness.",
+        "es": "Vuelo ovni|Intensa experiencia basada en 396Hz, que te lleva al emocionante viaje de la ingravidez.",
+        "fr": "Vol d'OVNI|Une expérience intense basée sur 396 Hz, qui vous emmène dans le voyage passionnant de l'apesanteur.",
+        "it": "Volo dell'UFO|Esperienza intensa basata su 396 Hz, che ti porta nell'emozionante viaggio dell'assenza di gravità.",
+        "hr": "NLO let|Intenzivno iskustvo temeljeno na 396Hz, koje vas vodi na uzbudljivo putovanje bestežinskog stanja.",
         "tags": "1 2 3",
         "img": "img/ufo-1448947_640_.jpg",
         "durationsec": 25 * 60,
@@ -2226,12 +2226,12 @@ list = [
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
         "name": "20 Min ",
-        "de": "Konzentration und Fokus",
-        "en": "concentration and focus",
-        "es": "concentración y enfoque",
-        "fr": "concentration",
-        "it": "concentrazione e attenzione",
-        "hr": "koncentracija i fokus",
+        "de": "Konzentration und Fokus|Die Basis von 40Hz in Verbindung mit vertiefenden Rotationen bringt dich in den absoluten Fokus.",
+        "en": "concentration and focus|The base of 40Hz combined with deepening rotations brings you into absolute focus.",
+        "es": "concentración y enfoque|La base de 40 Hz combinada con rotaciones cada vez más profundas te permite concentrarte por completo.",
+        "fr": "concentration|La base de 40 Hz combinée à des rotations plus profondes vous amène à une concentration absolue.",
+        "it": "concentrazione e attenzione|La base di 40Hz combinata con rotazioni di approfondimento ti porta in una messa a fuoco assoluta.",
+        "hr": "koncentracija i fokus|Baza od 40Hz u kombinaciji s dubljim rotacijama dovodi vas u apsolutni fokus.",
         "tags": "1 2 3",
         "img": "img/arrows-3274962_640_.jpg",
         "durationsec": 20 * 60,
@@ -2243,6 +2243,43 @@ list = [
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 60,
                 "loop": 20
+            }
+        ]
+    },
+    {
+        "date": "2023-09-10",
+        "type": "program",
+        "group": "11",
+        "col": "#0c6410",
+        "freq": [396 + 18.9, 396, 396 / 2, 396 + 18.9, 396 + 18.9], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "30 Min ",
+        "de": "Erweiterte Wahrnehmung|Durch die Verwendung der 18,9Hz in Verbindung mit der 396-Solfeggio-Frequenz wird die Öffnung Deiner Wahrnehmung angestrebt.",
+        "en": "Expanded perception|By using 18.9Hz in conjunction with the 396 Solfeggio frequency, the aim is to open your perception.",
+        "es": "Percepción ampliada|Al utilizar 18,9 Hz junto con la frecuencia 396 Solfeggio, el objetivo es abrir tu percepción.",
+        "fr": "Perception élargie|En utilisant 18,9 Hz en conjonction avec la fréquence 396 Solfège, le but est d'ouvrir votre perception.",
+        "it": "Percezione ampliata|Utilizzando 18,9 Hz insieme alla frequenza Solfeggio 396, l'obiettivo è aprire la tua percezione.",
+        "hr": "Proširena percepcija|Korištenjem 18,9 Hz u kombinaciji s frekvencijom 396 Solfeggio, cilj je otvoriti vašu percepciju.",
+        "tags": "1 2 3",
+        "img": "img/human-1177413_640_.jpg",
+        "durationsec": 30 * 60,
+        "program": [
+            {
+                "startsec": 1,
+                "freq": [396 + 18.9, 396, 396 / 2, 396 + 18.9, 396 + 18.9 + 18.9], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60,
+                "loop": 1
+            },
+            {
+                "startsec": 60 * 28,
+                "freq": [396, 396, 396 / 2, 396, 396], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60,
+                "loop": 1
             }
         ]
     }

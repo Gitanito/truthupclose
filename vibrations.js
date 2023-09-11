@@ -535,7 +535,7 @@ $(document).ready(function () {
             if (endsec > Date.now()) {
                 let newwidth = ((Date.now() - startsec) / ((endsec - startsec) / 100));
                 $('.activebalken').css('width', newwidth + '%');
-                if (newwidth >= 98 && !bellplayed && bell !== null) {
+                if (newwidth >= 95 && !bellplayed && bell !== null) {
                     bell.play();
                     bellplayed = true;
                 }
