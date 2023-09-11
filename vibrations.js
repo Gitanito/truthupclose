@@ -192,7 +192,6 @@ function start() {
     running = true;
 
     bell = new Audio("bell.wav");
-    bell.loop = false;
 
     activelement.parent().addClass('sticky-element');
     $("#settings").addClass('sticky-settings');
@@ -385,6 +384,7 @@ function stop() {
 
         runningindex = null;
         bell = null;
+        bellplayed = false;
 
         try {
 
@@ -535,7 +535,7 @@ $(document).ready(function () {
             if (endsec > Date.now()) {
                 let newwidth = ((Date.now() - startsec) / ((endsec - startsec) / 100));
                 $('.activebalken').css('width', newwidth + '%');
-                if (newwidth >= 98 && !bellplayed && bell != null) {
+                if (newwidth >= 98 && !bellplayed && bell !== null) {
                     bell.play();
                     bellplayed = true;
                 }
@@ -543,7 +543,6 @@ $(document).ready(function () {
                 if (newwidth >= 99) {
                     stop();
                     running = false;
-                    bellplayed = false;
                 }
 
                 if (running && mbControl.value === "1") {
