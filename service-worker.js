@@ -1,5 +1,5 @@
 
-const newversion = '20230911091946';
+const newversion = '20230914002922';
 
 const cacheName = 'vibrations';
 
@@ -10,7 +10,7 @@ const filesToCache = [
     'fontawesome/css/all.min.css',
     'fontawesome/js/all.min.js',
 '3dcourse.html',
-'bell.wav',
+'bell.mp3',
 'binaural.html',
 'bodysound.html',
 'fullboost.html',
@@ -101,6 +101,7 @@ const filesToCache = [
 'img/gemstone-g28de21b17_640.jpg',
 'img/gesund.jpg',
 'img/ginger-g0c1145b24_640.jpg',
+'img/glass-sphere-1746506_640.jpg',
 'img/glueck.jpg',
 'img/hand-g507065235_640.jpg',
 'img/hand-gca6fa87ca_640.png',
