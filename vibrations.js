@@ -191,7 +191,8 @@ function start() {
 
     running = true;
 
-    bell = new Audio("bell.wav");
+    bell = new Audio("bell.mp3");
+    bell.preload = "auto";
 
     activelement.parent().addClass('sticky-element');
     $("#settings").addClass('sticky-settings');
@@ -265,6 +266,8 @@ function start() {
 
     fullvolume.gain.setValueAtTime(0.0001, audioCtx.currentTime);
     fullvolume.gain.linearRampToValueAtTime(volumeControl.value, audioCtx.currentTime + 2);
+
+    bell.volume = volumeControl.value;
 
     if (rotateControl.value === "1") {
         startRotation();

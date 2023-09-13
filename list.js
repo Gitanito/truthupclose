@@ -2233,7 +2233,7 @@ list = [
         "it": "concentrazione e attenzione|La base di 40Hz combinata con rotazioni di approfondimento ti porta in una messa a fuoco assoluta.",
         "hr": "koncentracija i fokus|Baza od 40Hz u kombinaciji s dubljim rotacijama dovodi vas u apsolutni fokus.",
         "tags": "1 2 3",
-        "img": "img/arrows-3274962_640_.jpg",
+        "img": "img/glass-sphere-1746506_640.jpg",
         "durationsec": 20 * 60,
         "program": [
             {
@@ -2251,23 +2251,23 @@ list = [
         "type": "program",
         "group": "11",
         "col": "#0c6410",
-        "freq": [396 + 18.9, 396, 396 / 2, 396 + 18.9, 396 + 18.9], // Left 1, Left 2, Center, Right 1, Right 2
+        "freq": [396 + 18.98, 396, 396 / 2, 396 + 18.98, 396 + 18.98], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
         "name": "30 Min ",
-        "de": "Erweiterte Wahrnehmung|Durch die Verwendung der 18,9Hz in Verbindung mit der 396-Solfeggio-Frequenz wird die Öffnung Deiner Wahrnehmung angestrebt.",
-        "en": "Expanded perception|By using 18.9Hz in conjunction with the 396 Solfeggio frequency, the aim is to open your perception.",
-        "es": "Percepción ampliada|Al utilizar 18,9 Hz junto con la frecuencia 396 Solfeggio, el objetivo es abrir tu percepción.",
-        "fr": "Perception élargie|En utilisant 18,9 Hz en conjonction avec la fréquence 396 Solfège, le but est d'ouvrir votre perception.",
-        "it": "Percezione ampliata|Utilizzando 18,9 Hz insieme alla frequenza Solfeggio 396, l'obiettivo è aprire la tua percezione.",
-        "hr": "Proširena percepcija|Korištenjem 18,9 Hz u kombinaciji s frekvencijom 396 Solfeggio, cilj je otvoriti vašu percepciju.",
+        "de": "Erweiterte Wahrnehmung|Durch die Verwendung der 18,98 Hz in Verbindung mit der 396-Solfeggio-Frequenz wird die Öffnung Deiner Wahrnehmung angestrebt.",
+        "en": "Expanded perception|By using 18.98Hz in conjunction with the 396 Solfeggio frequency, the aim is to open your perception.",
+        "es": "Percepción ampliada|Al utilizar 18,98 Hz junto con la frecuencia 396 Solfeggio, el objetivo es abrir tu percepción.",
+        "fr": "Perception élargie|En utilisant 18,98 Hz en conjonction avec la fréquence 396 Solfège, le but est d'ouvrir votre perception.",
+        "it": "Percezione ampliata|Utilizzando 18,98 Hz insieme alla frequenza Solfeggio 396, l'obiettivo è aprire la tua percezione.",
+        "hr": "Proširena percepcija|Korištenjem 18,98 Hz u kombinaciji s frekvencijom 396 Solfeggio, cilj je otvoriti vašu percepciju.",
         "tags": "1 2 3",
         "img": "img/human-1177413_640_.jpg",
         "durationsec": 30 * 60,
         "program": [
             {
                 "startsec": 1,
-                "freq": [396 + 18.9, 396, 396 / 2, 396 + 18.9, 396 + 18.9 + 18.9], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [396 + 18.98, 396, 396 / 2, 396 + 18.98, 396 + 18.98 + 18.98], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 60,
