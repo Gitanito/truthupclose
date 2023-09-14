@@ -2282,5 +2282,75 @@ list = [
                 "loop": 1
             }
         ]
+    },
+    {
+        "date": "2023-09-10",
+        "type": "program",
+        "group": "11",
+        "col": "#9f3195",
+        "freq": [396, 396, 396 / 2, 396, 396], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "20 Min ",
+        "de": "Energieball",
+        "en": "Energy ball",
+        "es": "Bola de energía",
+        "fr": "Balle d'énergie",
+        "it": "Palla energetica",
+        "hr": "Energetska lopta",
+        "tags": "1 2 3",
+        "img": "img/orb-7230223_640.jpg",
+        "durationsec": 20 * 60,
+        "program": [
+            {
+                "startsec": 60,
+                "freq": [639, 639, 639 / 2, 639, 639], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 30,
+                "loop": 1
+            },
+            {
+                "startsec": 60 * 3,
+                "freq": [963, 963, 963 / 2, 963, 963], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 14,
+                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
+                "loop": 10
+            },
+            {
+                "startsec": 60 * 5,
+                "freq": [396 + 4, 396, 396 / 2, 396, 396 + 8], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60,
+                "loop": 1
+            },
+            {
+                "startsec": 60 * 6,
+                "freq": [852 + 4, 852, 852 / 2, 852, 852 + 8], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 2,
+                "loop": 1
+            },
+            {
+                "startsec": 60 * 18,
+                "freq": [396 + 4, 396, 396 / 2, 396, 396 + 8], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60,
+                "loop": 1
+            },
+            {
+                "startsec": 60 * 19,
+                "freq": [396, 396, 396 / 2, 396, 396], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 40,
+                "loop": 1
+            }
+        ]
     }
 ];

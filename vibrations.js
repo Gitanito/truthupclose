@@ -173,6 +173,44 @@ function startRotation() {
     }
 }
 
+function modify(oscillator, gain, pan, freq, vol, panv, changespeedsec, style = "linear") {
+    let old_o = oscillator.frequency.value;
+    let old_g = gain.gain.value;
+    let old_p = pan.pan.value;
+    oscillator.frequency.setValueAtTime(old_o, audioCtx.currentTime);
+    gain.gain.setValueAtTime(old_g, audioCtx.currentTime);
+    pan.pan.setValueAtTime(old_p, audioCtx.currentTime);
+
+    if (style === "exponential") {
+        oscillator.frequency.exponentialRampToValueAtTime(freq, audioCtx.currentTime + changespeedsec);
+        gain.gain.exponentialRampToValueAtTime(vol, audioCtx.currentTime + changespeedsec);
+        pan.pan.exponentialRampToValueAtTime(panv, audioCtx.currentTime + changespeedsec);
+    }
+    if (style === "linear") {
+        oscillator.frequency.linearRampToValueAtTime(freq, audioCtx.currentTime + changespeedsec);
+        gain.gain.linearRampToValueAtTime(vol, audioCtx.currentTime + changespeedsec);
+        pan.pan.linearRampToValueAtTime(panv, audioCtx.currentTime + changespeedsec);
+    }
+    if (style === "peak") {
+        oscillator.frequency.linearRampToValueAtTime(freq, audioCtx.currentTime + changespeedsec / 2);
+        gain.gain.linearRampToValueAtTime(vol, audioCtx.currentTime + changespeedsec / 2);
+        pan.pan.linearRampToValueAtTime(panv, audioCtx.currentTime + changespeedsec / 2);
+        timeoutlist.push(
+            window.setTimeout(
+                function () {
+                    oscillator.frequency.setValueAtTime(oscillator.frequency.value, audioCtx.currentTime);
+                    gain.gain.setValueAtTime(gain.gain.value, audioCtx.currentTime);
+                    pan.pan.setValueAtTime(pan.pan.value, audioCtx.currentTime);
+                    oscillator.frequency.linearRampToValueAtTime(old_o, audioCtx.currentTime + changespeedsec / 2);
+                    gain.gain.linearRampToValueAtTime(old_g, audioCtx.currentTime + changespeedsec / 2);
+                    pan.pan.linearRampToValueAtTime(old_p, audioCtx.currentTime + changespeedsec / 2);
+                },
+                changespeedsec / 2 * 1000
+            )
+        );
+    }
+}
+
 function start() {
     stop();
     if (running) {
@@ -190,9 +228,6 @@ function start() {
     }
 
     running = true;
-
-    bell = new Audio("bell.mp3");
-    bell.preload = "auto";
 
     activelement.parent().addClass('sticky-element');
     $("#settings").addClass('sticky-settings');
@@ -267,8 +302,6 @@ function start() {
     fullvolume.gain.setValueAtTime(0.0001, audioCtx.currentTime);
     fullvolume.gain.linearRampToValueAtTime(volumeControl.value, audioCtx.currentTime + 2);
 
-    bell.volume = volumeControl.value;
-
     if (rotateControl.value === "1") {
         startRotation();
     }
@@ -286,28 +319,21 @@ function start() {
                     window.setTimeout(
                         function () {
                             for (let o = 0; o < list[runningindex].program[p].freq.length; o++) {
-                                oscillators[o].frequency.setValueAtTime(oscillators[o].frequency.value, audioCtx.currentTime);
-                                oscillators[o].frequency.linearRampToValueAtTime(list[runningindex].program[p].freq[o], audioCtx.currentTime + list[runningindex].program[p].changespeedsec);
-                                gains[o].gain.setValueAtTime(gains[o].gain.value, audioCtx.currentTime);
-                                gains[o].gain.linearRampToValueAtTime(list[runningindex].program[p].vol[o], audioCtx.currentTime + list[runningindex].program[p].changespeedsec);
-                                pans[o].pan.setValueAtTime(pans[o].pan.value, audioCtx.currentTime);
-                                pans[o].pan.linearRampToValueAtTime(list[runningindex].program[p].pan[o], audioCtx.currentTime + list[runningindex].program[p].changespeedsec);
+
+                                modify(oscillators[o], gains[o], pans[o], list[runningindex].program[p].freq[o], list[runningindex].program[p].vol[o], list[runningindex].program[p].pan[o], list[runningindex].program[p].changespeedsec, list[runningindex].program[p].style);
+
                             }
                         },
                         (startsec + (list[runningindex].program[p].changespeedsec * l) ) * 1000
                     )
                 );
-                if (loopme > 1 && l < loopme - 1) {
+                if (list[runningindex].program[p].style !== "peak" && loopme > 1 && l < loopme - 1) {
                     timeoutlist.push(
                         window.setTimeout(
                             function () {
                                 for (let o = 0; o < runningfreq.freq.length; o++) {
-                                    oscillators[o].frequency.setValueAtTime(oscillators[o].frequency.value, audioCtx.currentTime);
-                                    oscillators[o].frequency.linearRampToValueAtTime(runningfreq.freq[o], audioCtx.currentTime + .01);
-                                    gains[o].gain.setValueAtTime(gains[o].gain.value, audioCtx.currentTime);
-                                    gains[o].gain.linearRampToValueAtTime(runningfreq.vol[o], audioCtx.currentTime + .01);
-                                    pans[o].pan.setValueAtTime(pans[o].pan.value, audioCtx.currentTime);
-                                    pans[o].pan.linearRampToValueAtTime(runningfreq.pan[o], audioCtx.currentTime + .01);
+
+                                    modify(oscillators[o], gains[o], pans[o], runningfreq.freq[o], runningfreq.vol[o], runningfreq.pan[o], .01, "linear");
                                 }
                             },
                             (startsec + (list[runningindex].program[p].changespeedsec * (l + 1)) + .1 ) * 1000
@@ -538,9 +564,13 @@ $(document).ready(function () {
             if (endsec > Date.now()) {
                 let newwidth = ((Date.now() - startsec) / ((endsec - startsec) / 100));
                 $('.activebalken').css('width', newwidth + '%');
-                if (newwidth >= 95 && !bellplayed && bell !== null) {
-                    bell.play();
+                if (newwidth >= 95 && !bellplayed && running) {
                     bellplayed = true;
+                    bell = new Audio("bell.mp3");
+                    //bell.volume = volumeControl.value;
+                    bell.preload = "auto";
+                    bell.loop = false;
+                    bell.play();
                 }
 
                 if (newwidth >= 99) {
