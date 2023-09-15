@@ -1,5 +1,5 @@
 
-const newversion = '20230915002250';
+const newversion = '20230915130804';
 
 const cacheName = 'vibrations';
 
@@ -18,6 +18,7 @@ const filesToCache = [
 'jquery.min.js',
 'list.js',
 'manifest.json',
+'manifest.webmanifest',
 'meetings.html',
 'papaparse.min.js',
 'podcasts.html',
@@ -39,7 +40,10 @@ const filesToCache = [
 'img/acne-g9679220a6_640.jpg',
 'img/adult-ge16ab3c40_640.jpg',
 'img/ai-generated-g94ce76027_640.jpg',
+'img/android-chrome-192x192.png',
+'img/android-chrome-512x512.png',
 'img/animal-g6e29370ee_640.jpg',
+'img/apple-touch-icon.png',
 'img/arm-g636c9e0fa_640.jpg',
 'img/arrangement-2790019_640_.jpg',
 'img/arrows-3274962_640_.jpg',
@@ -89,6 +93,9 @@ const filesToCache = [
 'img/eye-g92873dafd_640.jpg',
 'img/eye-gc16197ec0_640.jpg',
 'img/eye-gd05c61b68_640.jpg',
+'img/favicon-16x16.png',
+'img/favicon-32x32.png',
+'img/favicon.ico',
 'img/filter-g5e7f24ab4_640.jpg',
 'img/flower-g686369a58_640.jpg',
 'img/forest-g8888c2f62_640.jpg',
@@ -123,6 +130,15 @@ const filesToCache = [
 'img/homebutton.png',
 'img/hr.png',
 'img/human-1177413_640_.jpg',
+'img/icon-128x128.png',
+'img/icon-144x144.png',
+'img/icon-152x152.png',
+'img/icon-192x192.png',
+'img/icon-384x384.png',
+'img/icon-48x48.png',
+'img/icon-512x512.png',
+'img/icon-72x72.png',
+'img/icon-96x96.png',
 'img/infant-g57184ba03_640.jpg',
 'img/inspiration-ge68dca3f4_1920.jpg',
 'img/it.png',
@@ -197,6 +213,7 @@ const filesToCache = [
 'img/vacation-g4cdf340f8_1280.jpg',
 'img/virtual-reality-g843fa476e_1280.jpg',
 'img/wave-378786_640.jpg',
+'img/wave-8033273_1920_.jpg',
 'img/wave-g3268afc0d_1280.jpg',
 'img/waves-4527441_640_.jpg',
 'img/whale-g9b2a1dedb_640.jpg',
