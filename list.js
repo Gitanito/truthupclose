@@ -2361,7 +2361,7 @@ list = [
         "freq": [40 * 6 + 3, 40 * 6, 40 * 4, 40 * 6 + 3, 40 * 6 + 6], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
-        "name": "1,5 hours ",
+        "name": "90 Min ",
         "de": "Gedankenreise (lang)|Die Basis von 40Hz in Verbindung mit vertiefenden Rotationen bringt dich in den absoluten Fokus.",
         "en": "Mind-Travel (long)|The base of 40Hz combined with deepening rotations brings you into absolute focus.",
         "es": "viaje mental (largo)|La base de 40 Hz combinada con rotaciones cada vez más profundas te permite concentrarte por completo.",
@@ -2391,7 +2391,7 @@ list = [
         "freq": [40 * 6 + 3, 40 * 6, 40 * 4, 40 * 6 + 3, 40 * 6 + 6], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
-        "name": "30 mins ",
+        "name": "30 Min ",
         "de": "Gedankenreise (kurz)|Die Basis von 40Hz in Verbindung mit vertiefenden Rotationen bringt dich in den absoluten Fokus.",
         "en": "Mind-Travel (short)|The base of 40Hz combined with deepening rotations brings you into absolute focus.",
         "es": "viaje mental (corto)|La base de 40 Hz combinada con rotaciones cada vez más profundas te permite concentrarte por completo.",
