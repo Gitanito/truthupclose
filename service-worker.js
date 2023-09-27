@@ -1,5 +1,5 @@
 
-const newversion = '20230920005332';
+const newversion = '20230927183057';
 
 const cacheName = 'vibrations';
 
@@ -61,6 +61,7 @@ const filesToCache = [
 'img/body-gc12349c46_640.jpg',
 'img/books-g545e686c6_640.jpg',
 'img/books-g89d0d5e37_640.jpg',
+'img/brain-7351873_640_.jpg',
 'img/brain-gdf54a8d74_640.jpg',
 'img/breakfast-g36eabe351_1280.jpg',
 'img/burnout-gb6434d2d7_640.jpg',
@@ -180,6 +181,7 @@ const filesToCache = [
 'img/play.png',
 'img/pointing-gd2ad379fc_640.jpg',
 'img/positive-g363c7b752_1280.jpg',
+'img/psychology-6232517_640_.jpg',
 'img/room-g791600391_1280.jpg',
 'img/saint-ga85fbbdfc_640.jpg',
 'img/school-gec7aa12a9_640.jpg',
