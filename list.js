@@ -2358,23 +2358,23 @@ list = [
         "type": "program",
         "group": "11",
         "col": "#0859a9",
-        "freq": [40 * 6 + 3, 40 * 6, 40 * 4, 40 * 6 + 3, 40 * 6 + 6], // Left 1, Left 2, Center, Right 1, Right 2
+        "freq": [40 * 6 + 2.5, 40 * 6, 40 * 4, 40 * 6 + 2.5, 40 * 6 + 5], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
         "name": "90 Min ",
-        "de": "Gedankenreise (lang)|Die Basis von 40Hz in Verbindung mit vertiefenden Rotationen bringt dich in den absoluten Fokus.",
-        "en": "Mind-Travel (long)|The base of 40Hz combined with deepening rotations brings you into absolute focus.",
-        "es": "viaje mental (largo)|La base de 40 Hz combinada con rotaciones cada vez más profundas te permite concentrarte por completo.",
-        "fr": "Voyage mental (long)|La base de 40 Hz combinée à des rotations plus profondes vous amène à une concentration absolue.",
-        "it": "Viaggio mentale (lungo)|La base di 40Hz combinata con rotazioni di approfondimento ti porta in una messa a fuoco assoluta.",
-        "hr": "Putovanje uma (dugo)|Baza od 40Hz u kombinaciji s dubljim rotacijama dovodi vas u apsolutni fokus.",
+        "de": "Gedankenreise (lang)|Die Basis von 40Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 3Hz syncronisiert wird.",
+        "en": "Mind-Travel (long)|The base of 40Hz ensures increased attention, with the brain being synchronized to a range around 3Hz.",
+        "es": "viaje mental (largo)|La base de 40 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 3 Hz.",
+        "fr": "Voyage mental (long)|La base de 40 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 3 Hz.",
+        "it": "Viaggio mentale (lungo)|La base di 40Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 3Hz.",
+        "hr": "Putovanje uma (dugo)|Baza od 40 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 3 Hz.",
         "tags": "1 2 3",
         "img": "img/psychology-6232517_640_.jpg",
         "durationsec": 90 * 60,
         "program": [
             {
                 "startsec": 1,
-                "freq": [40 * 6 + 4, 40 * 6, 40 * 4, 40 * 6 + 4, 40 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [40 * 6 + 3.5, 40 * 6, 40 * 4, 40 * 6 + 3.5, 40 * 6 + 7], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 60 * 5,
@@ -2388,23 +2388,23 @@ list = [
         "type": "program",
         "group": "11",
         "col": "#0485bb",
-        "freq": [40 * 6 + 3, 40 * 6, 40 * 4, 40 * 6 + 3, 40 * 6 + 6], // Left 1, Left 2, Center, Right 1, Right 2
+        "freq": [40 * 6 + 2.5, 40 * 6, 40 * 4, 40 * 6 + 2.5, 40 * 6 + 5], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
         "name": "30 Min ",
-        "de": "Gedankenreise (kurz)|Die Basis von 40Hz in Verbindung mit vertiefenden Rotationen bringt dich in den absoluten Fokus.",
-        "en": "Mind-Travel (short)|The base of 40Hz combined with deepening rotations brings you into absolute focus.",
-        "es": "viaje mental (corto)|La base de 40 Hz combinada con rotaciones cada vez más profundas te permite concentrarte por completo.",
-        "fr": "Voyage mental (court)|La base de 40 Hz combinée à des rotations plus profondes vous amène à une concentration absolue.",
-        "it": "Viaggio mentale (corto)|La base di 40Hz combinata con rotazioni di approfondimento ti porta in una messa a fuoco assoluta.",
-        "hr": "Putovanje uma (kratak)|Baza od 40Hz u kombinaciji s dubljim rotacijama dovodi vas u apsolutni fokus.",
+        "de": "Gedankenreise (kurz)|Die Basis von 40Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 3Hz syncronisiert wird.",
+        "en": "Mind-Travel (short)|The base of 40Hz ensures increased attention, with the brain being synchronized to a range around 3Hz.",
+        "es": "viaje mental (corto)|La base de 40 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 3 Hz.",
+        "fr": "Voyage mental (court)|La base de 40 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 3 Hz.",
+        "it": "Viaggio mentale (corto)|La base di 40Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 3Hz.",
+        "hr": "Putovanje uma (kratak)|Baza od 40 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 3 Hz.",
         "tags": "1 2 3",
         "img": "img/brain-7351873_640_.jpg",
         "durationsec": 30 * 60,
         "program": [
             {
                 "startsec": 1,
-                "freq": [40 * 6 + 4, 40 * 6, 40 * 4, 40 * 6 + 4, 40 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [40 * 6 + 3.5, 40 * 6, 40 * 4, 40 * 6 + 3.5, 40 * 6 + 7], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 60 * 5,
