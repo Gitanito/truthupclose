@@ -1921,7 +1921,7 @@ list = [
         "it": "Messa a terra estrema",
         "hr": "Ekstremno uzemljenje",
         "tags": "1 2 3",
-        "img": "img/waves-4527441_640_.jpg",
+        "img": "img/jungle-1807476_640_.jpg",
         "durationsec": 10 * 60,
         "program": [
             {
@@ -2399,7 +2399,7 @@ list = [
         "it": "Viaggio mentale (corto)|La base di 40Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 3Hz.",
         "hr": "Putovanje uma (kratak)|Baza od 40 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 3 Hz.",
         "tags": "1 2 3",
-        "img": "img/brain-7351873_640_.jpg",
+        "img": "img/psychology-6232520_640_.jpg",
         "durationsec": 30 * 60,
         "program": [
             {
@@ -2410,6 +2410,36 @@ list = [
                 "changespeedsec": 60 * 5,
                 "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 6
+            }
+        ]
+    },
+    {
+        "date": "2023-09-27",
+        "type": "program",
+        "group": "11",
+        "col": "#09286c",
+        "freq": [40 * 6 + 2.25, 40 * 6, 40 * 4, 40 * 6 + 2.25, 40 * 6 + 4.5], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "90 Min ",
+        "de": "Theta Sync|Die Basis von 40Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4Hz syncronisiert wird.",
+        "en": "Theta Sync|The base of 40Hz ensures increased attention, with the brain being synchronized to a range around 4Hz.",
+        "es": "Theta Sync|La base de 40 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4 Hz.",
+        "fr": "Theta Sync|La base de 40 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 4 Hz.",
+        "it": "Theta Sync|La base di 40Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 4Hz.",
+        "hr": "Theta Sync|Baza od 40 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 4 Hz.",
+        "tags": "1 2 3",
+        "img": "img/bullet-443852_640_.jpg",
+        "durationsec": 90 * 60,
+        "program": [
+            {
+                "startsec": 1,
+                "freq": [40 * 6 + 2, 40 * 6, 40 * 4, 40 * 6 + 2, 40 * 6 + 4], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 5,
+                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
+                "loop": 18
             }
         ]
     }

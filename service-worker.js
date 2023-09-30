@@ -1,5 +1,5 @@
 
-const newversion = '20230929071443';
+const newversion = '20230930082440';
 
 const cacheName = 'vibrations';
 
@@ -64,6 +64,7 @@ const filesToCache = [
 'img/brain-7351873_640_.jpg',
 'img/brain-gdf54a8d74_640.jpg',
 'img/breakfast-g36eabe351_1280.jpg',
+'img/bullet-443852_640_.jpg',
 'img/burnout-gb6434d2d7_640.jpg',
 'img/care-gb1da9284c_640.jpg',
 'img/castle-g24f13cd1d_1280.jpg',
@@ -144,6 +145,7 @@ const filesToCache = [
 'img/inspiration-ge68dca3f4_1920.jpg',
 'img/it.png',
 'img/jonathan-borba-3eC5n6gHwe8-unsplash.jpg',
+'img/jungle-1807476_640_.jpg',
 'img/kidney-g824c2738d_640.jpg',
 'img/kiss-g4097dbd6e_640.jpg',
 'img/kreativ.jpg',
@@ -182,6 +184,7 @@ const filesToCache = [
 'img/pointing-gd2ad379fc_640.jpg',
 'img/positive-g363c7b752_1280.jpg',
 'img/psychology-6232517_640_.jpg',
+'img/psychology-6232520_640_.jpg',
 'img/room-g791600391_1280.jpg',
 'img/saint-ga85fbbdfc_640.jpg',
 'img/school-gec7aa12a9_640.jpg',
