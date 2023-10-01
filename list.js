@@ -2442,5 +2442,35 @@ list = [
                 "loop": 18
             }
         ]
+    },
+    {
+        "date": "2023-09-27",
+        "type": "program",
+        "group": "11",
+        "col": "#d7cc08",
+        "freq": [292.96875 + 1.9575, 292.96875, 146.484375, 292.96875 + 1.9575, 292.96875 + 3.915], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "90 Min ",
+        "de": "Sun'n earth|Die 150MHz der Sonne werden mit den 7.83Hz der Erde kombiniert, was zu einer tiefen Verbindung mit dem Universum führt.",
+        "en": "Sun'n earth|The Sun's 150MHz is combined with the Earth's 7.83Hz, resulting in a deep connection with the Universe.",
+        "es": "Sun'n earth|Los 150MHz del Sol se combinan con los 7,83Hz de la Tierra, lo que da como resultado una conexión profunda con el universo.",
+        "fr": "Sun'n earth|Les 150 MHz du Soleil sont combinés aux 7,83 Hz de la Terre, ce qui crée une connexion profonde avec l'Univers.",
+        "it": "Sun'n earth|I 150 MHz del Sole si combinano con i 7,83 Hz della Terra, determinando una profonda connessione con l'Universo.",
+        "hr": "Sun'n earth|Sunčevih 150MHz kombinira se sa Zemljinih 7,83Hz, što rezultira dubokom vezom sa Svemirom.",
+        "tags": "1 2 3",
+        "img": "img/earth-7195481_640_.jpg",
+        "durationsec": 90 * 60,
+        "program": [
+            {
+                "startsec": 1,
+                "freq": [292.96875 + 2, 292.96875, 146.484375, 292.96875 + 2, 292.96875 + 4], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-1, -1, 0, 1, 1],
+                "changespeedsec": 60 * 5,
+                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
+                "loop": 18
+            }
+        ]
     }
 ];

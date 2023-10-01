@@ -1,5 +1,5 @@
 
-const newversion = '20230930212827';
+const newversion = '20231001200510';
 
 const cacheName = 'vibrations';
 
@@ -106,6 +106,7 @@ const filesToCache = [
 'img/de.png',
 'img/droplet-gf9fbdcf52_640.jpg',
 'img/ear-ga3cfbb604_640.jpg',
+'img/earth-7195481_640_.jpg',
 'img/eet-g0d5463b75_1280.jpg',
 'img/en.png',
 'img/es.png',
