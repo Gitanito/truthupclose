@@ -89,18 +89,30 @@ $groups = [];
 foreach($tokens as $t) {
     // find group
     $g_ = explode('"type": "', $t);
-    $g =  explode('"', $g_[1]);
+    if (isset($g_[1])) {
+        $g =  explode('"', $g_[1]);
+    } else {
+        $g[0] = $g_[0];
+    }
     if (!isset($groups[$g[0]])) {
         $groups[$g[0]] = [];
     }
 
     $n_ = explode('"name": "', $t);
-    $n =  explode('"', $n_[1]);
+    if (isset($n_[1])) {
+        $n =  explode('"', $n_[1]);
+    } else {
+        $n[0] = $n_[0];
+    }
 
     $z = [];
     foreach($findlangs as $r) {
         $u_ = explode('"'.$r.'": "', $t);
-        $u = explode('"', $u_[1]);
+        if (isset($u_[1])) {
+            $u = explode('"', $u_[1]);
+        } else {
+            $u[0] = $u_[0];
+        }
         $z[$r] = $n[0] . " " . $u[0];
     }
     $groups[$g[0]][] = $z;
@@ -110,7 +122,10 @@ $fillupfiles = [
     'sound.html' => ["sound"],
     'binaural.html' => ["bin"],
     'fullboost.html' => ["five"],
-    'programs.html' => ["program"]
+    'programs.html' => ["program"],
+    'tools.html' => [],
+    'singlesound.html' => [],
+    'bodysound.html' => []
 ];
 foreach ($fillupfiles as $fuf => $cats) {
 
@@ -123,9 +138,16 @@ foreach ($fillupfiles as $fuf => $cats) {
         }
     }
 
-    $content = file_get_contents($fuf);
-    $start = explode("<!-- freqstart -->", $content);
-    $end  = explode("<!-- freqend -->", $start[1]);
-    $out = $start[0]."<!-- freqstart -->".join(" ", $mylist)."<!-- freqend -->".$end[1];
+    $out = file_get_contents($fuf);
+    $start = explode("<!-- freqstart -->", $out);
+    if (isset($start[1])) {
+        $end = explode("<!-- freqend -->", $start[1]);
+        $out = $start[0] . "<!-- freqstart -->" . join(" ", $mylist) . "<!-- freqend -->" . $end[1];
+    }
+    $start = explode("<!-- versstart -->", $out);
+    if (isset($start[1])) {
+        $end = explode("<!-- versend -->", $start[1]);
+        $out = $start[0] . "<!-- versstart -->" . date("dmyHi") . "<!-- versend -->" . $end[1];
+    }
     file_put_contents($fuf, $out);
 }

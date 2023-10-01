@@ -2449,8 +2449,8 @@ list = [
         "group": "11",
         "col": "#d7cc08",
         "freq": [292.96875 + 1.9575, 292.96875, 146.484375, 292.96875 + 1.9575, 292.96875 + 3.915], // Left 1, Left 2, Center, Right 1, Right 2
-        "vol": [.4, .5, .5, .5, .4],
-        "pan": [-1, -1, 0, 1, 1],
+        "vol": [.4, .4, .55, .4, .4],
+        "pan": [-1, -.5, 0, .5, 1],
         "name": "90 Min ",
         "de": "Sun'n earth|Die 150MHz der Sonne werden mit den 7.83Hz der Erde kombiniert, was zu einer tiefen Verbindung mit dem Universum führt.",
         "en": "Sun'n earth|The Sun's 150MHz is combined with the Earth's 7.83Hz, resulting in a deep connection with the Universe.",
@@ -2465,7 +2465,7 @@ list = [
             {
                 "startsec": 1,
                 "freq": [292.96875 + 2, 292.96875, 146.484375, 292.96875 + 2, 292.96875 + 4], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
+                "vol": [.4, .5, .3, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 60 * 5,
                 "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
