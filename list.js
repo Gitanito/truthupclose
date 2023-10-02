@@ -2358,7 +2358,7 @@ list = [
         "type": "program",
         "group": "11",
         "col": "#0859a9",
-        "freq": [40 * 6 + 2.5, 40 * 6, 40 * 4, 40 * 6 + 2.5, 40 * 6 + 5], // Left 1, Left 2, Center, Right 1, Right 2
+        "freq": [38 * 6 + 2.5, 38 * 6, 38 * 4, 38 * 6 + 8, 38 * 6 + 8 + 2.5], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
         "name": "90 Min ",
@@ -2374,7 +2374,7 @@ list = [
         "program": [
             {
                 "startsec": 1,
-                "freq": [40 * 6 + 3.5, 40 * 6, 40 * 4, 40 * 6 + 3.5, 40 * 6 + 7], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 3.5, 38 * 6, 38 * 4, 38 * 6 + 8, 38 * 6 + 8 + 3.5], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 60 * 5,
@@ -2388,7 +2388,7 @@ list = [
         "type": "program",
         "group": "11",
         "col": "#0485bb",
-        "freq": [40 * 6 + 2.5, 40 * 6, 40 * 4, 40 * 6 + 2.5, 40 * 6 + 5], // Left 1, Left 2, Center, Right 1, Right 2
+        "freq": [38 * 6 + 2.5, 38 * 6, 38 * 4, 38 * 6 + 8, 38 * 6 + 8 + 2.5], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
         "name": "30 Min ",
@@ -2404,7 +2404,7 @@ list = [
         "program": [
             {
                 "startsec": 1,
-                "freq": [40 * 6 + 3.5, 40 * 6, 40 * 4, 40 * 6 + 3.5, 40 * 6 + 7], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 3.5, 38 * 6, 38 * 4, 38 * 6 + 8, 38 * 6 + 8 + 3.5], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 60 * 5,
@@ -2418,7 +2418,7 @@ list = [
         "type": "program",
         "group": "11",
         "col": "#09286c",
-        "freq": [40 * 6 + 5, 40 * 6, 40 * 4, 40 * 6 + 5, 40 * 6 + 10], // Left 1, Left 2, Center, Right 1, Right 2
+        "freq": [38 * 6 + 5, 38 * 6, 38 * 4, 38 * 6 + 5, 38 * 6 + 10], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
         "name": "90 Min ",
@@ -2434,7 +2434,7 @@ list = [
         "program": [
             {
                 "startsec": 1,
-                "freq": [40 * 6 + 4, 40 * 6, 40 * 4, 40 * 6 + 4, 40 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4, 38 * 6, 38 * 4, 38 * 6 + 4, 38 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 60 * 5,
@@ -2448,7 +2448,7 @@ list = [
         "type": "program",
         "group": "11",
         "col": "#d7cc08",
-        "freq": [292.96875 + 1.9575, 292.96875, 146.484375, 292.96875 + 1.9575, 292.96875 + 3.915], // Left 1, Left 2, Center, Right 1, Right 2
+        "freq": [292.96875 + 1.9575, 292.96875, 146.484375, 292.96875 + 7.83 + 1.9575, 292.96875 + 7.83 + 1.9575], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .4, .55, .4, .4],
         "pan": [-1, -.5, 0, .5, 1],
         "name": "90 Min ",
@@ -2464,7 +2464,7 @@ list = [
         "program": [
             {
                 "startsec": 1,
-                "freq": [292.96875 + 2, 292.96875, 146.484375, 292.96875 + 2, 292.96875 + 4], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [292.96875 + 2, 292.96875, 146.484375, 292.96875 + 7.83 + 2, 292.96875 + 7.83 + 4], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .3, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "changespeedsec": 60 * 5,

@@ -147,7 +147,7 @@ foreach ($fillupfiles as $fuf => $cats) {
     $start = explode("<!-- versstart -->", $out);
     if (isset($start[1])) {
         $end = explode("<!-- versend -->", $start[1]);
-        $out = $start[0] . "<!-- versstart -->" . date("dmyHi") . "<!-- versend -->" . $end[1];
+        $out = $start[0] . "<!-- versstart -->" . date("Hidm") . "<!-- versend -->" . $end[1];
     }
     file_put_contents($fuf, $out);
 }
