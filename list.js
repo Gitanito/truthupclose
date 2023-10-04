@@ -2472,5 +2472,35 @@ list = [
                 "loop": 18
             }
         ]
+    },
+    {
+        "date": "2023-09-27",
+        "type": "program",
+        "group": "11",
+        "col": "#259de8",
+        "freq": [38 * 6 + 2.8, 38 * 6, 38 * 4, 38 * 6 + 8.15, 38 * 6 + 8.15 + 2.8], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "30 Min ",
+        "de": "Brainf**k|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 8.1Hz syncronisiert wird.",
+        "en": "Brainf**k|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 8.1Hz.",
+        "es": "Brainf**k|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 8.1 Hz.",
+        "fr": "Brainf**k|La base de 38 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 8.1 Hz.",
+        "it": "Brainf**k|La base di 38Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 8.1Hz.",
+        "hr": "Brainf**k|Baza od 38 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 8.1 Hz.",
+        "tags": "1 2 3",
+        "img": "img/galaxy-3608029_640_.jpg",
+        "durationsec": 30 * 60,
+        "program": [
+            {
+                "startsec": 1,
+                "freq": [38 * 6 + 2.7, 38 * 6, 38 * 4, 38 * 6 + 8.15, 38 * 6 + 8.15 + 2.7], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .4, .5, .4, .4],
+                "pan": [-1, -.5, 0, .5, 1],
+                "changespeedsec": 60 * 3,
+                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
+                "loop": 10
+            }
+        ]
     }
 ];
