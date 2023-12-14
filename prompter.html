@@ -1,0 +1,52 @@
+<script src="jquery.min.js"></script>
+<script src="jquery-ui.js"></script>
+<style>
+    body {
+        background: black;
+        color: white;
+        font-family: "Arial Black";
+    }
+    body::-webkit-scrollbar {
+        width: 12px;
+    }
+    body::-webkit-scrollbar-track {
+        background:#222;
+        border-radius: 20px;
+    }
+    body::-webkit-scrollbar-thumb {
+        background-color: #ddd;
+        border-radius: 20px;
+    }
+    h1 {
+        transform: scale(-1, 1);
+        color: #ffffff;
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+    }
+    #target {
+        position: fixed;
+        top: 40%;
+        left: 40%;
+        border: white 1px dashed;
+        margin: auto;
+        width: 40px;
+        height: 40px;
+    }
+</style>
+
+<form method="post">
+    <textarea id="ptext" name="ptext"></textarea>
+</form>
+<h1 id="out"></h1>
+<div id="target"></div>
+
+<script>
+    $( "#target" ).draggable();
+    $('#ptext').on("keyup", function () {
+        $('#out').html($('#ptext').val().replaceAll('\n','<br>'));
+    })
+</script>
+
