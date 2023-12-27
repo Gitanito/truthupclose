@@ -92,6 +92,29 @@
     })
     $('#run').on('click', function(){
         running = !running;
-    })
+    });
+
+    $(window).keypress(function(e) {
+        e.preventDefault();
+        var key = e.which;
+        switch (key) {
+            case 32:
+                running = !running;
+                break;
+            case 43:
+                z = parseInt($('#speed').html());
+                z++;
+                if (z > 10) z = 1;
+                $('#speed').html(z);
+                break;
+            case 45:
+                z = parseInt($('#speed').html());
+                z--;
+                if (z < 1) z = 10;
+                $('#speed').html(z);
+                break;
+        }
+        console.log(key);
+    });
 </script>
 
