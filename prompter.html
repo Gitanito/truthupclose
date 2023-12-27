@@ -2,7 +2,11 @@
 <script src="jquery-ui.js"></script>
 <style>
     body {
-        background: black;
+        background-color: black;
+        background-image: url("img/eyes.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
         color: white;
         font-family: "Arial";
     }
@@ -17,14 +21,19 @@
         background-color: #ddd;
         border-radius: 20px;
     }
-    h1 {
+    .flip {
         transform: scale(-1, 1);
-        color: #ffffff;
         -moz-transform: scale(-1, 1);
         -webkit-transform: scale(-1, 1);
         -o-transform: scale(-1, 1);
         -ms-transform: scale(-1, 1);
         transform: scale(-1, 1);
+    }
+
+    h1 {
+        font-weight: lighter;
+        color: #ffffff;
+        animation: primary 3s linear infinite;
     }
     #target {
         position: fixed;
@@ -35,18 +44,54 @@
         width: 40px;
         height: 40px;
     }
+
+    #speed {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        border: white 1px dashed;
+    }
+
+    #run {
+        position: fixed;
+        bottom: 10px;
+        left: 50px;
+        border: white 1px dashed;
+    }
 </style>
 
 <form method="post">
     <textarea id="ptext" name="ptext"></textarea>
 </form>
-<h1 id="out"></h1>
+<h1 id="out" class="flip"></h1>
 <div id="target"></div>
+<div id="run" class="flip">Start/Stop</div>
+<div id="speed" class="flip">3</div>
 
 <script>
     $( "#target" ).draggable();
     $('#ptext').on("keyup", function () {
-        $('#out').html($('#ptext').val().replaceAll('\n','<br>'));
+        $('#out').html('<br><br><br><br>' + $('#ptext').val().replaceAll('\n','<br><br>').replaceAll('! ','!<br><br>').replaceAll('. ','.<br><br>').replaceAll(', ',',<br><br>').replaceAll('? ','?<br><br>').replaceAll(': ',':<br><br>') + '<br><br><br><br>');
+    })
+
+    let running = false;
+
+    window.setInterval(function(){
+        if (running) {
+            let t = $('body').height();
+            let old = $(document).scrollTop();
+            $(document).scrollTop(old + parseInt($('#speed').html()));
+        }
+    }, 100);
+
+    $('#speed').on('click', function(){
+        let z = parseInt($('#speed').html());
+        z++;
+        if (z > 10) z = 1;
+        $('#speed').html(z);
+    })
+    $('#run').on('click', function(){
+        running = !running;
     })
 </script>
 
