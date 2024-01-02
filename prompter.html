@@ -1,5 +1,6 @@
 <script src="jquery.min.js"></script>
 <script src="jquery-ui.js"></script>
+
 <style>
     body {
         background-color: black;
@@ -60,7 +61,14 @@
     #run {
         position: fixed;
         bottom: 10px;
-        left: 50px;
+        left: 80px;
+        border: white 1px dashed;
+    }
+
+    #flipscreen {
+        position: fixed;
+        bottom: 10px;
+        left: 250px;
         border: white 1px dashed;
     }
 </style>
@@ -70,10 +78,29 @@
 </form>
 <h1 id="out" class="flip"></h1>
 <div id="target"></div>
-<div id="run" class="flip">Start/Stop</div>
-<div id="speed" class="flip">3</div>
+<div id="run" class="flip">Start/Stop (Space)</div>
+<div id="speed" class="flip">3 (+/-)</div>
+<div id="flipscreen" class="flip">Flip (f)</div>
+
 
 <script>
+    let fpos_pointer = -1;
+    let fpos = [[-1,1],[-1,-1],[1,-1],[1,1]];
+
+    function flipscreen() {
+        fpos_pointer++;
+        if (fpos_pointer > 3) fpos_pointer = 0;
+
+        let r = fpos[fpos_pointer][0] + ',' + fpos[fpos_pointer][1];
+        $(".flip").css({
+            '-webkit-transform' : 'scale(' + r + ')',
+            '-moz-transform'    : 'scale(' + r + ')',
+            '-ms-transform'     : 'scale(' + r + ')',
+            '-o-transform'      : 'scale(' + r + ')',
+            'transform'         : 'scale(' + r + ')'
+        });
+    }
+
     $( "#target" ).draggable();
     $('#ptext').on("keyup", function () {
         $('#out').html('<br><br><br><br>' + $('#ptext').val().replaceAll('\n','<br><br>').replaceAll('! ','!<br><br>').replaceAll('. ','.<br><br>').replaceAll(', ',',<br><br>').replaceAll('? ','?<br><br>').replaceAll(': ',':<br><br>') + '<br><br><br><br>');
@@ -98,6 +125,9 @@
     $('#run').on('click', function(){
         running = !running;
     });
+    $('#flipscreen').on('click', function(){
+        flipscreen();
+    });
 
     $(window).keypress(function(e) {
         e.preventDefault();
@@ -117,6 +147,9 @@
                 z--;
                 if (z < 1) z = 10;
                 $('#speed').html(z);
+                break;
+            case 102:
+                flipscreen();
                 break;
         }
         console.log(key);
