@@ -344,10 +344,9 @@ function start() {
                 }
             }
             if (typeof list[runningindex].program[p].file !== "undefined") {
-                rvaudio = new Audio(list[runningindex].program[p].file);
-                rvaudioplayed = true;
-                rvaudio.loop = false;
-                rvaudio.play();
+                rvaudio[p] = new Audio(list[runningindex].program[p].file);
+                rvaudio[p].loop = false;
+                rvaudio[p].play();
             }
         }
         duration = list[runningindex].durationsec / 60;

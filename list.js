@@ -2504,36 +2504,6 @@ list = [
         ]
     },
     {
-        "date": "2023-09-27",
-        "type": "program",
-        "group": "11",
-        "col": "#259de8",
-        "freq": [38 * 8 + 2.7166, 38 * 8, 38 * 4, 38 * 8 + 8.15, 38 * 8 + 8.15 + 2.7166], // Left 1, Left 2, Center, Right 1, Right 2
-        "vol": [.4, .4, .5, .4, .4],
-        "pan": [-1, -1, 0, 1, 1],
-        "name": "30 Min ",
-        "de": "Sweet Spot|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 8.1Hz syncronisiert wird.",
-        "en": "Sweet Spot|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 8.1Hz.",
-        "es": "Sweet Spot|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 8.1 Hz.",
-        "fr": "Sweet Spot|La base de 38 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 8.1 Hz.",
-        "it": "Sweet Spot|La base di 38Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 8.1Hz.",
-        "hr": "Sweet Spot|Baza od 38 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 8.1 Hz.",
-        "tags": "1 2 3",
-        "img": "img/galaxy-3608029_640_.jpg",
-        "durationsec": 30 * 60,
-        "program": [
-            {
-                "startsec": 1,
-                "freq": [38 * 8 + 2.72, 38 * 8, 38 * 4, 38 * 8 + 8.15, 38 * 8 + 8.15 + 2.72], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .4, .5, .4, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "changespeedsec": 60 * 3,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
-                "loop": 10
-            }
-        ]
-    },
-    {
         "date": "2024-03-22",
         "type": "program",
         "group": "11",
@@ -2553,7 +2523,7 @@ list = [
         "durationsec": 90 * 60,
         "program": [
             {
-                "startsec": 1,
+                "startsec": 20,
                 "freq": [38 * 6 + 4, 38 * 6, 38 * 4, 38 * 6 + 4, 38 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
@@ -2563,20 +2533,21 @@ list = [
                 "loop": 1
             },
             {
-                "startsec": 60 * 5,
+                "startsec": 60 * 1,
                 "freq": [38 * 6 + 4, 38 * 6, 38 * 4, 38 * 6 + 4, 38 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/start/Leon.mp3",
+                "file": "mp3/rv/de/color/Leon.mp3",
                 "changespeedsec": 10,
                 "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
-                "startsec": 60 * 6,
+                "startsec": 60 * 2,
                 "freq": [38 * 6 + 4, 38 * 6, 38 * 4, 38 * 6 + 4, 38 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
+                "file": "mp3/rv/de/end/Leon.mp3",
                 "changespeedsec": 10,
                 "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
