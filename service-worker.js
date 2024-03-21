@@ -1,5 +1,5 @@
 
-const newversion = '20231006104027';
+const newversion = '20240322002730';
 
 const cacheName = 'vibrations';
 
@@ -16,6 +16,7 @@ const filesToCache = [
 'favicon.ico',
 'fullboost.html',
 'index.html',
+'jquery-ui.js',
 'jquery.min.js',
 'list.js',
 'manifest.json',
@@ -24,6 +25,7 @@ const filesToCache = [
 'papaparse.min.js',
 'podcasts.html',
 'programs.html',
+'prompter.html',
 'service-worker.js',
 'singlesound.html',
 'sound.html',
@@ -113,6 +115,7 @@ const filesToCache = [
 'img/eye-g92873dafd_640.jpg',
 'img/eye-gc16197ec0_640.jpg',
 'img/eye-gd05c61b68_640.jpg',
+'img/eyes.png',
 'img/favicon-16x16.png',
 'img/favicon-32x32.png',
 'img/favicon.ico',
@@ -221,6 +224,7 @@ const filesToCache = [
 'img/play.png',
 'img/pointing-gd2ad379fc_640.jpg',
 'img/positive-g363c7b752_1280.jpg',
+'img/prompterbg.png',
 'img/psychology-6232517_640_.jpg',
 'img/psychology-6232520_640_.jpg',
 'img/room-g791600391_1280.jpg',

@@ -25,6 +25,8 @@ let runningindex = null;
 let timeoutlist = [];
 let bell = null;
 let bellplayed = false;
+let rvaudio = null;
+let rvaudioplayed = false;
 
     let minutesControl = null;
 let volumeControl = null;
@@ -341,12 +343,17 @@ function start() {
                     );
                 }
             }
+            if (typeof list[runningindex].program[p].file !== "undefined") {
+                rvaudio = new Audio(list[runningindex].program[p].file);
+                rvaudioplayed = true;
+                rvaudio.loop = false;
+                rvaudio.play();
+            }
         }
         duration = list[runningindex].durationsec / 60;
     } else {
         duration = minutesControl.value;
     }
-
     startsec = Date.now();
     endsec = startsec + (duration * 60000);
 
@@ -414,6 +421,8 @@ function stop() {
         runningindex = null;
         bell = null;
         bellplayed = false;
+        rvaudio = null;
+        rvaudioplayed = false;
 
         try {
 
