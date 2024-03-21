@@ -344,10 +344,17 @@ function start() {
                 }
             }
             if (typeof list[runningindex].program[p].file !== "undefined") {
-                rvaudio = null;
-                rvaudio = new Audio(list[runningindex].program[p].file);
-                rvaudio.loop = false;
-                rvaudio.play();
+                timeoutlist.push(
+                    window.setTimeout(
+                        function () {
+                            rvaudio = null;
+                            rvaudio = new Audio(list[runningindex].program[p].file);
+                            rvaudio.loop = false;
+                            rvaudio.play();
+                        },
+                        (startsec + (list[runningindex].program[p].changespeedsec) + (Math.floor(Math.random() * 10)) ) * 1000
+                    )
+                );
             }
         }
         duration = list[runningindex].durationsec / 60;
