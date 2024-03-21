@@ -2523,7 +2523,7 @@ list = [
         "durationsec": 90 * 60,
         "program": [
             {
-                "startsec": 20,
+                "startsec": 5,
                 "freq": [38 * 6 + 4, 38 * 6, 38 * 4, 38 * 6 + 4, 38 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],

@@ -344,9 +344,10 @@ function start() {
                 }
             }
             if (typeof list[runningindex].program[p].file !== "undefined") {
-                rvaudio[p] = new Audio(list[runningindex].program[p].file);
-                rvaudio[p].loop = false;
-                rvaudio[p].play();
+                rvaudio = null;
+                rvaudio = new Audio(list[runningindex].program[p].file);
+                rvaudio.loop = false;
+                rvaudio.play();
             }
         }
         duration = list[runningindex].durationsec / 60;
