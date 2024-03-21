@@ -352,7 +352,7 @@ function start() {
                             rvaudio.loop = false;
                             rvaudio.play();
                         },
-                        (startsec + (list[runningindex].program[p].changespeedsec) + (Math.floor(Math.random() * 10)) ) * 1000
+                        (startsec + (list[runningindex].program[p].changespeedsec) ) * 1000
                     )
                 );
             }
