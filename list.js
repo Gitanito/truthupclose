@@ -2507,8 +2507,8 @@ list = [
         "date": "2024-03-22",
         "type": "program",
         "group": "11",
-        "col": "#09286c",
-        "freq": [38 * 6 + 5, 38 * 6, 38 * 4, 38 * 6 + 5, 38 * 6 + 10], // Left 1, Left 2, Center, Right 1, Right 2
+        "col": "#a4954b",
+        "freq": [38 * 6 + 4, 38 * 6, 38 * 4, 38 * 6 + 4, 38 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
         "name": "RV DE Leon ",
@@ -2523,7 +2523,7 @@ list = [
         "durationsec": 19 * 60,
         "program": [
             {
-                "startsec": 5,
+                "startsec": 30,
                 "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4.5, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
