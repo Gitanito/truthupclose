@@ -2508,208 +2508,189 @@ list = [
         "type": "program",
         "group": "11",
         "col": "#a4954b",
-        "freq": [38 * 6 + 4, 38 * 6, 38 * 4, 38 * 6 + 4, 38 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
+        "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
-        "name": "RV DE Leon ",
-        "de": "RV Test|Die Basis von 40Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
-        "en": "RV Test|The base of 40Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
-        "es": "RV Test|La base de 40 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4.5 Hz.",
-        "fr": "RV Test|La base de 40 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 4.5 Hz.",
-        "it": "RV Test|La base di 40Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 4.5Hz.",
-        "hr": "RV Test|Baza od 40 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 4.5 Hz.",
+        "name": "19 Min RV ",
+        "de": "Remote Viewing DE Leon|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
+        "en": "Remote Viewing DE Leon|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
+        "es": "Remote Viewing DE Leon|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4.5 Hz.",
+        "fr": "Remote Viewing DE Leon|La base de 38 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 4.5 Hz.",
+        "it": "Remote Viewing DE Leon|La base di 38Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 4.5Hz.",
+        "hr": "Remote Viewing DE Leon|Baza od 38 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 4.5 Hz.",
         "tags": "1 2 3",
-        "img": "img/bullet-443852_640_.jpg",
+        "img": "img/remoteview.jpg",
         "durationsec": 19 * 60,
         "program": [
             {
                 "startsec": 30,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4.5, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/start/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 1,
-                "freq": [38 * 6 + 4, 38 * 6, 38 * 4, 38 * 6 + 4, 38 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/question/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 2,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4.5, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/targetnumber/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 3,
-                "freq": [38 * 6 + 4, 38 * 6, 38 * 4, 38 * 6 + 4, 38 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/color/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 4,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4.5, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/targetnumber/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 5,
-                "freq": [38 * 6 + 4, 38 * 6, 38 * 4, 38 * 6 + 4, 38 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/surface/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 6,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4.5, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/targetnumber/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 7,
-                "freq": [38 * 6 + 4, 38 * 6, 38 * 4, 38 * 6 + 4, 38 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/form/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 8,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4.5, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/movement/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 9,
-                "freq": [38 * 6 + 4, 38 * 6, 38 * 4, 38 * 6 + 4, 38 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/type/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 10,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4.5, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/detail/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 11,
-                "freq": [38 * 6 + 4, 38 * 6, 38 * 4, 38 * 6 + 4, 38 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/targetnumber/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 12,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4.5, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/environment/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 13,
-                "freq": [38 * 6 + 4, 38 * 6, 38 * 4, 38 * 6 + 4, 38 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/consistency/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 14,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4.5, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/targetnumber/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 15,
-                "freq": [38 * 6 + 4, 38 * 6, 38 * 4, 38 * 6 + 4, 38 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/material/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 16,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4.5, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/purpose/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 17,
-                "freq": [38 * 6 + 4, 38 * 6, 38 * 4, 38 * 6 + 4, 38 * 6 + 8], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/moreinfo/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             },
             {
                 "startsec": 60 * 18,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4.5, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .5, .5, .5, .4],
                 "pan": [-1, -1, 0, 1, 1],
                 "file": "mp3/rv/de/end/Leon.mp3",
                 "changespeedsec": 10,
-                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 1
             }
         ]

@@ -1,5 +1,5 @@
 
-const newversion = '20240322090406';
+const newversion = '20240322115522';
 
 const cacheName = 'vibrations';
 
@@ -227,6 +227,7 @@ const filesToCache = [
 'img/prompterbg.png',
 'img/psychology-6232517_640_.jpg',
 'img/psychology-6232520_640_.jpg',
+'img/remoteview.jpg',
 'img/room-g791600391_1280.jpg',
 'img/saint-ga85fbbdfc_640.jpg',
 'img/school-gec7aa12a9_640.jpg',
