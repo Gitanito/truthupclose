@@ -347,12 +347,12 @@ function start() {
                 timeoutlist.push(
                     window.setTimeout(
                         function () {
-                            rvaudio = null;
+                            console.log("playing");
                             rvaudio = new Audio(list[runningindex].program[p].file);
                             rvaudio.loop = false;
                             rvaudio.play();
                         },
-                        (startsec + (list[runningindex].program[p].changespeedsec) ) * 1000
+                        (startsec + 1 ) * 1000
                     )
                 );
             }
