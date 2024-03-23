@@ -1,5 +1,5 @@
 
-const newversion = '20240322115522';
+const newversion = '20240323233302';
 
 const cacheName = 'vibrations';
 
@@ -26,6 +26,7 @@ const filesToCache = [
 'podcasts.html',
 'programs.html',
 'prompter.html',
+'remoteviewing.html',
 'service-worker.js',
 'singlesound.html',
 'sound.html',
@@ -112,6 +113,7 @@ const filesToCache = [
 'img/eet-g0d5463b75_1280.jpg',
 'img/en.png',
 'img/es.png',
+'img/eye-3778179_640.jpg',
 'img/eye-g92873dafd_640.jpg',
 'img/eye-gc16197ec0_640.jpg',
 'img/eye-gd05c61b68_640.jpg',
@@ -260,6 +262,11 @@ const filesToCache = [
 'img/upper-body-g61a50f82f_640.jpg',
 'img/vacation-g4cdf340f8_1280.jpg',
 'img/virtual-reality-g843fa476e_1280.jpg',
+'img/watercolor-1210307_640.jpg',
+'img/watercolor-1210341_640.jpg',
+'img/watercolor-1210345_640.jpg',
+'img/watercolor-1210349_640.jpg',
+'img/watercolor-1210353_640.jpg',
 'img/wave-378786_640.jpg',
 'img/wave-8033273_1920_.jpg',
 'img/wave-g3268afc0d_1280.jpg',

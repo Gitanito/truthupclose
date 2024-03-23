@@ -123,6 +123,7 @@ $fillupfiles = [
     'binaural.html' => ["bin"],
     'fullboost.html' => ["five"],
     'programs.html' => ["program"],
+    'remoteviewing.html' => ["remoteviewing"],
     'tools.html' => [],
     'singlesound.html' => [],
     'bodysound.html' => []

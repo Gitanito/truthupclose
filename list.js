@@ -2503,195 +2503,665 @@ list = [
             }
         ]
     },
+
+
     {
         "date": "2024-03-22",
-        "type": "program",
-        "group": "11",
+        "type": "remoteviewing",
+        "group": "12",
         "col": "#a4954b",
         "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
-        "name": "19 Min RV ",
-        "de": "Remote Viewing DE Leon|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
-        "en": "Remote Viewing DE Leon|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
-        "es": "Remote Viewing DE Leon|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4.5 Hz.",
-        "fr": "Remote Viewing DE Leon|La base de 38 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 4.5 Hz.",
-        "it": "Remote Viewing DE Leon|La base di 38Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 4.5Hz.",
-        "hr": "Remote Viewing DE Leon|Baza od 38 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 4.5 Hz.",
+        "name": "Hans Deutsch",
+        "de": "19 Min Remote Viewing Session|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
+        "en": "19 Min Remote Viewing Session|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
+        "es": "19 Min Remote Viewing Session|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4.5 Hz.",
+        "fr": "19 Min Remote Viewing Session|La base de 38 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 4.5 Hz.",
+        "it": "19 Min Remote Viewing Session|La base di 38Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 4.5Hz.",
+        "hr": "19 Min Remote Viewing Session|Baza od 38 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 4.5 Hz.",
         "tags": "1 2 3",
-        "img": "img/remoteview.jpg",
+        "img": "img/watercolor-1210341_640.jpg",
         "durationsec": 19 * 60,
         "program": [
             {
+                "startsec": 3,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/entry/Hans.mp3"
+            },
+            {
                 "startsec": 30,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/start/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/start/Hans.mp3"
             },
             {
                 "startsec": 60 * 1,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/question/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/question/Hans.mp3"
             },
             {
                 "startsec": 60 * 2,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/targetnumber/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/targetnumber/Hans.mp3"
             },
             {
                 "startsec": 60 * 3,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/color/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Hans.mp3",
+                "file": "mp3/rv/de/color/Hans.mp3"
             },
             {
                 "startsec": 60 * 4,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/targetnumber/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Hans.mp3"
             },
             {
                 "startsec": 60 * 5,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/surface/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Hans.mp3",
+                "file": "mp3/rv/de/surface/Hans.mp3"
             },
             {
                 "startsec": 60 * 6,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/targetnumber/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Hans.mp3"
             },
             {
                 "startsec": 60 * 7,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/form/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Hans.mp3",
+                "file": "mp3/rv/de/form/Hans.mp3"
             },
             {
                 "startsec": 60 * 8,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/movement/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Hans.mp3",
+                "file": "mp3/rv/de/movement/Hans.mp3"
             },
             {
                 "startsec": 60 * 9,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/type/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Hans.mp3",
+                "file": "mp3/rv/de/type/Hans.mp3"
             },
             {
                 "startsec": 60 * 10,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/detail/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Hans.mp3"
             },
             {
                 "startsec": 60 * 11,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/targetnumber/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Hans.mp3",
+                "file": "mp3/rv/de/detail/Hans.mp3"
             },
             {
                 "startsec": 60 * 12,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/environment/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Hans.mp3",
+                "file": "mp3/rv/de/environment/Hans.mp3"
             },
             {
                 "startsec": 60 * 13,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/consistency/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Hans.mp3",
+                "file": "mp3/rv/de/consistency/Hans.mp3"
             },
             {
                 "startsec": 60 * 14,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/targetnumber/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Hans.mp3"
             },
             {
                 "startsec": 60 * 15,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/material/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Hans.mp3",
+                "file": "mp3/rv/de/material/Hans.mp3"
             },
             {
                 "startsec": 60 * 16,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/purpose/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Hans.mp3",
+                "file": "mp3/rv/de/purpose/Hans.mp3"
             },
             {
                 "startsec": 60 * 17,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/moreinfo/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Hans.mp3",
+                "file": "mp3/rv/de/moreinfo/Hans.mp3"
             },
             {
                 "startsec": 60 * 18,
-                "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
-                "pan": [-1, -1, 0, 1, 1],
-                "file": "mp3/rv/de/end/Leon.mp3",
-                "changespeedsec": 10,
-                "loop": 1
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/end/Hans.mp3"
+            }
+        ]
+    },
+    {
+        "date": "2024-03-22",
+        "type": "remoteviewing",
+        "group": "12",
+        "col": "#512396",
+        "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "Lina Deutsch ",
+        "de": "19 Min Remote Viewing Session|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
+        "en": "19 Min Remote Viewing Session|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
+        "es": "19 Min Remote Viewing Session|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4.5 Hz.",
+        "fr": "19 Min Remote Viewing Session|La base de 38 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 4.5 Hz.",
+        "it": "19 Min Remote Viewing Session|La base di 38Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 4.5Hz.",
+        "hr": "19 Min Remote Viewing Session|Baza od 38 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 4.5 Hz.",
+        "tags": "1 2 3",
+        "img": "img/watercolor-1210345_640.jpg",
+        "durationsec": 19 * 60,
+        "program": [
+            {
+                "startsec": 3,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/entry/Lina.mp3"
+            },
+            {
+                "startsec": 30,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/start/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 1,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/question/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 2,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/targetnumber/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 3,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "mp3/rv/de/color/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 4,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 5,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "mp3/rv/de/surface/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 6,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 7,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "mp3/rv/de/form/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 8,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "mp3/rv/de/movement/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 9,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "mp3/rv/de/type/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 10,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 11,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "mp3/rv/de/detail/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 12,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "mp3/rv/de/environment/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 13,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "mp3/rv/de/consistency/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 14,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 15,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "mp3/rv/de/material/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 16,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "mp3/rv/de/purpose/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 17,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "mp3/rv/de/moreinfo/Lina.mp3"
+            },
+            {
+                "startsec": 60 * 18,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/end/Lina.mp3"
+            }
+        ]
+    },
+    {
+        "date": "2024-03-22",
+        "type": "remoteviewing",
+        "group": "12",
+        "col": "#9eee54",
+        "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "Margarete Deutsch ",
+        "de": "19 Min Remote Viewing Session|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
+        "en": "19 Min Remote Viewing Session|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
+        "es": "19 Min Remote Viewing Session|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4.5 Hz.",
+        "fr": "19 Min Remote Viewing Session|La base de 38 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 4.5 Hz.",
+        "it": "19 Min Remote Viewing Session|La base di 38Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 4.5Hz.",
+        "hr": "19 Min Remote Viewing Session|Baza od 38 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 4.5 Hz.",
+        "tags": "1 2 3",
+        "img": "img/watercolor-1210353_640.jpg",
+        "durationsec": 19 * 60,
+        "program": [
+            {
+                "startsec": 3,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/entry/Margarete.mp3"
+            },
+            {
+                "startsec": 30,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/start/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 1,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/question/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 2,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/targetnumber/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 3,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Margarete.mp3",
+                "file": "mp3/rv/de/color/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 4,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 5,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Margarete.mp3",
+                "file": "mp3/rv/de/surface/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 6,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 7,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Margarete.mp3",
+                "file": "mp3/rv/de/form/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 8,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Margarete.mp3",
+                "file": "mp3/rv/de/movement/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 9,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Margarete.mp3",
+                "file": "mp3/rv/de/type/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 10,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 11,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Margarete.mp3",
+                "file": "mp3/rv/de/detail/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 12,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Margarete.mp3",
+                "file": "mp3/rv/de/environment/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 13,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Margarete.mp3",
+                "file": "mp3/rv/de/consistency/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 14,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 15,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Margarete.mp3",
+                "file": "mp3/rv/de/material/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 16,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Margarete.mp3",
+                "file": "mp3/rv/de/purpose/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 17,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Margarete.mp3",
+                "file": "mp3/rv/de/moreinfo/Margarete.mp3"
+            },
+            {
+                "startsec": 60 * 18,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/end/Margarete.mp3"
+            }
+        ]
+    },
+    {
+        "date": "2024-03-22",
+        "type": "remoteviewing",
+        "group": "12",
+        "col": "#bd9eda",
+        "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "Maximilian Deutsch ",
+        "de": "19 Min Remote Viewing Session|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
+        "en": "19 Min Remote Viewing Session|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
+        "es": "19 Min Remote Viewing Session|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4.5 Hz.",
+        "fr": "19 Min Remote Viewing Session|La base de 38 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 4.5 Hz.",
+        "it": "19 Min Remote Viewing Session|La base di 38Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 4.5Hz.",
+        "hr": "19 Min Remote Viewing Session|Baza od 38 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 4.5 Hz.",
+        "tags": "1 2 3",
+        "img": "img/watercolor-1210349_640.jpg",
+        "durationsec": 19 * 60,
+        "program": [
+            {
+                "startsec": 3,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/entry/Maximilian.mp3"
+            },
+            {
+                "startsec": 30,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/start/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 1,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/question/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 2,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/targetnumber/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 3,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Maximilian.mp3",
+                "file": "mp3/rv/de/color/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 4,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 5,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Maximilian.mp3",
+                "file": "mp3/rv/de/surface/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 6,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 7,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Maximilian.mp3",
+                "file": "mp3/rv/de/form/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 8,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Maximilian.mp3",
+                "file": "mp3/rv/de/movement/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 9,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Maximilian.mp3",
+                "file": "mp3/rv/de/type/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 10,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 11,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Maximilian.mp3",
+                "file": "mp3/rv/de/detail/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 12,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Maximilian.mp3",
+                "file": "mp3/rv/de/environment/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 13,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Maximilian.mp3",
+                "file": "mp3/rv/de/consistency/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 14,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 15,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Maximilian.mp3",
+                "file": "mp3/rv/de/material/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 16,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Maximilian.mp3",
+                "file": "mp3/rv/de/purpose/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 17,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Maximilian.mp3",
+                "file": "mp3/rv/de/moreinfo/Maximilian.mp3"
+            },
+            {
+                "startsec": 60 * 18,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/end/Maximilian.mp3"
+            }
+        ]
+    },
+    {
+        "date": "2024-03-22",
+        "type": "remoteviewing",
+        "group": "12",
+        "col": "#b1e55b",
+        "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "Laura Deutsch ",
+        "de": "19 Min Remote Viewing Session|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
+        "en": "19 Min Remote Viewing Session|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
+        "es": "19 Min Remote Viewing Session|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4.5 Hz.",
+        "fr": "19 Min Remote Viewing Session|La base de 38 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 4.5 Hz.",
+        "it": "19 Min Remote Viewing Session|La base di 38Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 4.5Hz.",
+        "hr": "19 Min Remote Viewing Session|Baza od 38 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 4.5 Hz.",
+        "tags": "1 2 3",
+        "img": "img/watercolor-1210307_640.jpg",
+        "durationsec": 19 * 60,
+        "program": [
+            {
+                "startsec": 3,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/entry/Laura.mp3"
+            },
+            {
+                "startsec": 30,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/start/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 1,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/question/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 2,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/targetnumber/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 3,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Laura.mp3",
+                "file": "mp3/rv/de/color/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 4,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 5,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Laura.mp3",
+                "file": "mp3/rv/de/surface/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 6,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 7,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Laura.mp3",
+                "file": "mp3/rv/de/form/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 8,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Laura.mp3",
+                "file": "mp3/rv/de/movement/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 9,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Laura.mp3",
+                "file": "mp3/rv/de/type/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 10,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 11,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Laura.mp3",
+                "file": "mp3/rv/de/detail/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 12,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Laura.mp3",
+                "file": "mp3/rv/de/environment/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 13,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Laura.mp3",
+                "file": "mp3/rv/de/consistency/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 14,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/targetnumber/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 15,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Laura.mp3",
+                "file": "mp3/rv/de/material/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 16,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Laura.mp3",
+                "file": "mp3/rv/de/purpose/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 17,
+                "maxrandomsec": 20,
+                "prefile": "mp3/rv/de/impression/Laura.mp3",
+                "file": "mp3/rv/de/moreinfo/Laura.mp3"
+            },
+            {
+                "startsec": 60 * 18,
+                "maxrandomsec": 20,
+                "file": "mp3/rv/de/end/Laura.mp3"
             }
         ]
     }

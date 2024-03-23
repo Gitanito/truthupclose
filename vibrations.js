@@ -117,6 +117,14 @@ let cats = {
         "hr": "Programa"
     },
 
+    "12": {
+        "de": "Remote Viewing",
+        "en": "Remote Viewing",
+        "es": "Remote Viewing",
+        "fr": "Remote Viewing",
+        "it": "Remote Viewing",
+        "hr": "Remote Viewing"
+    },
 }
 
 function setCookie(cname, cvalue, exdays) {
@@ -312,47 +320,66 @@ function start() {
     if (typeof list[runningindex].program !== "undefined") {
         for (let p = 0; p < list[runningindex].program.length; p++) {
             let loopme = 1;
-            if (list[runningindex].program[p].loop > 1) {
+            if (typeof list[runningindex].program[p].loop !== "undefined" && list[runningindex].program[p].loop > 1) {
                 loopme = list[runningindex].program[p].loop;
             }
             let startsec = list[runningindex].program[p].startsec;
             for (let l = 0; l < loopme; l++) {
-                timeoutlist.push(
-                    window.setTimeout(
-                        function () {
-                            for (let o = 0; o < list[runningindex].program[p].freq.length; o++) {
-
-                                modify(oscillators[o], gains[o], pans[o], list[runningindex].program[p].freq[o], list[runningindex].program[p].vol[o], list[runningindex].program[p].pan[o], list[runningindex].program[p].changespeedsec, list[runningindex].program[p].style);
-
-                            }
-                        },
-                        (startsec + (list[runningindex].program[p].changespeedsec * l) ) * 1000
-                    )
-                );
-                if (list[runningindex].program[p].style !== "peak" && loopme > 1 && l < loopme - 1) {
+                if (typeof list[runningindex].program[p].freq !== "undefined") {
                     timeoutlist.push(
                         window.setTimeout(
                             function () {
-                                for (let o = 0; o < runningfreq.freq.length; o++) {
+                                for (let o = 0; o < list[runningindex].program[p].freq.length; o++) {
 
-                                    modify(oscillators[o], gains[o], pans[o], runningfreq.freq[o], runningfreq.vol[o], runningfreq.pan[o], .01, "linear");
+                                    modify(oscillators[o], gains[o], pans[o], list[runningindex].program[p].freq[o], list[runningindex].program[p].vol[o], list[runningindex].program[p].pan[o], list[runningindex].program[p].changespeedsec, list[runningindex].program[p].style);
+
                                 }
                             },
-                            (startsec + (list[runningindex].program[p].changespeedsec * (l + 1)) + .1 ) * 1000
+                            (startsec + (list[runningindex].program[p].changespeedsec * l)) * 1000
                         )
                     );
+
+                    if (list[runningindex].program[p].style !== "peak" && loopme > 1 && l < loopme - 1) {
+                        timeoutlist.push(
+                            window.setTimeout(
+                                function () {
+                                    for (let o = 0; o < runningfreq.freq.length; o++) {
+
+                                        modify(oscillators[o], gains[o], pans[o], runningfreq.freq[o], runningfreq.vol[o], runningfreq.pan[o], .01, "linear");
+                                    }
+                                },
+                                (startsec + (list[runningindex].program[p].changespeedsec * (l + 1)) + .1) * 1000
+                            )
+                        );
+                    }
                 }
             }
             if (typeof list[runningindex].program[p].file !== "undefined") {
+                let randomt = 0;
+                if (typeof list[runningindex].program[p].maxrandomsec !== "undefined") {
+                    randomt = Math.round(Math.random() * (list[runningindex].program[p].maxrandomsec - 1));
+                }
+                if (typeof list[runningindex].program[p].prefile !== "undefined") {
+                    timeoutlist.push(
+                        window.setTimeout(
+                            function () {
+                                rvaudio = new Audio(list[runningindex].program[p].prefile);
+                                rvaudio.loop = false;
+                                rvaudio.play();
+                            },
+                            (startsec  + randomt) * 1000
+                        )
+                    );
+                    randomt += 2;
+                }
                 timeoutlist.push(
                     window.setTimeout(
                         function () {
-                            console.log("playing");
                             rvaudio = new Audio(list[runningindex].program[p].file);
                             rvaudio.loop = false;
                             rvaudio.play();
                         },
-                        (startsec + 1  + Math.round(Math.random() * 9)) * 1000
+                        (startsec  + randomt) * 1000
                     )
                 );
             }
