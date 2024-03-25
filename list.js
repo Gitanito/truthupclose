@@ -2794,7 +2794,7 @@ list = [
                 "file": "mp3/rv/de/entry/Lina.mp3"
             },
             {
-                "startsec": 10,
+                "startsec": 20,
                 "maxrandomsec": 0,
                 "file": "mp3/rv/de/start/Lina.mp3"
             },
