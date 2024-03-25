@@ -3172,7 +3172,7 @@ list = [
         "col": "#f33737",
         //"freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
         //"vol": [.4, .5, .5, .5, .4],
-        "freq": [38 * 8 + 2.72, 38 * 8, 38 * 4, 38 * 8 + 8.15, 38 * 8 + 8.15 + 2.72], // Left 1, Left 2, Center, Right 1, Right 2
+        "freq": [38 * 8 + 2.72, 38 * 8, 38, 38 * 8 + 8.15, 38 * 8 + 8.15 + 2.72], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .4, .5, .4, .4],
         "pan": [-1, -1, 0, 1, 1],
         "name": "IRT Lina Deutsch schnell",

@@ -1,5 +1,5 @@
 
-const newversion = '20240325194143';
+const newversion = '20240325195550';
 
 const cacheName = 'vibrations';
 
