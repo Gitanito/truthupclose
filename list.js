@@ -2773,138 +2773,6 @@ list = [
         "date": "2024-03-22",
         "type": "remoteviewing",
         "group": "12",
-        "col": "#512396",
-        "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-        "vol": [.4, .5, .5, .5, .4],
-        "pan": [-1, -1, 0, 1, 1],
-        "name": "IRT Lina Deutsch schnell",
-        "de": "10 Min Remote Viewing Session|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
-        "en": "10 Min Remote Viewing Session|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
-        "es": "10 Min Remote Viewing Session|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4.5 Hz.",
-        "fr": "10 Min Remote Viewing Session|La base de 38 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 4.5 Hz.",
-        "it": "10 Min Remote Viewing Session|La base di 38Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 4.5Hz.",
-        "hr": "10 Min Remote Viewing Session|Baza od 38 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 4.5 Hz.",
-        "tags": "1 2 3",
-        "img": "img/watercolor-1210345_640.jpg",
-        "durationsec": 10 * 60,
-        "program": [
-            {
-                "startsec": 3,
-                "maxrandomsec": 0,
-                "file": "mp3/rv/de/entry/Lina.mp3"
-            },
-            {
-                "startsec": 20,
-                "maxrandomsec": 0,
-                "file": "mp3/rv/de/start/Lina.mp3"
-            },
-            {
-                "startsec": 30,
-                "maxrandomsec": 0,
-                "file": "mp3/rv/de/question/Lina.mp3"
-            },
-            {
-                "startsec": 60,
-                "maxrandomsec": 0,
-                "file": "mp3/rv/de/targetnumber/Lina.mp3"
-            },
-            {
-                "startsec": 90,
-                "maxrandomsec": 10,
-                "prefile": "mp3/rv/de/impression/Lina.mp3",
-                "file": "mp3/rv/de/color/Lina.mp3"
-            },
-            {
-                "startsec": 120,
-                "maxrandomsec": 10,
-                "file": "mp3/rv/de/targetnumber/Lina.mp3"
-            },
-            {
-                "startsec": 150,
-                "maxrandomsec": 10,
-                "prefile": "mp3/rv/de/impression/Lina.mp3",
-                "file": "mp3/rv/de/surface/Lina.mp3"
-            },
-            {
-                "startsec": 180,
-                "maxrandomsec": 10,
-                "file": "mp3/rv/de/targetnumber/Lina.mp3"
-            },
-            {
-                "startsec": 210,
-                "maxrandomsec": 10,
-                "prefile": "mp3/rv/de/impression/Lina.mp3",
-                "file": "mp3/rv/de/form/Lina.mp3"
-            },
-            {
-                "startsec": 240,
-                "maxrandomsec": 10,
-                "prefile": "mp3/rv/de/impression/Lina.mp3",
-                "file": "mp3/rv/de/movement/Lina.mp3"
-            },
-            {
-                "startsec": 270,
-                "maxrandomsec": 10,
-                "prefile": "mp3/rv/de/impression/Lina.mp3",
-                "file": "mp3/rv/de/type/Lina.mp3"
-            },
-            {
-                "startsec": 300,
-                "maxrandomsec": 10,
-                "file": "mp3/rv/de/targetnumber/Lina.mp3"
-            },
-            {
-                "startsec": 330,
-                "maxrandomsec": 10,
-                "prefile": "mp3/rv/de/impression/Lina.mp3",
-                "file": "mp3/rv/de/detail/Lina.mp3"
-            },
-            {
-                "startsec": 360,
-                "maxrandomsec": 10,
-                "prefile": "mp3/rv/de/impression/Lina.mp3",
-                "file": "mp3/rv/de/environment/Lina.mp3"
-            },
-            {
-                "startsec": 390,
-                "maxrandomsec": 10,
-                "prefile": "mp3/rv/de/impression/Lina.mp3",
-                "file": "mp3/rv/de/consistency/Lina.mp3"
-            },
-            {
-                "startsec": 420,
-                "maxrandomsec": 10,
-                "file": "mp3/rv/de/targetnumber/Lina.mp3"
-            },
-            {
-                "startsec": 450,
-                "maxrandomsec": 10,
-                "prefile": "mp3/rv/de/impression/Lina.mp3",
-                "file": "mp3/rv/de/material/Lina.mp3"
-            },
-            {
-                "startsec": 480,
-                "maxrandomsec": 10,
-                "prefile": "mp3/rv/de/impression/Lina.mp3",
-                "file": "mp3/rv/de/purpose/Lina.mp3"
-            },
-            {
-                "startsec": 510,
-                "maxrandomsec": 10,
-                "prefile": "mp3/rv/de/impression/Lina.mp3",
-                "file": "mp3/rv/de/moreinfo/Lina.mp3"
-            },
-            {
-                "startsec": 540,
-                "maxrandomsec": 10,
-                "file": "mp3/rv/de/end/Lina.mp3"
-            }
-        ]
-    },
-    {
-        "date": "2024-03-22",
-        "type": "remoteviewing",
-        "group": "12",
         "col": "#9eee54",
         "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
@@ -3294,6 +3162,152 @@ list = [
                 "startsec": 60 * 18,
                 "maxrandomsec": 20,
                 "file": "mp3/rv/de/end/Laura.mp3"
+            }
+        ]
+    },
+    {
+        "date": "2024-03-22",
+        "type": "remoteviewing",
+        "group": "12",
+        "col": "#f33737",
+        //"freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+        //"vol": [.4, .5, .5, .5, .4],
+        "freq": [38 * 8 + 2.72, 38 * 8, 38 * 4, 38 * 8 + 8.15, 38 * 8 + 8.15 + 2.72], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .4, .5, .4, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "IRT Lina Deutsch schnell",
+        "de": "10 Min Remote Viewing Session|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 8.1Hz syncronisiert wird.",
+        "en": "10 Min Remote Viewing Session|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 8.1Hz.",
+        "es": "10 Min Remote Viewing Session|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 8.1 Hz.",
+        "fr": "10 Min Remote Viewing Session|La base de 38 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 8.1 Hz.",
+        "it": "10 Min Remote Viewing Session|La base di 38Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 8.1Hz.",
+        "hr": "10 Min Remote Viewing Session|Baza od 38 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 8.1 Hz.",
+        "tags": "1 2 3",
+        "img": "img/fractal-346127_640.jpg",
+        "durationsec": 10 * 60,
+        "randomfilelist": [
+            "mp3/rv/de/color/Lina.mp3",
+            "mp3/rv/de/surface/Lina.mp3",
+            "mp3/rv/de/movement/Lina.mp3",
+            "mp3/rv/de/form/Lina.mp3",
+            "mp3/rv/de/type/Lina.mp3",
+            "mp3/rv/de/detail/Lina.mp3",
+            "mp3/rv/de/environment/Lina.mp3",
+            "mp3/rv/de/consistency/Lina.mp3",
+            "mp3/rv/de/material/Lina.mp3",
+            "mp3/rv/de/purpose/Lina.mp3"
+        ],
+        "program": [
+            {
+                "startsec": 3,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/entry/Lina.mp3"
+            },
+            {
+                "startsec": 20,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/start/Lina.mp3"
+            },
+            {
+                "startsec": 30,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/question/Lina.mp3"
+            },
+            {
+                "startsec": 60,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/targetnumber/Lina.mp3"
+            },
+            {
+                "startsec": 90,
+                "maxrandomsec": 10,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "randomfilelist"
+            },
+            {
+                "startsec": 120,
+                "maxrandomsec": 10,
+                "file": "mp3/rv/de/targetnumber/Lina.mp3"
+            },
+            {
+                "startsec": 150,
+                "maxrandomsec": 10,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "randomfilelist"
+            },
+            {
+                "startsec": 180,
+                "maxrandomsec": 10,
+                "file": "mp3/rv/de/targetnumber/Lina.mp3"
+            },
+            {
+                "startsec": 210,
+                "maxrandomsec": 10,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "randomfilelist"
+            },
+            {
+                "startsec": 240,
+                "maxrandomsec": 10,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "randomfilelist"
+            },
+            {
+                "startsec": 270,
+                "maxrandomsec": 10,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "randomfilelist"
+            },
+            {
+                "startsec": 300,
+                "maxrandomsec": 10,
+                "file": "mp3/rv/de/targetnumber/Lina.mp3"
+            },
+            {
+                "startsec": 330,
+                "maxrandomsec": 10,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "randomfilelist"
+            },
+            {
+                "startsec": 360,
+                "maxrandomsec": 10,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "randomfilelist"
+            },
+            {
+                "startsec": 390,
+                "maxrandomsec": 10,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "randomfilelist"
+            },
+            {
+                "startsec": 420,
+                "maxrandomsec": 10,
+                "file": "mp3/rv/de/targetnumber/Lina.mp3"
+            },
+            {
+                "startsec": 450,
+                "maxrandomsec": 10,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "randomfilelist"
+            },
+            {
+                "startsec": 480,
+                "maxrandomsec": 10,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "randomfilelist"
+            },
+            {
+                "startsec": 510,
+                "maxrandomsec": 10,
+                "prefile": "mp3/rv/de/impression/Lina.mp3",
+                "file": "mp3/rv/de/moreinfo/Lina.mp3"
+            },
+            {
+                "startsec": 540,
+                "maxrandomsec": 10,
+                "file": "mp3/rv/de/end/Lina.mp3"
             }
         ]
     }
