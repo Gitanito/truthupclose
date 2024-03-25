@@ -1,5 +1,5 @@
 
-const newversion = '20240323233302';
+const newversion = '20240325091241';
 
 const cacheName = 'vibrations';
 
@@ -59,6 +59,7 @@ const filesToCache = [
 'img/abacus-g4f6c2fe99_640.jpg',
 'img/acne-g9679220a6_640.jpg',
 'img/adult-ge16ab3c40_640.jpg',
+'img/ai-generated-8620479_640.jpg',
 'img/ai-generated-g94ce76027_640.jpg',
 'img/android-chrome-192x192.png',
 'img/android-chrome-512x512.png',

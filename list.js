@@ -2513,7 +2513,7 @@ list = [
         "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
-        "name": "Hans Deutsch",
+        "name": "IRT Hans Deutsch",
         "de": "19 Min Remote Viewing Session|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
         "en": "19 Min Remote Viewing Session|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
         "es": "19 Min Remote Viewing Session|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4.5 Hz.",
@@ -2645,7 +2645,7 @@ list = [
         "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
-        "name": "Lina Deutsch ",
+        "name": "IRT Lina Deutsch",
         "de": "19 Min Remote Viewing Session|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
         "en": "19 Min Remote Viewing Session|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
         "es": "19 Min Remote Viewing Session|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4.5 Hz.",
@@ -2777,7 +2777,7 @@ list = [
         "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
-        "name": "Margarete Deutsch ",
+        "name": "IRT Margarete Deutsch",
         "de": "19 Min Remote Viewing Session|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
         "en": "19 Min Remote Viewing Session|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
         "es": "19 Min Remote Viewing Session|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4.5 Hz.",
@@ -2909,7 +2909,7 @@ list = [
         "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
-        "name": "Maximilian Deutsch ",
+        "name": "IRT Maximilian Deutsch",
         "de": "19 Min Remote Viewing Session|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
         "en": "19 Min Remote Viewing Session|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
         "es": "19 Min Remote Viewing Session|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4.5 Hz.",
@@ -3041,7 +3041,7 @@ list = [
         "freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
         "pan": [-1, -1, 0, 1, 1],
-        "name": "Laura Deutsch ",
+        "name": "IRT Laura Deutsch",
         "de": "19 Min Remote Viewing Session|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
         "en": "19 Min Remote Viewing Session|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
         "es": "19 Min Remote Viewing Session|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4.5 Hz.",

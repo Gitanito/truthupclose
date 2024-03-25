@@ -118,12 +118,12 @@ let cats = {
     },
 
     "12": {
-        "de": "Remote Viewing",
-        "en": "Remote Viewing",
-        "es": "Remote Viewing",
-        "fr": "Remote Viewing",
-        "it": "Remote Viewing",
-        "hr": "Remote Viewing"
+        "de": "Information Research Technique (IRT)",
+        "en": "Information Research Technique (IRT)",
+        "es": "Information Research Technique (IRT)",
+        "fr": "Information Research Technique (IRT)",
+        "it": "Information Research Technique (IRT)",
+        "hr": "Information Research Technique (IRT)"
     },
 }
 
@@ -370,7 +370,7 @@ function start() {
                             (startsec  + randomt) * 1000
                         )
                     );
-                    randomt += 2;
+                    randomt += 1;
                 }
                 timeoutlist.push(
                     window.setTimeout(
