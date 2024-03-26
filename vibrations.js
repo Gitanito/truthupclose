@@ -26,6 +26,7 @@ let timeoutlist = [];
 let bell = null;
 let bellplayed = false;
 let rvaudio = null;
+let rvaudiolist = null;
 let rvxaudio = null;
 let rvaudioplayed = false;
 
@@ -319,6 +320,10 @@ function start() {
 
 
     if (typeof list[runningindex].program !== "undefined") {
+        rvaudiolist = null;
+        if (typeof list[runningindex].randomfilelist === "object") {
+            rvaudiolist = list[runningindex].randomfilelist;
+        }
         for (let p = 0; p < list[runningindex].program.length; p++) {
             let loopme = 1;
             if (typeof list[runningindex].program[p].loop !== "undefined" && list[runningindex].program[p].loop > 1) {
@@ -377,9 +382,9 @@ function start() {
                     window.setTimeout(
                         function () {
                             let myaudiofile = list[runningindex].program[p].file;
-                            if (myaudiofile === "randomfilelist" && typeof list[runningindex].randomfilelist === "object") {
-                                list[runningindex].randomfilelist.sort(() => Math.random() - 0.5);
-                                myaudiofile = list[runningindex].randomfilelist.pop();
+                            if (myaudiofile === "randomfilelist" && rvaudiolist != null) {
+                                rvaudiolist.sort(() => Math.random() - 0.5);
+                                myaudiofile = rvaudiolist.pop();
                             }
                             rvaudio = new Audio(myaudiofile);
                             rvaudio.loop = false;
