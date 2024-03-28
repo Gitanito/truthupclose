@@ -322,7 +322,7 @@ function start() {
     if (typeof list[runningindex].program !== "undefined") {
         rvaudiolist = null;
         if (typeof list[runningindex].randomfilelist === "object") {
-            rvaudiolist = list[runningindex].randomfilelist;
+            rvaudiolist = list[runningindex].randomfilelist.slice();
         }
         for (let p = 0; p < list[runningindex].program.length; p++) {
             let loopme = 1;
