@@ -3201,7 +3201,8 @@ list = [
             {
                 "startsec": 3,
                 "maxrandomsec": 0,
-                "file": "mp3/rv/de/entry/Lina.mp3"
+                "prefile": "mp3/rv/de/entry/Lina.mp3",
+                "file": "randomfilelist"
             },
             {
                 "startsec": 20,
