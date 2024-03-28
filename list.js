@@ -3169,11 +3169,11 @@ list = [
         "date": "2024-03-22",
         "type": "remoteviewing",
         "group": "12",
-        "col": "#f33737",
-        //"freq": [38 * 6 + 4.5, 38 * 6, 38 * 4, 38 * 6 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-        //"vol": [.4, .5, .5, .5, .4],
-        "freq": [38 * 8 + 2.72, 38 * 8, 38, 38 * 8 + 8.15, 38 * 8 + 8.15 + 2.72], // Left 1, Left 2, Center, Right 1, Right 2
-        "vol": [.4, .4, .5, .4, .4],
+        "col": "#f3c737",
+        "freq": [38 * 6 + 4.5, 38, 38, 38 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        //"freq": [38 * 8 + 2.72, 38 * 8, 38, 38 * 8 + 8.15, 38 * 8 + 8.15 + 2.72], // Left 1, Left 2, Center, Right 1, Right 2
+        //"vol": [.4, .4, .5, .4, .4],
         "pan": [-1, -1, 0, 1, 1],
         "name": "IRT Lina Deutsch schnell",
         "de": "10 Min Remote Viewing Session|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 8.1Hz syncronisiert wird.",
@@ -3184,6 +3184,7 @@ list = [
         "hr": "10 Min Remote Viewing Session|Baza od 38 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 8.1 Hz.",
         "tags": "1 2 3",
         "img": "img/fractal-346127_640.jpg",
+        "showdatetime": true,
         "durationsec": 10 * 60,
         "randomfilelist": [
             "mp3/rv/de/color/Lina.mp3",
@@ -3201,8 +3202,7 @@ list = [
             {
                 "startsec": 3,
                 "maxrandomsec": 0,
-                "prefile": "mp3/rv/de/entry/Lina.mp3",
-                "file": "randomfilelist"
+                "file": "mp3/rv/de/entry/Lina.mp3"
             },
             {
                 "startsec": 20,

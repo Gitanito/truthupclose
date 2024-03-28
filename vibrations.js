@@ -245,7 +245,7 @@ function start() {
     $("#settings").addClass('sticky-settings');
 
     if (activelement.data("desc") !== "") {
-        $("#playingdesc").html("<br><h5>Details:</h5>" + activelement.data("desc") + "<br><br><br>");
+        $("#playingdesc").html("<br><h5>Details:</h5>" + activelement.data("desc") + "<br><br><h3 id='bigdate'></h3><h1 id='bigtime'></h1><br><br>");
     }
     let set = list[activelement.data("f")];
     runningindex = activelement.data("f");
@@ -389,6 +389,10 @@ function start() {
                             rvaudio = new Audio(myaudiofile);
                             rvaudio.loop = false;
                             rvaudio.play();
+                            if (typeof list[runningindex].showdatetime !== "undefined" && list[runningindex].showdatetime === true) {
+                                $('#bigtime').html(new Date().toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' }));
+                                $('#bigdate').html(new Date().toLocaleDateString('de-DE'));
+                            }
                         },
                         (startsec  + randomt) * 1000
                     )
