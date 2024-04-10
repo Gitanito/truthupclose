@@ -2449,7 +2449,7 @@ list = [
         "group": "11",
         "col": "#856dde",
         "freq": [38 * 4 + 4.5, 38 * 5, 38, 38 * 4 + 4.5, 38 * 5 + 9], // Left 1, Left 2, Center, Right 1, Right 2
-        "vol": [.4, .5, .5, .5, .4],
+        "vol": [.4, .4, .5, .4, .4],
         "pan": [-1, -.8, 0, .8, 1],
         "name": "90 Min ",
         "de": "Deep Flow|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
@@ -2467,7 +2467,7 @@ list = [
             {
                 "startsec": 1,
                 "freq": [38 * 4 + 5, 38 * 5, 38, 38 * 4 + 5, 38 * 5 + 10], // Left 1, Left 2, Center, Right 1, Right 2
-                "vol": [.4, .5, .5, .5, .4],
+                "vol": [.4, .4, .5, .4, .4],
                 "pan": [-.8, -1, 0, 1, .8],
                 "changespeedsec": 60 * 5,
                 "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
