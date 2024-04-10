@@ -243,8 +243,10 @@ function start() {
 
     running = true;
 
-    triggersound = list[runningindex].triggersound;
-    triggerrandsec = list[runningindex].triggerrandsec;
+    if (typeof list[runningindex].triggersound !== "undefined" && typeof list[runningindex].triggerrandsec !== "undefined") {
+        triggersound = list[runningindex].triggersound;
+        triggerrandsec = list[runningindex].triggerrandsec;
+    }
 
     activelement.parent().addClass('sticky-element');
     $("#settings").addClass('sticky-settings');
