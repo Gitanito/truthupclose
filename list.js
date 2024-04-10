@@ -2447,6 +2447,36 @@ list = [
         "date": "2023-09-27",
         "type": "program",
         "group": "11",
+        "col": "#856dde",
+        "freq": [38 * 4 + 4.5, 38 * 5, 38, 38 * 4 + 4.5, 38 * 5 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "90 Min ",
+        "de": "Deep Flow|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
+        "en": "Deep Flow|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
+        "es": "Deep Flow|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4.5 Hz.",
+        "fr": "Deep Flow|La base de 38 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 4.5 Hz.",
+        "it": "Deep Flow|La base di 38Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 4.5Hz.",
+        "hr": "Deep Flow|Baza od 38 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 4.5 Hz.",
+        "tags": "1 2 3",
+        "img": "img/jellyfish-5384711_640.jpg",
+        "durationsec": 90 * 60,
+        "triggersound": "mp3/rv/de/impression/Lina.mp3",
+        "triggerrandsec": 10,
+        "program": [
+            {
+                "startsec": 1,
+                "freq": [38 * 4 + 5, 38 * 5, 38, 38 * 4 + 5, 38 * 5 + 10], // Left 1, Left 2, Center, Right 1, Right 2
+                "changespeedsec": 60 * 5,
+                "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
+                "loop": 18
+            }
+        ]
+    },
+    {
+        "date": "2023-09-27",
+        "type": "program",
+        "group": "11",
         "col": "#d7cc08",
         "freq": [292.96875 + 1.9575, 292.96875, 146.484375, 292.96875 + 7.83 + 1.9575, 292.96875 + 7.83 + 1.9575], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .4, .55, .4, .4],

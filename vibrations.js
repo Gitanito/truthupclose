@@ -29,6 +29,8 @@ let rvaudio = null;
 let rvaudiolist = null;
 let rvxaudio = null;
 let rvaudioplayed = false;
+let triggersound = "";
+let triggerrandsec = 0;
 
     let minutesControl = null;
 let volumeControl = null;
@@ -240,6 +242,9 @@ function start() {
     }
 
     running = true;
+
+    triggersound = list[runningindex].triggersound;
+    triggerrandsec = list[runningindex].triggerrandsec;
 
     activelement.parent().addClass('sticky-element');
     $("#settings").addClass('sticky-settings');
@@ -489,6 +494,8 @@ function stop() {
         } catch (e) {
         }
     }
+    triggersound = "";
+    triggerrandsec = 0;
 }
 
 function changeLang() {
@@ -640,6 +647,20 @@ $(document).ready(function () {
             }
         }, 250);
     }
+
+    $(document).on("mouseup", function(){
+       if (running && triggersound !== "") {
+           window.setTimeout(
+               function () {
+                   rvxaudio = new Audio(triggersound);
+                   rvxaudio.loop = false;
+                   rvxaudio.play();
+               },
+               (Math.random() * triggerrandsec) * 1000
+           )
+       }
+    });
+
 
     initializeCookieBanner();
 
