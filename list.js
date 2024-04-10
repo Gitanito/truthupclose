@@ -2450,7 +2450,7 @@ list = [
         "col": "#856dde",
         "freq": [38 * 4 + 4.5, 38 * 5, 38, 38 * 4 + 4.5, 38 * 5 + 9], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .5, .5, .5, .4],
-        "pan": [-1, -1, 0, 1, 1],
+        "pan": [-1, -.8, 0, .8, 1],
         "name": "90 Min ",
         "de": "Deep Flow|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
         "en": "Deep Flow|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
@@ -2461,12 +2461,14 @@ list = [
         "tags": "1 2 3",
         "img": "img/jellyfish-5384711_640.jpg",
         "durationsec": 90 * 60,
-        "triggersound": "mp3/rv/de/impression/Lina.mp3",
+        "triggersound": "mp3/rv/de/impression/Laura.mp3",
         "triggerrandsec": 10,
         "program": [
             {
                 "startsec": 1,
                 "freq": [38 * 4 + 5, 38 * 5, 38, 38 * 4 + 5, 38 * 5 + 10], // Left 1, Left 2, Center, Right 1, Right 2
+                "vol": [.4, .5, .5, .5, .4],
+                "pan": [-.8, -1, 0, 1, .8],
                 "changespeedsec": 60 * 5,
                 "style": "peak", // (default) linear (100% up), exponential (100% up), peak (50% up, 50% down)
                 "loop": 18
