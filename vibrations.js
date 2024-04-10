@@ -243,11 +243,6 @@ function start() {
 
     running = true;
 
-    if (typeof list[runningindex].triggersound !== "undefined" && typeof list[runningindex].triggerrandsec !== "undefined") {
-        triggersound = list[runningindex].triggersound;
-        triggerrandsec = list[runningindex].triggerrandsec;
-    }
-
     activelement.parent().addClass('sticky-element');
     $("#settings").addClass('sticky-settings');
 
@@ -325,6 +320,11 @@ function start() {
         startRotation();
     }
 
+
+    if (typeof list[runningindex].triggersound !== "undefined" && typeof list[runningindex].triggerrandsec !== "undefined") {
+        triggersound = list[runningindex].triggersound;
+        triggerrandsec = list[runningindex].triggerrandsec;
+    }
 
     if (typeof list[runningindex].program !== "undefined") {
         rvaudiolist = null;
