@@ -2448,7 +2448,7 @@ list = [
         "type": "program",
         "group": "11",
         "col": "#856dde",
-        "freq": [38 * 4 + 4.5, 38 * 5, 38, 38 * 4 + 4.5, 38 * 5 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+        "freq": [38 * 4 + 4.5, 38 * 4, 38, 38 * 4 + 4.5, 38 * 4 + 9], // Left 1, Left 2, Center, Right 1, Right 2
         "vol": [.4, .4, .5, .4, .4],
         "pan": [-1, -.8, 0, .8, 1],
         "name": "90 Min ",
@@ -2461,12 +2461,12 @@ list = [
         "tags": "1 2 3",
         "img": "img/jellyfish-5384711_640.jpg",
         "durationsec": 90 * 60,
-        "triggersound": "mp3/rv/de/impression/Laura.mp3",
+        "triggersound": "mp3/rv/de/impression/Lina.mp3",
         "triggerrandsec": 10,
         "program": [
             {
                 "startsec": 1,
-                "freq": [38 * 4 + 5, 38 * 5, 38, 38 * 4 + 5, 38 * 5 + 10], // Left 1, Left 2, Center, Right 1, Right 2
+                "freq": [38 * 4 + 5, 38 * 4, 38, 38 * 4 + 5, 38 * 4 + 10], // Left 1, Left 2, Center, Right 1, Right 2
                 "vol": [.4, .4, .5, .4, .4],
                 "pan": [-.8, -1, 0, 1, .8],
                 "changespeedsec": 60 * 5,
