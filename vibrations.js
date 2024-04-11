@@ -658,7 +658,7 @@ $(document).ready(function () {
                    rvxaudio.loop = false;
                    rvxaudio.play();
                },
-               (Math.random() * triggerrandsec) * 1000
+               ((Math.random() * triggerrandsec) + 3) * 1000
            )
        }
     });
