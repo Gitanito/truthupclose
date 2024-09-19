@@ -3344,5 +3344,180 @@ list = [
                 "file": "mp3/rv/de/end/Lina.mp3"
             }
         ]
+    },
+    {
+        "date": "2024-03-22",
+        "type": "remoteviewing",
+        "group": "12",
+        "col": "#e81414",
+        "freq": [38 * 6 + 4.5, 38, 38, 38 + 4.5, 38 * 6 + 9], // Left 1, Left 2, Center, Right 1, Right 2
+        "vol": [.4, .5, .5, .5, .4],
+        //"freq": [38 * 8 + 2.72, 38 * 8, 38, 38 * 8 + 8.15, 38 * 8 + 8.15 + 2.72], // Left 1, Left 2, Center, Right 1, Right 2
+        //"vol": [.4, .4, .5, .4, .4],
+        "pan": [-1, -1, 0, 1, 1],
+        "name": "Lina Manifestation schnell",
+        "de": "10 Min Manifesting Session|Die Basis von 38Hz sorgt für erhöhte Aufmerksamkeit, wobei das Gehirn auf einen Bereich um 4.5Hz syncronisiert wird.",
+        "en": "10 Min Manifesting Session|The base of 38Hz ensures increased attention, with the brain being synchronized to a range around 4.5Hz.",
+        "es": "10 Min Manifesting Session|La base de 38 Hz garantiza una mayor atención, y el cerebro se sincroniza en un rango de alrededor de 4.5 Hz.",
+        "fr": "10 Min Manifesting Session|La base de 38 Hz assure une attention accrue, le cerveau étant synchronisé sur une plage autour de 4.5 Hz.",
+        "it": "10 Min Manifesting Session|La base di 38Hz garantisce una maggiore attenzione, con il cervello sincronizzato su una gamma intorno a 4.5Hz.",
+        "hr": "10 Min Manifesting Session|Baza od 38 Hz osigurava povećanu pozornost, a mozak je sinkroniziran na raspon od oko 4.5 Hz.",
+        "tags": "1 2 3",
+        "img": "img/dandelion-8809189_640.png",
+        "lightshow": 1 / ( 270 / 100 ),
+        "showdatetime": true,
+        "durationsec": 10 * 60,
+        "program": [
+            {
+                "startsec": 3,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/entry/Lina.mp3"
+            },
+            {
+                "startsec": 20,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/start/Lina.mp3"
+            },
+            {
+                "startsec": 30,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/question/Lina.mp3"
+            },
+            {
+                "startsec": 50,
+                "maxrandomsec": 10,
+                "file": "mp3/rv/de/wish/Lina.mp3"
+            },
+            {
+                "startsec": 70,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/wishinfo/Lina.mp3"
+            },
+            {
+                "startsec": 90,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 120,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 140,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 160,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 180,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 200,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 220,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 240,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 260,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 280,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 300,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 320,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 340,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 360,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 380,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 400,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 420,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 440,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 460,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 480,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 500,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 520,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 540,
+                "maxrandomsec": 5,
+                "file": "mp3/rv/de/alert/Lina.mp3"
+            },
+            {
+                "startsec": 560,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/wishend/Lina.mp3"
+            },
+            {
+                "startsec": 590,
+                "maxrandomsec": 0,
+                "file": "mp3/rv/de/wishend2/Lina.mp3"
+            }
+        ]
     }
 ];
