@@ -77,4 +77,4 @@ let stayloggedin = function(){
 		$('#betticket_header a').click();
 	}, 2000)
 }
-window.setInterval("stayloggedin()", 1000 * 30); // 30 Sekunden
+window.setInterval("stayloggedin()", 1000 * 56); // 30 Sekunden
