@@ -30,7 +30,7 @@ let autobet = function(){
 							console.log(c);
 							console.log(d);
 							console.log(b+c+d);
-							$('#event_'+m[1]).css("background-color","red");
+							$('#event_'+m[1]).css("background-color","lightgreen");
 							let x = $(this).find('.bet-group-column-1 .t3-bet-button');
 							if(!games.includes(m[1])) {
 								games.push(m[1]);
@@ -39,18 +39,18 @@ let autobet = function(){
 									$('#singlebets_betamount').attr("data-steps", "0,1,2,3");
 									$('#betamount_plus').click();
 									setTimeout(function(){
-										//$('#placeBetButton').click();
+										$('#placeBetButton').click();
 										setTimeout(function(){
-											//$('#commitBet').click();
+											$('#commitBet').click();
 											setTimeout(function(){
 												x[2].click();
 												setTimeout(function(){
 													$('#singlebets_betamount').attr("data-steps", "0,1,2,3");
 													$('#betamount_plus').click();
 													setTimeout(function(){
-														//$('#placeBetButton').click();
+														$('#placeBetButton').click();
 														setTimeout(function(){
-															//$('#commitBet').click();
+															$('#commitBet').click();
 														}, 1000);
 													}, 1000);
 												}, 1000);
@@ -60,7 +60,7 @@ let autobet = function(){
 								}, 1000);
 								localStorage.setItem("bettedGames", JSON.stringify(games));
 							} else {
-								$('#event_'+m[1]).css("background-color","lightgreen");
+								$('#event_'+m[1]).css("background-color","red");
 							}
 						}
 					}
