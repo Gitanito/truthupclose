@@ -72,9 +72,9 @@ let autobet = function(){
 window.setInterval("autobet()", 60000 * 5); // 5 Minuten
 autobet();
 let stayloggedin = function(){
-	$('#betticket_header a').click();
+	$('#betticket_mybets_header a').click();
 	setTimeout(function(){
-		$('#betticket_mybets_header a').click();
+		$('#betticket_header a').click();
 	}, 2000)
 }
 window.setInterval("stayloggedin()", 1000 * 30); // 30 Sekunden
