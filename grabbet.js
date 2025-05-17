@@ -21,8 +21,8 @@ let autobet = function(){
 						let c = parseFloat(m[3].replace(",","."));
 						let d = parseFloat(m[4].replace(",","."));
 
-						let minimum = 2.5;
-						let minimum_draw = 3.1;
+						let minimum = 2.4;
+						let minimum_draw = 3;
 
 						if (b >= minimum && d >= minimum && d+d >=4.9 && c >= minimum_draw) {
 							console.log(m[1]);
