@@ -1,3 +1,4 @@
+let paused = false;
 let autobet = function(){
 	//window.location = window.location;
 	setTimeout(function(){
@@ -17,6 +18,7 @@ let autobet = function(){
 					let m;
 					m = regex.exec(line);
 					if ( m) {
+                        paused = true;
 						let b = parseFloat(m[2].replace(",","."));
 						let c = parseFloat(m[3].replace(",","."));
 						let d = parseFloat(m[4].replace(",","."));
@@ -63,6 +65,7 @@ let autobet = function(){
 								$('#event_'+m[1]).css("background-color","red");
 							}
 						}
+                        paused = false;
 					}
 				}
 			)
@@ -72,9 +75,11 @@ let autobet = function(){
 window.setInterval("autobet()", 60000 * 5); // 5 Minuten
 autobet();
 let stayloggedin = function(){
-	$('#betticket_mybets_header a').click();
-	setTimeout(function(){
-		$('#betticket_header a').click();
-	}, 2000)
+    if (!paused) {
+    	$('#betticket_mybets_header a').click();
+    	setTimeout(function(){
+    		$('#betticket_header a').click();
+    	}, 2000);
+    }
 }
 window.setInterval("stayloggedin()", 1000 * 56); // 30 Sekunden
