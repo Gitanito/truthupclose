@@ -26,13 +26,17 @@ let autobet = function () {
 						let minimum = 2.4;
 						let minimum_draw = 3;
 
+						if (games.includes(m[1])) {
+							$('#event_' + m[1]).css("background-color", "lightgreen");
+						}
+
 						if (b >= minimum && d >= minimum && d + d >= 4.9 && c >= minimum_draw) {
 							console.log(m[1]);
 							console.log(b);
 							console.log(c);
 							console.log(d);
 							console.log(b + c + d);
-							$('#event_' + m[1]).css("background-color", "lightgreen");
+							$('#event_' + m[1]).css("background-color", "red");
 							let x = $(this).find('.bet-group-column-1 .t3-bet-button');
 							if (!games.includes(m[1])) {
 								games.push(m[1]);
@@ -62,7 +66,7 @@ let autobet = function () {
 								}, 1000);
 								localStorage.setItem("bettedGames", JSON.stringify(games));
 							} else {
-								$('#event_' + m[1]).css("background-color", "red");
+								$('#event_' + m[1]).css("background-color", "lightgreen");
 							}
 						}
 						paused = false;
